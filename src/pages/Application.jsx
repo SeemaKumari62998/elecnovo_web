@@ -2,95 +2,132 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const ImageContainer = styled.ul`
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
 `;
 
 const Image = styled.img`
-  width: 100%;
+  width: 50%;
   height: auto;
   transition: transform 0.3s;
 `;
 const ImageItem = styled.li`
-  flex: 0 0 calc(33.33% - 50px);
-  margin: 25px;
-  padding: 50px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: auto;
+
+  &:hover {
+    ${Image} {
+      transform: scale(1.1);
+      box-shadow: 0 0 8px rgb(255, 255, 255);
+    }
+  }
+`;
+
+const H1 = styled(motion.h1)`
+  color: var(--color-grey-400);
+  margin: 40px;
+  box-shadow: 0 0 6px rgb(255, 255, 255);
 `;
 
 function Application() {
   return (
     <>
-      <motion.h1
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{
-          delay: 0.3,
-          y: { type: "spring", stiffness: 60 },
-          opacity: { duration: 0.2 },
-          ease: "easeIn",
-          duration: 1,
-        }}
-      >
-        Applications
-      </motion.h1>
+      <H1>Applications</H1>
 
       <ImageContainer>
         <ImageItem
           as={motion.li}
           whileHover={{
-            scale: 1.1,
-            textShadow: "0px 0px 8px rgb(255,255,255)",
-            boxShadow: "0px, 0px, 8px rgb(255,255,255)",
+            scale: [1, 1.2, 1.1],
+            rotate: [0, 10, -10, 0],
+            transition: { duration: 0.5 },
           }}
         >
-          <Image src="ap1.jpg" alt="Application" />
+          <Image src="auto.png" alt="Application" />
         </ImageItem>
 
         <ImageItem
           as={motion.li}
           whileHover={{
-            scale: 1.1,
-            textShadow: "0px 0px 8px rgb(255,255,255)",
-            boxShadow: "0px, 0px, 8px rgb(255,255,255)",
+            scale: [1, 1.2, 1.1],
+            rotate: [0, 10, -10, 0],
+            transition: { duration: 0.5 },
           }}
         >
-          <Image src="ap2.jpg" alt="Application" />
+          <Image src="bike.png" alt="Application" />
         </ImageItem>
 
         <ImageItem
           as={motion.li}
           whileHover={{
-            scale: 1.1,
-            textShadow: "0px 0px 8px rgb(255,255,255)",
-            boxShadow: "0px, 0px, 8px rgb(255,255,255)",
+            scale: [1, 1.2, 1.1],
+            rotate: [0, 10, -10, 0],
+            transition: { duration: 0.5 },
           }}
         >
-          <Image src="ap3.jpg" alt="Application" />
+          <Image src="boat.png" alt="Application" />
         </ImageItem>
 
         <ImageItem
           as={motion.li}
           whileHover={{
-            scale: 1.1,
-            textShadow: "0px 0px 8px rgb(255,255,255)",
-            boxShadow: "0px, 0px, 8px rgb(255,255,255)",
+            scale: [1, 1.2, 1.1],
+            rotate: [0, 10, -10, 0],
+            transition: { duration: 0.5 },
           }}
         >
-          <Image src="ap3.jpg" alt="Application" />
+          <Image src="car.png" alt="Application" />
         </ImageItem>
 
         <ImageItem
           as={motion.li}
           whileHover={{
-            scale: 1.1,
-            textShadow: "0px 0px 8px rgb(255,255,255)",
-            boxShadow: "0px, 0px, 8px rgb(255,255,255)",
+            scale: [1, 1.2, 1.1],
+            rotate: [0, 10, -10, 0],
+            transition: { duration: 0.5 },
           }}
         >
-          <Image src="ap3.jpg" alt="Application" />
+          <Image src="scooter.png" alt="Application" />
+        </ImageItem>
+
+        <ImageItem
+          as={motion.li}
+          whileHover={{
+            scale: [1, 1.2, 1.1],
+            rotate: [0, 10, -10, 0],
+            transition: { duration: 0.5 },
+          }}
+        >
+          <Image src="loader.png" alt="Application" />
+        </ImageItem>
+
+        <ImageItem
+          as={motion.li}
+          whileHover={{
+            scale: [1, 1.2, 1.1],
+            rotate: [0, 10, -10, 0],
+            transition: { duration: 0.5 },
+          }}
+        >
+          <Image src="cleaningMachine.png" alt="Application" />
+        </ImageItem>
+
+        <ImageItem
+          as={motion.li}
+          whileHover={{
+            scale: [1, 1.2, 1.1],
+            rotate: [0, 10, -10, 0],
+            transition: { duration: 0.5 },
+          }}
+        >
+          <Image src="tractor.png" alt="Application" />
         </ImageItem>
       </ImageContainer>
     </>

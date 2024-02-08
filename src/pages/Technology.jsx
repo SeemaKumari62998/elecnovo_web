@@ -1,7 +1,7 @@
 function Technology() {
   return (
     <div>
-      <h1>Technology</h1>
+      <h1>Hellow</h1>
     </div>
   );
 }

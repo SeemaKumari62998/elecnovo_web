@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Footer from "../../ui/Footer";
 import { motion } from "framer-motion";
+import ScrollingAnimation from "../../ui/ScrollingAnimation";
 
 const Wrapper = styled(motion.div)`
   display: flex;
