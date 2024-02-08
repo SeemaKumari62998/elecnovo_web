@@ -12,7 +12,9 @@ const StyledAppLayout = styled.div`
 `;
 
 const Main = styled.main`
-  background-color: var(--color-grey-800);
+  background-color: var(--color-grey-900);
+  margin-top: 96px;
+  color: var(--color-grey-100);
 `;
 
 function AppLayout() {

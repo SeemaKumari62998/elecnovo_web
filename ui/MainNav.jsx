@@ -85,6 +85,16 @@ function MainNav() {
         <li>
           <NavLink to="/technology"></NavLink>
         </li>
+
+        <li>
+          <NavLink to="/career"></NavLink>
+        </li>
+        <li>
+          <NavLink to="/teams"></NavLink>
+        </li>
+        <li>
+          <NavLink to="/appication"></NavLink>
+        </li>
         {/*
         <li>
           <StyledNavLink to="/application">

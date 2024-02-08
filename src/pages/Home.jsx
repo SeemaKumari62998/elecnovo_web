@@ -3,27 +3,32 @@ import { motion } from "framer-motion";
 import Footer from "../../ui/Footer";
 import videobg from "../../public/videobg.mp4";
 import productVideo from "../../public/productVideo.mp4";
+import { BsBoxArrowInUpRight } from "react-icons/bs";
+
+import { Link } from "react-router-dom";
+import Application from "./Application";
+import PerformanceVideo from "../../ui/PerformanceVideo";
 
 const Cointainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* overflow: hidden; */
+  overflow: hidden;
+  width: 100vw;
+  /* height: 100vh; */
 `;
 
 const H2 = styled(motion.h2)`
   text-align: center;
   font-size: 4vw;
 
-  @media (min-width: 768) {
+  @media (min-width: 768px) {
     font-size: 3rem;
   }
 
   position: relative;
   margin-top: 5vw;
   color: var(--color-grey-100);
-  /* margin-top: 200px; */
-  /* font-size: 50px; */
 `;
 
 const VideoContainer = styled.div`
@@ -31,7 +36,7 @@ const VideoContainer = styled.div`
   height: 100vh;
   overflow: hidden;
   position: relative;
-  border-bottom: 3px solid white;
+  border-bottom: 1px solid white;
 `;
 
 const Video = styled.video`
@@ -49,7 +54,7 @@ const Overlay = styled.div`
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 `;
 
 const StyledParagraph = styled.div`
@@ -103,7 +108,7 @@ const SecondOverlay = styled.div`
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 `;
 
 const StyledContent = styled.div`
@@ -136,6 +141,7 @@ const StyledLiContainer = styled.div`
 
 const StyledLi = styled.li`
   margin: 10px;
+  font-size: 20px;
 `;
 
 const ImageContainer = styled.div`
@@ -152,7 +158,7 @@ const ImageOverlay = styled.div`
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
 `;
 
 const Image = styled.img`
@@ -191,7 +197,7 @@ function Home() {
           <SecondVideo src={productVideo} autoPlay loop muted />
           <SecondOverlay />
 
-          <H2>PRODUCTS</H2>
+          <H2>TECHNOLOGY</H2>
           <StyledContent>
             <StyledUl>
               <StyledLiContainer>
@@ -202,67 +208,67 @@ function Home() {
               </StyledLiContainer>
 
               <StyledLiContainer>
-                <StyledLi>Tell me more</StyledLi>
+                <StyledLi>
+                  Tell me more
+                  <Link to="/products">
+                    <BsBoxArrowInUpRight />
+                  </Link>
+                </StyledLi>
               </StyledLiContainer>
             </StyledUl>
           </StyledContent>
         </SecondVideoContainer>
 
-        <ImageContainer>
-          <Image src="ap4.jpg" alt="dashboard" />
-          <ImageOverlay />
-          <H2>Application</H2>
-
-          <StyledContent>
-            <StyledUl>
-              <StyledLiContainer>
-                <StyledLi>Performance</StyledLi>
-              </StyledLiContainer>
-              <StyledLiContainer>
-                <StyledLi>Speed</StyledLi>
-              </StyledLiContainer>
-
-              <StyledLiContainer>
-                <StyledLi>Design</StyledLi>
-              </StyledLiContainer>
-            </StyledUl>
-          </StyledContent>
-        </ImageContainer>
+        <Application />
       </Cointainer>
 
-      <StyledParagraph>
-        <H2>Why Elecnovo is one of the best EV motorin India?</H2>
+      <SecondVideoContainer>
+        <H2>Elecnovo solutions...</H2>
+        <PerformanceVideo />
+
+        <StyledContent>
+          <StyledUl>
+            <StyledLiContainer>
+              <StyledLi>Performance</StyledLi>
+            </StyledLiContainer>
+            <StyledLiContainer>
+              <StyledLi>Speed</StyledLi>
+            </StyledLiContainer>
+
+            <StyledLiContainer>
+              <StyledLi>
+                Tell me more
+                <Link to="/products">
+                  <BsBoxArrowInUpRight />
+                </Link>
+              </StyledLi>
+            </StyledLiContainer>
+          </StyledUl>
+        </StyledContent>
+      </SecondVideoContainer>
+
+      {/* <StyledParagraph>
+        <H2>Elecnovo solutions...</H2>
 
         <ParagraphItem>
           <StyledLiContainer>
-            <StyledLi>Compact design with low noise</StyledLi>
+            <StyledLi>Performance</StyledLi>
           </StyledLiContainer>
 
           <StyledLiContainer>
-            <StyledLi>Compact design with low noise</StyledLi>
+            <StyledLi>Speed</StyledLi>
           </StyledLiContainer>
 
           <StyledLiContainer>
-            <StyledLi>Compact design with low noise</StyledLi>
+            <StyledLi>Tell Me More...</StyledLi>
           </StyledLiContainer>
-        </ParagraphItem>
+        </ParagraphItem> */}
 
-        {/* <div>
-          <h1>About Elecnoco E-Mobolity solutions </h1>
-          <p>
-            Elecnoco has motors ranging from 2KW to 20KW. Individual components
-            <br />
-            of Elecnovo motors such as stator, rotor and controllers are custom
-            <br />
-            designed to meet customers demands as per their requirements.
-          </p>
-        </div> */}
-
-        <StyledWe>
+      {/* <StyledWe>
           <h1>We Design it!</h1>
           <h1>We Build it!</h1>
         </StyledWe>
-      </StyledParagraph>
+      </StyledParagraph> */}
 
       <Footer />
     </>

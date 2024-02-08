@@ -10,6 +10,8 @@ import AppLayout from "../ui/AppLayout";
 import { Toaster } from "react-hot-toast";
 import Application from "./pages/Application";
 import ProductDetail from "../ui/ProductDetail";
+import Career from "../ui/Career";
+import Teams from "../ui/Teams";
 
 function App() {
   return (
@@ -19,13 +21,15 @@ function App() {
         <Routes>
           <Route element={<AppLayout />}>
             <Route path="/" element={<Home />} />
-            <Route path="/" element={<Home />} />
+
             <Route path="about" element={<About />} />
             <Route path="technology" element={<Technology />} />
             <Route path="products" element={<Products />} />
             <Route path="contact" element={<Contact />} />
             <Route path="application" element={<Application />} />
             <Route path="productdetail" element={<ProductDetail />} />
+            <Route path="career" element={<Career />} />
+            <Route path="teams" element={<Teams />} />
           </Route>
           <Route path="*" element={<PagenotFound />} />
         </Routes>

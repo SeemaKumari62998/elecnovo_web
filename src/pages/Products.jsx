@@ -3,14 +3,14 @@ import Button from "../../ui/Button";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import Application from "../pages/Application";
-import Technology from "../pages/Technology";
 
 const StyledContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-top: 50px;
+  margin-top: 200px;
+  color: var(--color-grey-300);
 `;
 
 const StyledUl = styled.ul`
@@ -40,7 +40,7 @@ function Products() {
   const navigate = useNavigate();
 
   function handleExplore() {
-    navigate("/productDetail");
+    navigate("/productdetail");
   }
 
   return (
@@ -127,10 +127,6 @@ function Products() {
 
       <StyledHeading>
         <Application />
-      </StyledHeading>
-
-      <StyledHeading>
-        <Technology />
       </StyledHeading>
     </>
   );
