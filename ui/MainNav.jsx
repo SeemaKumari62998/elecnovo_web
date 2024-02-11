@@ -95,12 +95,7 @@ function MainNav() {
         <li>
           <NavLink to="/appication"></NavLink>
         </li>
-        {/*
-        <li>
-          <StyledNavLink to="/application">
-            <span>Application</span>
-          </StyledNavLink>
-        </li> */}
+
         <li>
           <StyledNavLink to="/contact">
             <span>Contact</span>

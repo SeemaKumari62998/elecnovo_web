@@ -11,9 +11,6 @@ const StyledFooter = styled.div`
   padding: 40px;
   color: var(--color-grey-600);
   width: 100%;
-  margin-top: 20px;
-  border-top: 1px solid white;
-  /* gap: 200px; */
 
   @media (min-width: 768px) {
     flex-direction: row;
