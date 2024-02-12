@@ -9,7 +9,7 @@ import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Application from "./Application";
 import PerformanceVideo from "../../ui/PerformanceVideo";
-
+import productVideo from "../../public/productVideo.mp4";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -34,15 +34,6 @@ const Video = styled.video`
 
   top: 0;
   left: 0;
-`;
-
-const Overlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(rgba(0, 0, 0.9, 0.3), rgba(0, 0, 0.9, 0.3));
 `;
 
 const Heading = styled(motion.h2)`
@@ -91,7 +82,8 @@ function Home() {
   return (
     <Container>
       <Section>
-        <Video src={motor} autoPlay loop muted />
+        {/* <Video src={productVideo} autoPlay loop muted /> */}
+        <Video src={technology} autoPlay loop muted />
         {/* <Overlay /> */}
         <Heading
           initial={{ y: 50, opacity: 0 }}
@@ -109,7 +101,8 @@ function Home() {
       </Section>
 
       <Section>
-        <Video src={technology} autoPlay loop muted />
+        {/* <Video src={technology} autoPlay loop muted /> */}
+        <Video src={motor} autoPlay loop muted />
         {/* <Overlay /> */}
         <Heading>TECHNOLOGY</Heading>
         <Content>
