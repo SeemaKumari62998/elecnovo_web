@@ -36,12 +36,12 @@ const Video = styled.video`
   left: 0;
 `;
 
-const Heading = styled(motion.h2)`
+const Heading = styled(motion.div)`
   position: relative;
-  color: var(--color-grey-600);
+  color: var(--color-grey-300);
   padding-left: 40px;
-  margin-top: 40px;
-  font-size: 3rem;
+  margin-top: 300px;
+  font-size: 1.5rem;
 `;
 
 const Content = styled.div`
@@ -58,23 +58,24 @@ const Ul = styled.ul`
   list-style: none;
   padding: 7px;
   margin: 15px;
+  margin-right: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 `;
 
 const LiContainer = styled.div`
-  width: 160px;
-  padding: 6px;
-  background-color: rgba(0, 0, 0, 0.2);
+  width: 180px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
-  margin: 10px;
-  backdrop-filter: blur(50px);
+  margin: 20px;
+  backdrop-filter: blur(60px);
   text-align: center;
 `;
 
 const Li = styled.li`
-  margin: 10px;
+  margin: 20px;
   font-size: 15px;
 `;
 
@@ -82,36 +83,26 @@ function Home() {
   return (
     <Container>
       <Section>
-        {/* <Video src={productVideo} autoPlay loop muted /> */}
         <Video src={technology} autoPlay loop muted />
-        {/* <Overlay /> */}
-        <Heading
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            delay: 0.2,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 0.1 },
-            ease: "easeIn",
-            duration: 1,
-          }}
-        >
-          DRIVING GREEN MOBILITY
+        <Heading>
+          <h1>DRIVING GREEN MOBILITY</h1>
+          <h2>WITH HIGH SPEED </h2>
         </Heading>
       </Section>
 
       <Section>
-        {/* <Video src={technology} autoPlay loop muted /> */}
         <Video src={motor} autoPlay loop muted />
-        {/* <Overlay /> */}
-        <Heading>TECHNOLOGY</Heading>
+        <Heading>
+          <h1> ELECNOVO TECHNOLOGY</h1>
+          <h2>BEST ELECTRIC MOTORS USAGE</h2>
+        </Heading>
         <Content>
           <Ul>
             <LiContainer>
-              <Li>PMSM</Li>
+              <Li>PMSM MOTORS</Li>
             </LiContainer>
             <LiContainer>
-              <Li>BLDC</Li>
+              <Li>BLDC MOTORS</Li>
             </LiContainer>
             <LiContainer>
               <Li>
@@ -127,19 +118,33 @@ function Home() {
       <Application />
 
       <Section>
-        <Heading>ELECNOVO SOLUTIONS</Heading>
-        {/* <Overlay /> */}
+        <Heading>
+          <h1>ELECNOVO SOLUTIONS..</h1>
+          <h2>PROVIDED WITH 100% SECURITY</h2>
+        </Heading>
+
         <PerformanceVideo />
         <Content>
           <Ul>
             <LiContainer>
               <Li>HIGH RELIABILITY</Li>
             </LiContainer>
+
+            <LiContainer>
+              <Li>EFFICIENT OPERATION</Li>
+            </LiContainer>
             <LiContainer>
               <Li>LOWER TOTAL COST</Li>
             </LiContainer>
+
             <LiContainer>
               <Li>HIGH POWER DENSITY</Li>
+            </LiContainer>
+            <LiContainer>
+              <Li>INDEGENIOUSLY DEVELOPED</Li>
+            </LiContainer>
+            <LiContainer>
+              <Li>BETTER USER EXPERIENCE</Li>
             </LiContainer>
           </Ul>
         </Content>

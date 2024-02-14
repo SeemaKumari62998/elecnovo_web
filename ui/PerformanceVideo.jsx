@@ -14,7 +14,7 @@ const Video = styled.video`
   height: 100%;
   object-fit: cover;
 
-  margin-bottom: 300px;
+  margin-bottom: 757px;
 `;
 
 function PerformanceVideo() {

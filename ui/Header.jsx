@@ -2,6 +2,7 @@ import styled from "styled-components";
 // import Logo from "../ui/Logo";
 import MainNav from "./MainNav";
 import TopHeader from "./TopHeader";
+import Logo from "./Logo";
 
 const StyledHeader = styled.header`
   display: flex;
@@ -9,7 +10,7 @@ const StyledHeader = styled.header`
   align-items: center;
 
   background-color: black;
-  padding: 1px 90px;
+  padding: 8px 50px;
 
   width: 100%;
   color: white;
@@ -28,19 +29,28 @@ const Overlay = styled.div`
   background: linear-gradient(rgba(0, 0.5, 0.9, 0.3), rgba(0, 0.5, 0.9, 0.3));
 `;
 
+const CenteredTopHeader = styled.div`
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+`;
+
 function Header() {
   return (
     <StyledHeader>
       <>
-        <img
+        {/* <img
           src="logo.png"
           style={{ width: "155px", height: "100px" }}
           alt="logo"
-        />
-        <TopHeader />
-        <Overlay />
-        <MainNav />
+        /> */}
+        <Logo />
+        <CenteredTopHeader>
+          <TopHeader />
+        </CenteredTopHeader>
       </>
+      <Overlay />
+      <MainNav />
     </StyledHeader>
   );
 }

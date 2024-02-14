@@ -81,7 +81,7 @@ const StyledNavLink = styled(NavLink)`
 function Footer() {
   return (
     <StyledFooter>
-      <Logo />
+      {/* <Logo /> */}
 
       <StyledColumn>
         <h3>Quick links </h3>

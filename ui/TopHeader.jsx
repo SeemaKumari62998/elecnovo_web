@@ -4,13 +4,15 @@ import { MdArrowForwardIos } from "react-icons/md";
 
 const Container = styled.div`
   font-size: 18px;
+  display: flex;
+  justify-content: center;
 `;
 const Ul = styled.ul`
   display: flex;
   flex-direction: row;
   list-style-type: none;
   padding: 0;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 `;

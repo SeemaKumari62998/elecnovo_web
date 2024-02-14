@@ -49,18 +49,19 @@ const Span = styled.span`
 `;
 
 const H2 = styled(motion.h2)`
-  text-align: left;
+  text-align: center;
+  font-size: 3rem;
+  position: absolute;
+  top: 20px; /* Adjust this value to move it down from the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  color: var(--color-grey-200);
+  padding: 10px;
+  margin: 0;
 
   @media (min-width: 768px) {
     font-size: 3rem;
   }
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: var(--color-grey-600);
-  padding: 20px;
-  margin: 20px;
 `;
 const Overlay = styled.div`
   position: absolute;
@@ -77,7 +78,7 @@ function Application() {
       <Cointainer>
         {/* <Overlay /> */}
         <ImageContainer>
-          <H2>APPLICATIONS</H2>
+          <H2> ELECNOVO APPLICATIONS FOR BEST VEHICLE </H2>
 
           <ImageItem
             as={motion.li}

@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import Menu from "./MenuList";
+
 const NavList = styled.ul`
   display: flex;
   justify-content: flex-end;
-  flex-direction: row;
-  gap: 0.8rem;
+  margin-right: 50px;
+  border: 0.3rem solid var(--color-grey-700);
+  border-radius: 10px;
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -13,26 +15,25 @@ const StyledNavLink = styled(NavLink)`
     position: relative;
 
     &::after {
-      content: "";
-      border: solid transparent;
-      border-width: 0;
+      border: 1px solid blue;
       position: absolute;
       top: 50%;
       right: 0.5em;
       transform: translateY(-50%);
     }
   }
+
   &:link,
   &:visited {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
-
     color: var(--color-grey-300);
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 500;
     padding: 1.2rem 2.4rem;
     transition: all 0.3s;
+    box-shadow: 0 3px 10px white;
+    border-radius: 8px;
   }
 
   /* This works because react-router places the active class on the active NavLink */
@@ -40,12 +41,12 @@ const StyledNavLink = styled(NavLink)`
   &:active,
   &.active:link,
   &.active:visited {
-    color: var(--color-grey-800);
-    background-color: var(--color-grey-400);
-    border-radius: var(--border-radius-sm);
+    color: black;
+    background-color: var(--color-green-100);
+    border-radius: 8px;
   }
 
-  & svg {
+  /* & svg {
     width: 2.4rem;
     height: 2.4rem;
     color: var(--color-grey-400);
@@ -57,14 +58,21 @@ const StyledNavLink = styled(NavLink)`
   &.active:link svg,
   &.active:visited svg {
     color: var(--color-brand-600);
-  }
+  } */
 `;
 
 function MainNav() {
   return (
-    <nav>
+    <>
       <NavList>
         <li>
+          <StyledNavLink to="/contact">
+            <span>Contact</span>
+          </StyledNavLink>
+        </li>
+      </NavList>
+
+      {/* <li>
           <StyledNavLink to="/">
             <span>Home</span>
           </StyledNavLink>
@@ -80,8 +88,18 @@ function MainNav() {
           <StyledNavLink to="/about">
             <span>About us</span>
           </StyledNavLink>
+        </li> */}
+      <ul>
+        <li>
+          <NavLink to="/"></NavLink>
+        </li>
+        <li>
+          <NavLink to="/about us"></NavLink>
         </li>
 
+        <li>
+          <NavLink to="/products"></NavLink>
+        </li>
         <li>
           <NavLink to="/technology"></NavLink>
         </li>
@@ -97,16 +115,10 @@ function MainNav() {
         </li>
 
         <li>
-          <StyledNavLink to="/contact">
-            <span>Contact</span>
-          </StyledNavLink>
-        </li>
-
-        <li>
           <Menu />
         </li>
-      </NavList>
-    </nav>
+      </ul>
+    </>
   );
 }
 
