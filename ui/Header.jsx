@@ -1,27 +1,55 @@
 import styled from "styled-components";
-import Logo from "../ui/Logo";
+// import Logo from "../ui/Logo";
 import MainNav from "./MainNav";
+import TopHeader from "./TopHeader";
+import Logo from "./Logo";
 
 const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  background-color: var(--color-grey-900);
-  padding: 1px 90px;
-  border-bottom: 2px solid var(--color-grey-800);
+  background-color: black;
+  padding: 8px 50px;
+
   width: 100%;
   color: white;
 
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 100;
+`;
+const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0.5, 0.9, 0.3), rgba(0, 0.5, 0.9, 0.3));
+`;
+
+const CenteredTopHeader = styled.div`
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
 `;
 
 function Header() {
   return (
     <StyledHeader>
-      <Logo />
+      <>
+        {/* <img
+          src="logo.png"
+          style={{ width: "155px", height: "100px" }}
+          alt="logo"
+        /> */}
+        <Logo />
+        <CenteredTopHeader>
+          <TopHeader />
+        </CenteredTopHeader>
+      </>
+      <Overlay />
       <MainNav />
     </StyledHeader>
   );

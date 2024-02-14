@@ -1,19 +1,26 @@
 import styled from "styled-components";
-import engine from "../public/engine.mp4";
+import solution from "../public/solution.mp4";
 
 const Container = styled.div`
+  display: flex;
+  justify-content: left;
+  align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 `;
 
 const Video = styled.video`
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  margin-bottom: 757px;
 `;
 
 function PerformanceVideo() {
   return (
     <Container>
-      <Video src={engine} autoPlay loop muted />
+      <Video src={solution} autoPlay loop muted />
     </Container>
   );
 }
