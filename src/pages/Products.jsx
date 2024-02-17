@@ -124,10 +124,6 @@ function Products() {
           </StyledLi>
         </StyledUl>
       </StyledContainer>
-
-      <StyledHeading>
-        <Application />
-      </StyledHeading>
     </>
   );
 }

@@ -8,7 +8,7 @@ import PagenotFound from "./pages/PagenotFound";
 import GlobalStyles from "./styles/GlobalStyles";
 import AppLayout from "../ui/AppLayout";
 import { Toaster } from "react-hot-toast";
-import Application from "./pages/Application";
+import ApplicationDetails from "../ui/ApplicationDetails";
 import ProductDetail from "../ui/ProductDetail";
 import Career from "../ui/Career";
 import Teams from "../ui/Teams";
@@ -26,7 +26,7 @@ function App() {
             <Route path="technology" element={<Technology />} />
             <Route path="products" element={<Products />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="application" element={<Application />} />
+            <Route path="applicationdetails" element={<ApplicationDetails />} />
             <Route path="productdetail" element={<ProductDetail />} />
             <Route path="career" element={<Career />} />
             <Route path="teams" element={<Teams />} />

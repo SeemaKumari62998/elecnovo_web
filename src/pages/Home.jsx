@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import Application from "./Application";
 import PerformanceVideo from "../../ui/PerformanceVideo";
 import productVideo from "../../public/productVideo.mp4";
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -23,7 +24,6 @@ const Section = styled.div`
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  border: 1px solid grey;
 `;
 
 const Video = styled.video`
@@ -37,11 +37,22 @@ const Video = styled.video`
 `;
 
 const Heading = styled(motion.div)`
-  position: relative;
+  position: absolute;
   color: var(--color-grey-300);
   padding-left: 40px;
-  margin-top: 300px;
-  font-size: 1.5rem;
+  top: 80%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+`;
+const H1 = styled.h1`
+  position: absolute;
+  color: var(--color-grey-300);
+  padding-left: 40px;
+  top: 12%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 `;
 
 const Content = styled.div`
@@ -86,7 +97,6 @@ function Home() {
         <Video src={technology} autoPlay loop muted />
         <Heading>
           <h1>DRIVING GREEN MOBILITY</h1>
-          <h2>WITH HIGH SPEED </h2>
         </Heading>
       </Section>
 
@@ -94,7 +104,6 @@ function Home() {
         <Video src={motor} autoPlay loop muted />
         <Heading>
           <h1> ELECNOVO TECHNOLOGY</h1>
-          <h2>BEST ELECTRIC MOTORS USAGE</h2>
         </Heading>
         <Content>
           <Ul>
@@ -118,10 +127,7 @@ function Home() {
       <Application />
 
       <Section>
-        <Heading>
-          <h1>ELECNOVO SOLUTIONS..</h1>
-          <h2>PROVIDED WITH 100% SECURITY</h2>
-        </Heading>
+        <H1>ELECNOVO SOLUTIONS..</H1>
 
         <PerformanceVideo />
         <Content>
@@ -131,20 +137,20 @@ function Home() {
             </LiContainer>
 
             <LiContainer>
-              <Li>EFFICIENT OPERATION</Li>
+              <Li>EASY TO ASSEMBLE</Li>
             </LiContainer>
             <LiContainer>
-              <Li>LOWER TOTAL COST</Li>
+              <Li>COST EFFECTIVE</Li>
             </LiContainer>
 
             <LiContainer>
-              <Li>HIGH POWER DENSITY</Li>
+              <Li>COMPACT SIZE</Li>
             </LiContainer>
             <LiContainer>
-              <Li>INDEGENIOUSLY DEVELOPED</Li>
+              <Li>LIGHT WEIGHT</Li>
             </LiContainer>
             <LiContainer>
-              <Li>BETTER USER EXPERIENCE</Li>
+              <Li>EASY TO CONTROL</Li>
             </LiContainer>
           </Ul>
         </Content>

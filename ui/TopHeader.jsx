@@ -34,7 +34,7 @@ function TopHeader() {
         <ArrowWrapper>
           <MdArrowBackIos />
         </ArrowWrapper>
-        <Li>GreenMobility</Li>
+        <Li>Home</Li>
         <Li>Technology</Li>
         <Li>Application</Li>
         <Li>Solutions</Li>

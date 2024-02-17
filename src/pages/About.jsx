@@ -18,11 +18,11 @@ const Wrapper = styled(motion.div)`
 `;
 
 const Paragrapg = styled.p`
-  text-align: center;
-  max-width: 800px;
-  margin-bottom: 5%;
-  font-weight: bold;
-  font-size: 1.2em;
+  text-align: left;
+  max-width: 80%;
+  margin: 4% auto;
+  font-size: 2rem;
+  color: var(--color-grey-200);
 `;
 
 const Container = styled.div`
@@ -31,9 +31,10 @@ const Container = styled.div`
 `;
 
 const Img = styled.img`
-  max-height: 70vh;
+  height: 400px;
   width: 100%;
   object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 `;
 
 const Overlay = styled.div`
@@ -55,6 +56,9 @@ const SectionContainer = styled.div`
   width: 100%;
   margin-bottom: 40px;
 `;
+const H1 = styled.h1`
+  color: var(--color-grey-200);
+`;
 
 function About() {
   return (
@@ -65,22 +69,12 @@ function About() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
       >
-        <Img src="Elecnovo SIGN board.png" alt="About" />
+        <Img src="aboutpageimage.jpg" alt="About" />
         <Overlay />
       </Container>
 
       <Wrapper>
-        <SectionContainer>
-          <h2>Mission</h2>
-          <p>Design, Development and Supply</p>
-        </SectionContainer>
-
-        <SectionContainer>
-          <h2>Vision</h2>
-          <p> Elecnovo provides motor solutions ranging from 1kW and 20kW</p>
-        </SectionContainer>
-
-        <h1>ABOUT US</h1>
+        <H1>ABOUT US</H1>
         <Paragrapg>
           ELECNOVO is engaged in Design, Development and Supply of Intelligent,
           Efficient and Reliable electric motors and controllers for electric
@@ -94,18 +88,7 @@ function About() {
           Elecnovo is an iniative of R & D in India and Make in India.
         </Paragrapg>
 
-        <div>
-          <ul>
-            <h3>Our History</h3>
-            <li>Established</li>
-            <li>Strategic investment</li>
-            <li>Acquired</li>
-          </ul>
-        </div>
-
         <Footer />
-
-        <p>Copyrights </p>
       </Wrapper>
     </>
   );
