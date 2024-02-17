@@ -12,27 +12,28 @@ const Container = styled.div`
 
 const ListContainer = styled.ul`
   flex: 1;
+  background-color: var(--color-grey-200);
 `;
 
 const Input = styled.input`
   border: 1px solid var(--color-grey-100);
   background-color: var(--color-grey-200);
   border-radius: var(--border-radius-sm);
-  padding: 0.9rem 1.2rem;
+  padding: 2rem 3rem;
   box-shadow: var(--shadow-sm);
 `;
 
 const StyledLi = styled.li`
   display: flex;
   flex-direction: row;
-
   justify-content: left;
   background-color: var(--color-grey-100);
-  padding: 5px;
+  padding: 1px;
   margin: 50px;
   text-align: center;
   color: black;
-  margin-left: 300px;
+  margin: 100px;
+  width: 70%;
 
   svg {
     margin-bottom: 5px;
@@ -55,6 +56,7 @@ const FormContainer = styled.div`
 
 const Styledspan = styled.span`
   color: var(--color-grey-500);
+  padding: 10px;
 `;
 
 function ContactForm() {
@@ -71,13 +73,12 @@ function ContactForm() {
         <ListContainer>
           <StyledLi>
             <MdOutlineMailOutline />
-
-            <Styledspan>test@test.com</Styledspan>
+            <Styledspan>REACHUS@ELECNOVO.COM</Styledspan>
           </StyledLi>
 
           <StyledLi>
             <MdPhone />
-            <Styledspan>9999900000</Styledspan>
+            <Styledspan>89712 84680</Styledspan>
           </StyledLi>
 
           <StyledLi>
@@ -89,9 +90,9 @@ function ContactForm() {
         <Form>
           <h1>CONTACT US</h1>
           <FormContainer>
-            <Input type="text" placeholder="Enter ur name" />
-            <Input type="text" placeholder="Enter ur comapny" />
-            <Input type="text" placeholder="Enter ur email" />
+            <Input type="text" placeholder="Enter Your Name" />
+            <Input type="text" placeholder="Enter Your Company Name" />
+            <Input type="text" placeholder="Enter Your Email" />
             <Input type="text" placeholder="Phone" />
           </FormContainer>
 

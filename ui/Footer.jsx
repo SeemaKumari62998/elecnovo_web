@@ -112,10 +112,8 @@ function Footer() {
       <StyledMedia>
         <h3>Follow Us On</h3>
         <MediaUl>
-          <FaInstagram />
           <FaFacebook />
           <FaLinkedin />
-          <FaTwitter />
         </MediaUl>
       </StyledMedia>
     </StyledFooter>

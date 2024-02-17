@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-const Cointainer = styled.div`
+import { useState } from "react";
+
+const Container = styled.div`
   position: relative;
 `;
 
@@ -24,10 +26,8 @@ const ImageItem = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* align-items: center; */
-  /* text-align: center; */
   margin-bottom: 50px;
-  margin-top: auto;
+  margin-top: 50px;
   position: relative;
 
   &:hover {
@@ -40,11 +40,12 @@ const ImageItem = styled.li`
 
 const Span = styled.span`
   position: absolute;
-  bottom: -200px;
+  bottom: -210px;
   left: 35%;
   transform: translateX(-50%);
   color: var(--color-grey-200);
-  /* background-color: rgba(0, 0, 0, 0.5); */
+  white-space: nowrap;
+  font-size: 2rem;
   padding: 150px 300px;
 `;
 
@@ -52,8 +53,8 @@ const H2 = styled(motion.h2)`
   text-align: center;
   font-size: 3rem;
   position: absolute;
-  top: 20px; /* Adjust this value to move it down from the top */
-  left: 50%; /* Center horizontally */
+  top: 30px;
+  left: 50%;
   transform: translateX(-50%);
   color: var(--color-grey-200);
   padding: 10px;
@@ -72,13 +73,23 @@ const Overlay = styled.div`
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 `;
 
+const PopupContainer = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
 function Application() {
+  const [popDetail, setPopDetail] = useState(null);
+  const [popupPosition, setPopupPosition] = useState({ x: 0, y: 0 });
+
   return (
     <>
-      <Cointainer>
+      <Container>
         {/* <Overlay /> */}
         <ImageContainer>
-          <H2> ELECNOVO APPLICATIONS FOR BEST VEHICLE </H2>
+          <H2> ELECNOVO APPLICATIONS</H2>
 
           <ImageItem
             as={motion.li}
@@ -87,8 +98,8 @@ function Application() {
               transition: { duration: 0.7 },
             }}
           >
-            <Image src="bike.png" alt="Application" />
-            <Span>Bike</Span>
+            <Image src="bike.png" alt="Application" onClick={""} />
+            <Span>Electric Motorcycle</Span>
           </ImageItem>
 
           <ImageItem
@@ -99,7 +110,7 @@ function Application() {
             }}
           >
             <Image src="scooter.png" alt="Application" />
-            <Span>Scooter</Span>
+            <Span> Electric Scooter</Span>
           </ImageItem>
 
           <ImageItem
@@ -110,7 +121,7 @@ function Application() {
             }}
           >
             <Image src="tractor.png" alt="Application" />
-            <Span>Tractor</Span>
+            <Span>Electric Tractor</Span>
           </ImageItem>
 
           <ImageItem
@@ -122,7 +133,7 @@ function Application() {
             }}
           >
             <Image src="Golfkart.png" alt="Application" />
-            <Span>Golfkart</Span>
+            <Span>Electric Golfkart</Span>
           </ImageItem>
 
           <ImageItem
@@ -133,7 +144,7 @@ function Application() {
             }}
           >
             <Image src="boat.png" alt="Application" />
-            <Span>Boat</Span>
+            <Span>Electric Boat</Span>
           </ImageItem>
 
           <ImageItem
@@ -144,7 +155,7 @@ function Application() {
             }}
           >
             <Image src="car.png" alt="Application" />
-            <Span>Car</Span>
+            <Span>Electric Car</Span>
           </ImageItem>
 
           <ImageItem
@@ -155,7 +166,7 @@ function Application() {
             }}
           >
             <Image src="loader.png" alt="Application" />
-            <Span>Loader</Span>
+            <Span>Electric Goodsvehicle</Span>
           </ImageItem>
           <ImageItem
             as={motion.li}
@@ -165,10 +176,17 @@ function Application() {
             }}
           >
             <Image src="cleaningMachine.png" alt="Application" />
-            <Span>CleaningMachine</Span>
+            <Span>Electric Cleaningvehicle</Span>
           </ImageItem>
         </ImageContainer>
-      </Cointainer>
+        {popDetail && (
+          <PopupContainer
+            style={{ top: popupPosition.y, left: popupPosition.x }}
+          >
+            {popDetail}
+          </PopupContainer>
+        )}
+      </Container>
     </>
   );
 }

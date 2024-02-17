@@ -61,7 +61,7 @@ function Menu() {
           </Border>
 
           <Border>
-            <NavLink to="/application" onClick={closeMenu}>
+            <NavLink to="/applicationdetails" onClick={closeMenu}>
               <MenuItem>Application</MenuItem>
             </NavLink>
 
