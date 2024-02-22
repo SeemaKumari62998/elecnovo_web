@@ -10,7 +10,7 @@ import AppLayout from "../ui/AppLayout";
 import { Toaster } from "react-hot-toast";
 import ApplicationDetails from "../ui/ApplicationDetails";
 import ProductDetail from "../ui/ProductDetail";
-import Career from "../ui/Career";
+import Achivements from "../ui/Achivemets";
 import Teams from "../ui/Teams";
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="applicationdetails" element={<ApplicationDetails />} />
             <Route path="productdetail" element={<ProductDetail />} />
-            <Route path="career" element={<Career />} />
+            <Route path="achivements" element={<Achivements />} />
             <Route path="teams" element={<Teams />} />
           </Route>
           <Route path="*" element={<PagenotFound />} />
