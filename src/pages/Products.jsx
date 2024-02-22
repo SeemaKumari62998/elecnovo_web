@@ -2,40 +2,44 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../ui/Button";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import Application from "../pages/Application";
 
 const StyledContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
-  margin-top: 200px;
-  color: var(--color-grey-300);
+  color: var(--color-grey-200);
 `;
 
 const StyledUl = styled.ul`
   list-style-type: none;
   padding: 0;
+  margin: 10px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 70px;
+  grid-template-columns: repeat(3, 1fr);
+
+  top: 0;
+  left: 0;
+  width: 100%;
 `;
 
-const StyledLi = styled.li`
+const StyledImage = styled.li`
   grid-column: span 1;
-  grid-row: span 1;
+  grid-row: span 2;
+  padding: 50px;
+  margin: 70px;
+  margin-top: 2px;
 `;
 
 const H3 = styled.h3`
   text-align: center;
   font-weight: 200px;
-  font-size: larger;
+  font-size: 30px;
 `;
 
-const StyledHeading = styled.h2`
-  text-align: center;
-  margin-top: 200px;
-`;
+// const StyledHeading = styled.h2`
+//   text-align: center;
+//   margin-top: 20px;
+// `;
 function Products() {
   const navigate = useNavigate();
 
@@ -46,8 +50,9 @@ function Products() {
   return (
     <>
       <StyledContainer>
+        {/* <StyledHeading>WELCOME</StyledHeading> */}
         <StyledUl>
-          <StyledLi
+          <StyledImage
             as={motion.li}
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -64,9 +69,9 @@ function Products() {
             <h2>1 KW BLDC/PMSM</h2>
             <h3>High Efficiency technology</h3>
             <Button onClick={handleExplore}>Explore</Button>
-          </StyledLi>
+          </StyledImage>
 
-          <StyledLi
+          <StyledImage
             as={motion.h3}
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -83,9 +88,9 @@ function Products() {
             <h2>1 KW BLDC/PMSM</h2>
             <h3>High Efficiency technology</h3>
             <Button onClick={handleExplore}>Explore</Button>
-          </StyledLi>
+          </StyledImage>
 
-          <StyledLi
+          <StyledImage
             as={motion.h3}
             initial={{ y: -100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -102,26 +107,7 @@ function Products() {
             <h2>1 KW BLDC/PMSM</h2>
             <h3>High Efficiency technology</h3>
             <Button onClick={handleExplore}>Explore</Button>
-          </StyledLi>
-
-          <StyledLi
-            as={motion.h3}
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{
-              delay: 0.4,
-              y: { type: "spring", stiffness: 60 },
-              opacity: { duration: 0.2 },
-              ease: "easeIn",
-              duration: 1,
-            }}
-          >
-            <H3>Product4</H3>
-            <img src="3D.PNG" alt="product" />
-            <h2>1 KW BLDC/PMSM</h2>
-            <h3>High Efficiency technology</h3>
-            <Button onClick={handleExplore}>Explore</Button>
-          </StyledLi>
+          </StyledImage>
         </StyledUl>
       </StyledContainer>
     </>

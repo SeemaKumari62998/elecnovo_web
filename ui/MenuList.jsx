@@ -82,8 +82,8 @@ function Menu() {
             <NavLink to="/teams" onClick={closeMenu}>
               <MenuItem>Teams</MenuItem>
             </NavLink>
-            <NavLink to="/career" onClick={closeMenu}>
-              <MenuItem>Career</MenuItem>
+            <NavLink to="/achivements" onClick={closeMenu}>
+              <MenuItem>Achivements</MenuItem>
             </NavLink>
           </Border>
 

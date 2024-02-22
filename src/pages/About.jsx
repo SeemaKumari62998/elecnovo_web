@@ -95,3 +95,10 @@ function About() {
 }
 
 export default About;
+
+/*Design, Development, Manufacture and Supply 
+of 
+Electric Motors
+for 
+Electric Vehicles
+*/

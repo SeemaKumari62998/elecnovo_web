@@ -7,7 +7,7 @@ const Container = styled.div`
   align-items: center;
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: black;
   overflow: hidden;
 `;
@@ -30,6 +30,7 @@ const TransparentSheet = styled.div`
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 `;
+
 const Div = styled.div`
   position: absolute;
   top: 40px;
@@ -43,11 +44,14 @@ const H1 = styled.h1`
 const Styleddiv = styled.div`
   position: absolute;
   border: 1px solid grey;
-  padding: 100px;
-  height: 70%;
-  text-align: left;
-  right: 8%;
-  width: 40%;
+
+  /* height: 60%; */
+  text-align: center;
+  left: 55%;
+  max-width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  top: 15%;
 `;
 
 function ApplicationDetails() {
@@ -57,11 +61,11 @@ function ApplicationDetails() {
         <Video src={engine_2} loop muted autoPlay />
         <TransparentSheet />
         <Div>
-          <H1>Elecnovo Technology </H1>
+          <H1>Elecnovo Applications</H1>
         </Div>
 
         <Styleddiv>
-          <p>Write up</p>
+          <p>Core Technology details</p>
         </Styleddiv>
       </Container>
     </>
