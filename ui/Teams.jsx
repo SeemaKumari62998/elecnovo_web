@@ -1,40 +1,40 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  height: 100vh;
   display: flex;
+  flex-direction: row;
 
   color: var(--color-grey-200);
   gap: 40px;
+  height: 100vh;
 `;
 
 const Section = styled.div`
-  border: 1px solid white;
-  width: 30%;
-  padding: 10px;
+  width: calc(30% - 40px);
+  padding: 20px;
   text-align: left;
-  margin-top: 40px;
+  margin-top: 100px;
 `;
 
 const Image = styled.img`
-  border: 1px solid pink;
-  margin: 30px;
-  width: auto;
-  max-height: 100%;
+  max-width: 100%;
+  max-height: 200px;
+  margin-top: 100px;
+  margin-left: 50px;
 `;
 
 const H1 = styled.h1`
   color: white;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 20px;
+  font-size: 40px;
 `;
-
 function Teams() {
   return (
     <>
       <H1>Elecnovo Teams</H1>
       <Container>
-        <Image src="" alt="photo" />
+        <Image src="elecnovoLogo.png" alt="photo" />
         <Section>
           <h3>
             Ratul Borah <br /> Founder and CEO
@@ -46,7 +46,7 @@ function Teams() {
           </p>
         </Section>
 
-        <Image src="" alt="photo" />
+        <Image src="elecnovoLogo.png" alt="photo" />
         <Section>
           <p>Santanoo Medhi Co-Founder</p>
           <p>

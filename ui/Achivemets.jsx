@@ -14,7 +14,7 @@ const Ul = styled.ul`
 `;
 
 const Li = styled.li`
-  padding: 20px;
+  padding: 25px;
   background-color: black;
   margin: 20px;
   width: 0 auto;
@@ -27,7 +27,7 @@ const P = styled.p`
 `;
 const H1 = styled.h1`
   margin: 20px;
-  color: var(--color-green-100);
+  color: var(--color-grey-400);
 `;
 
 function Career() {
