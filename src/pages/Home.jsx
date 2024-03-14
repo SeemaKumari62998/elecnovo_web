@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import Footer from "../../ui/Footer";
-// import videobg from "../../public/videobg.mp4";
 import motor from "../../public/motor.mp4";
 import technology from "../../public/technology.mp4";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
@@ -9,7 +8,6 @@ import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Application from "./Application";
 import PerformanceVideo from "../../ui/PerformanceVideo";
-import productVideo from "../../public/productVideo.mp4";
 
 const Container = styled.div`
   display: flex;
