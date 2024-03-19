@@ -12,6 +12,10 @@ import ApplicationDetails from "../ui/ApplicationDetails";
 import ProductDetail from "../ui/ProductDetail";
 import Achivements from "../ui/Achivemets";
 import Teams from "../ui/Teams";
+import Career from "../ui/Career";
+import Technologies from "../ui/Technologies";
+import Solutions from "./pages/Solutions";
+import Application from "./pages/Application";
 
 function App() {
   return (
@@ -30,6 +34,11 @@ function App() {
             <Route path="productdetail" element={<ProductDetail />} />
             <Route path="achivements" element={<Achivements />} />
             <Route path="teams" element={<Teams />} />
+
+            <Route path="technologies" element={<Technologies />} />
+            <Route path="application" element={<Application />} />
+            <Route path="solutions" element={<Solutions />} />
+            <Route path="career" element={<Career />} />
           </Route>
           <Route path="*" element={<PagenotFound />} />
         </Routes>

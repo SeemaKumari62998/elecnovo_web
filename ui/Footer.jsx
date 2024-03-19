@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Logo from "../ui/Logo";
 import { NavLink } from "react-router-dom";
+import { MdOutlineMailOutline, MdPhone } from "react-icons/md";
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const StyledFooter = styled.div`
@@ -84,6 +85,15 @@ function Footer() {
       {/* <Logo /> */}
 
       <StyledColumn>
+        <h3>Address</h3>
+        <StyledUl>
+          <span>Address</span>No. 18, First Floor, Sub Layout, 4th Phase,
+          <br />
+          Bommasandra Industrial Area, <br /> Bengaluru, Karnataka 560099, INDIA
+        </StyledUl>
+      </StyledColumn>
+
+      <StyledColumn>
         <h3>Quick links </h3>
         <StyledUl>
           <li>
@@ -102,10 +112,20 @@ function Footer() {
       </StyledColumn>
 
       <StyledColumn>
-        <h3>Resouces</h3>
+        <h3>Contact Us</h3>
         <StyledUl>
-          <li>Privacy Policy</li>
-          <li>Terms & conditions</li>
+          <li>
+            <span>
+              <MdOutlineMailOutline />
+            </span>
+            Email - REACHUS@ELECNOVO.COM
+          </li>
+          <li>
+            <span>
+              <MdPhone />
+            </span>
+            Phone - 703693586
+          </li>
         </StyledUl>
       </StyledColumn>
 
@@ -114,6 +134,8 @@ function Footer() {
         <MediaUl>
           <FaFacebook />
           <FaLinkedin />
+          <FaInstagram />
+          <FaTwitter />
         </MediaUl>
       </StyledMedia>
     </StyledFooter>

@@ -61,28 +61,32 @@ function Menu() {
           </Border>
 
           <Border>
-            <NavLink to="/applicationdetails" onClick={closeMenu}>
+            <NavLink to="/applicationdetails" onClick={() => closeMenu()}>
               <MenuItem>Application</MenuItem>
             </NavLink>
 
-            <NavLink to="/technology" onClick={closeMenu}>
+            <NavLink to="/technology" onClick={() => closeMenu()}>
               <MenuItem>Technology</MenuItem>
             </NavLink>
 
-            <NavLink to="/products" onClick={closeMenu}>
+            <NavLink to="/products" onClick={() => closeMenu()}>
               <MenuItem>Products</MenuItem>
             </NavLink>
           </Border>
 
           <Border>
-            <NavLink to="/about" onClick={closeMenu}>
+            <NavLink to="/about" onClick={() => closeMenu()}>
               <MenuItem>About us</MenuItem>
             </NavLink>
 
-            <NavLink to="/teams" onClick={closeMenu}>
+            <NavLink to="/career" onClick={() => closeMenu()}>
+              <MenuItem>Career</MenuItem>
+            </NavLink>
+
+            <NavLink to="/teams" onClick={() => closeMenu()}>
               <MenuItem>Teams</MenuItem>
             </NavLink>
-            <NavLink to="/achivements" onClick={closeMenu}>
+            <NavLink to="/achivements" onClick={() => closeMenu()}>
               <MenuItem>Achivements</MenuItem>
             </NavLink>
           </Border>
