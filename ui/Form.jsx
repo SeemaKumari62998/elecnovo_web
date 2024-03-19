@@ -10,6 +10,10 @@ const Form = styled.form`
       /* Box */
       background-color: var(--color-grey-0);
       border: 1px solid var(--color-grey-100);
+      @media only screen and (max-width: 600px) {
+        width: 100%;
+        padding: 9.4rem 2rem;
+      }
     `}
 
   ${(props) =>

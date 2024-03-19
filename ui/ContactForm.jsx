@@ -8,11 +8,22 @@ import { MdOutlineMailOutline, MdPhone } from "react-icons/md";
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
+  width: 100%;
+
+  @media only screen and (max-width: 600px) {
+    justify-content: center;
+    flex-direction: column;
+  }
 `;
 
 const ListContainer = styled.ul`
   flex: 1;
   background-color: var(--color-grey-200);
+  width: 50%;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 const Input = styled.input`
@@ -29,7 +40,7 @@ const StyledLi = styled.li`
   justify-content: left;
   background-color: var(--color-grey-100);
   padding: 1px;
-  margin: 50px;
+  // margin: 50px;
   text-align: center;
   color: black;
   margin: 100px;
@@ -43,6 +54,11 @@ const StyledLi = styled.li`
   span {
     font-size: 20px;
   }
+
+  @media only screen and (max-width: 600px) {
+    width: 80%;
+    margin: 20px;
+  }
 `;
 const StyledBtn = styled(Button)`
   margin-top: 30px;
@@ -52,6 +68,12 @@ const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    // margin: 20px;
+  }
 `;
 
 const Styledspan = styled.span`

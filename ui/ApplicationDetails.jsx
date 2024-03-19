@@ -20,6 +20,13 @@ const Video = styled.video`
   height: auto;
   border-radius: 5px;
   top: 150px;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const TransparentSheet = styled.div`
@@ -36,10 +43,18 @@ const Div = styled.div`
   top: 40px;
   left: 20%;
   z-index: 1;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 const H1 = styled.h1`
   color: white;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 22px;
+  }
 `;
 const Styleddiv = styled.div`
   position: absolute;
@@ -52,6 +67,12 @@ const Styleddiv = styled.div`
   padding: 20px;
   margin: 0 auto;
   top: 15%;
+
+  @media only screen and (max-width: 600px) {
+    left: 20%;
+    max-width: 100%;
+    top: 45%;
+  }
 `;
 
 function ApplicationDetails() {
