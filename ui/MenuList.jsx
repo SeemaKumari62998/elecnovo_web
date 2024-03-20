@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { TiThMenu } from "react-icons/ti";
 import { NavLink } from "react-router-dom";
@@ -40,53 +40,71 @@ const Border = styled.div`
 function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const menuRef = useRef();
 
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    }
+
+    // Bind the event listener only when the menu is open
+    if (menuOpen) {
+      document.addEventListener("click", handleClickOutside);
+    } else {
+      // Unbind the event listener when the menu is closed
+      document.removeEventListener("click", handleClickOutside);
+    }
+
+    // Cleanup function to remove the event listener on component unmount
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [menuOpen]);
 
   return (
     <>
-      <MenuContainer>
-        <TiThMenu onClick={toggleMenu} />
+      <MenuContainer ref={menuRef}>
+        <TiThMenu onClick={() => setMenuOpen(!menuOpen)} />
 
         <MenuList isOpen={menuOpen}>
           <Border>
-            <NavLink to="/" onClick={closeMenu}>
+            <NavLink to="/" onClick={() => setMenuOpen(false)}>
               <MenuItem>Home</MenuItem>
             </NavLink>
           </Border>
 
           <Border>
-            <NavLink to="/applicationdetails" onClick={() => closeMenu()}>
+            <NavLink
+              to="/applicationdetails"
+              onClick={() => setMenuOpen(false)}
+            >
               <MenuItem>Application</MenuItem>
             </NavLink>
 
-            <NavLink to="/technology" onClick={() => closeMenu()}>
+            <NavLink to="/technology" onClick={() => setMenuOpen(false)}>
               <MenuItem>Technology</MenuItem>
             </NavLink>
 
-            <NavLink to="/products" onClick={() => closeMenu()}>
+            <NavLink to="/products" onClick={() => setMenuOpen(false)}>
               <MenuItem>Products</MenuItem>
             </NavLink>
           </Border>
 
           <Border>
-            <NavLink to="/about" onClick={() => closeMenu()}>
+            <NavLink to="/about" onClick={() => setMenuOpen(false)}>
               <MenuItem>About us</MenuItem>
             </NavLink>
 
-            <NavLink to="/career" onClick={() => closeMenu()}>
+            <NavLink to="/career" onClick={() => setMenuOpen(false)}>
               <MenuItem>Career</MenuItem>
             </NavLink>
 
-            <NavLink to="/teams" onClick={() => closeMenu()}>
+            <NavLink to="/teams" onClick={() => setMenuOpen(false)}>
               <MenuItem>Teams</MenuItem>
             </NavLink>
-            <NavLink to="/achivements" onClick={() => closeMenu()}>
+            <NavLink to="/achivements" onClick={() => setMenuOpen(false)}>
               <MenuItem>Achivements</MenuItem>
             </NavLink>
           </Border>

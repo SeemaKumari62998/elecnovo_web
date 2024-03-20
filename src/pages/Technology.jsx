@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import LinkButton from "../../ui/LinkButton";
 
 const Container = styled.div`
   max-height: 100vh;
@@ -47,34 +48,38 @@ const P = styled.p`
 
 function Technology() {
   return (
-    <Container>
-      <H1>Elecnovo's Motor Technologies</H1>
-      <Imagecontainer>
-        <Div>
-          <Image src="tractor.png" alt="technology" />
-          <P>BLDC</P>
-        </Div>
+    <>
+      <LinkButton to="/">&larr;Back</LinkButton>
 
-        <Div>
-          <Image src="tractor.png" alt="technology" />
-          <P>PMSM</P>
-        </Div>
-        <Div>
-          <Image src="tractor.png" alt="technology" />
-          <P>AF</P>
-        </Div>
+      <Container>
+        <H1>Elecnovo's Motor Technologies</H1>
+        <Imagecontainer>
+          <Div>
+            <Image src="tractor.png" alt="technology" />
+            <P>BLDC</P>
+          </Div>
 
-        <Div>
-          <Image src="tractor.png" alt="technology" />
-          <P>SRM</P>
-        </Div>
-      </Imagecontainer>
+          <Div>
+            <Image src="tractor.png" alt="technology" />
+            <P>PMSM</P>
+          </Div>
+          <Div>
+            <Image src="tractor.png" alt="technology" />
+            <P>AF</P>
+          </Div>
 
-      <H2>
-        BLDC: Brushless Direct Current; PMSM: Permanent Magnet Synchronous
-        Motor; AF: Axial Flux; SRM: Switch Reluctance Motor
-      </H2>
-    </Container>
+          <Div>
+            <Image src="tractor.png" alt="technology" />
+            <P>SRM</P>
+          </Div>
+        </Imagecontainer>
+
+        <H2>
+          BLDC: Brushless Direct Current; PMSM: Permanent Magnet Synchronous
+          Motor; AF: Axial Flux; SRM: Switch Reluctance Motor
+        </H2>
+      </Container>
+    </>
   );
 }
 

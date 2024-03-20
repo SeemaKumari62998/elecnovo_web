@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../ui/Button";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-
+import LinkButton from "../../ui/LinkButton";
 const StyledContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -49,6 +49,8 @@ function Products() {
 
   return (
     <>
+      <LinkButton to="/">&larr;Back</LinkButton>
+
       <StyledContainer>
         {/* <StyledHeading>WELCOME</StyledHeading> */}
         <StyledUl>

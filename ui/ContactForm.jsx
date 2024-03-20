@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Button from "./Button";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineMailOutline, MdPhone } from "react-icons/md";
+import LinkButton from "./LinkButton";
 
 const Container = styled.div`
   display: flex;
@@ -40,7 +41,7 @@ const StyledLi = styled.li`
   justify-content: left;
   background-color: var(--color-grey-100);
   padding: 1px;
-  // margin: 50px;
+
   text-align: center;
   color: black;
   margin: 100px;
@@ -91,6 +92,7 @@ function ContactForm() {
 
   return (
     <>
+      <LinkButton to="/">&larr;Back</LinkButton>
       <Container>
         <ListContainer>
           <StyledLi>
