@@ -22,6 +22,11 @@ const Section = styled.div`
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  border: 1px solid grey;
+
+  @media only screen and (max-width: 600px) {
+    height: 31vh;
+  }
 `;
 
 const Video = styled.video`
@@ -34,15 +39,21 @@ const Video = styled.video`
   left: 0;
 `;
 
-const Heading = styled(motion.div)`
-  position: absolute;
+const Heading = styled(motion.h1)`
+  position: relative;
   color: var(--color-grey-300);
   padding-left: 40px;
-  top: 80%;
-  left: 15%;
-  transform: translate(-50%, -50%);
+  margin-top: 37%;
+  font-size: 2rem;
   z-index: 10;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 10px;
+    padding-left: 10px;
+    margin-top: 180px;
+  }
 `;
+
 const H1 = styled.h1`
   position: absolute;
   color: var(--color-grey-300);
@@ -51,6 +62,14 @@ const H1 = styled.h1`
   left: 15%;
   transform: translate(-50%, -50%);
   z-index: 10;
+  font-size: 3rem;
+
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 50px;
+    font-size: 18px;
+    left: 25%;
+    top: 15%;
+  }
 `;
 
 const Content = styled.div`
@@ -61,16 +80,25 @@ const Content = styled.div`
   text-align: center;
   color: var(--color-green-100);
   width: fit-content;
+
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 50px;
+  }
 `;
 
 const Ul = styled.ul`
   list-style: none;
-  padding: 7px;
+  /* padding: 7px;
   margin: 15px;
-  margin-right: 150px;
+  margin-right: 150px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 600px) {
+    margin-right: 0px;
+  }
 `;
 
 const LiContainer = styled.div`
@@ -81,10 +109,16 @@ const LiContainer = styled.div`
   margin: 20px;
   backdrop-filter: blur(60px);
   text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+  }
 `;
 
 const Li = styled.li`
-  margin: 20px;
+  margin: 10px;
   font-size: 15px;
 `;
 
@@ -111,10 +145,12 @@ function Home() {
             <LiContainer>
               <Li>BLDC MOTORS</Li>
             </LiContainer>
+
             <LiContainer>
               <Li>
                 <Link to="/products">
-                  Tell me more <BsBoxArrowInUpRight />
+                  Tell me More
+                  <BsBoxArrowInUpRight />
                 </Link>
               </Li>
             </LiContainer>

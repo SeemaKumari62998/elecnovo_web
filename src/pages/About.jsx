@@ -3,14 +3,13 @@ import Footer from "../../ui/Footer";
 import { motion } from "framer-motion";
 import ScrollingAnimation from "../../ui/ScrollingAnimation";
 import LinkButton from "../../ui/LinkButton";
+
 const Wrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2%;
-  /* height: 100vh;
-  margin-top: 210px; */
 
   @media (min-width: 768px) {
     padding: 5%;

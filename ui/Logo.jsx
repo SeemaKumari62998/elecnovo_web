@@ -8,6 +8,10 @@ const StyledLogo = styled.div`
   height: 100px;
   width: 10%; /* Adjust this width as needed */
   margin-right: auto; /* Pushes the logo to the left */
+
+  @media only screen and (max-width: 600px) {
+    width: 50%;
+  }
 `;
 
 const Img = styled.img`

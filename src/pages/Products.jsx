@@ -3,11 +3,17 @@ import Button from "../../ui/Button";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import LinkButton from "../../ui/LinkButton";
+
 const StyledContainer = styled.div`
   display: flex;
   justify-content: center;
   height: 100vh;
   color: var(--color-grey-200);
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    height: 100%;
+  }
 `;
 
 const StyledUl = styled.ul`
@@ -20,6 +26,10 @@ const StyledUl = styled.ul`
   top: 0;
   left: 0;
   width: 100%;
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(1, 2fr);
+  }
 `;
 
 const StyledImage = styled.li`
@@ -28,6 +38,11 @@ const StyledImage = styled.li`
   padding: 50px;
   margin: 70px;
   margin-top: 2px;
+
+  @media only screen and (max-width: 600px) {
+    padding: 20px;
+    margin: 20px;
+  }
 `;
 
 const H3 = styled.h3`

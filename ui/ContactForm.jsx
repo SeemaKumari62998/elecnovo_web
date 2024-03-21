@@ -53,7 +53,7 @@ const StyledLi = styled.li`
   }
 
   span {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   @media only screen and (max-width: 600px) {
@@ -82,6 +82,11 @@ const Styledspan = styled.span`
   padding: 10px;
 `;
 
+const Span = styled.span`
+  color: var(--color-blue-700);
+  margin-top: 10px;
+`;
+
 function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -97,16 +102,19 @@ function ContactForm() {
         <ListContainer>
           <StyledLi>
             <MdOutlineMailOutline />
+            <Span>Email-</Span>
             <Styledspan>REACHUS@ELECNOVO.COM</Styledspan>
           </StyledLi>
 
           <StyledLi>
             <MdPhone />
+            <Span>Phone -</Span>
             <Styledspan>89712 84680</Styledspan>
           </StyledLi>
 
           <StyledLi>
             <CiLocationOn />
+            <Span> Address -</Span>
             <Styledspan>Elecnovo </Styledspan>
           </StyledLi>
         </ListContainer>
