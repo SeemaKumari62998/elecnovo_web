@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import engine_2 from "../public/engine_2.mp4";
-
+import LinkButton from "./LinkButton";
 const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -78,6 +78,8 @@ const Styleddiv = styled.div`
 function ApplicationDetails() {
   return (
     <>
+      <LinkButton to="/">&larr;Back</LinkButton>
+
       <Container>
         <Video src={engine_2} loop muted autoPlay />
         <TransparentSheet />

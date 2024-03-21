@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import LinkButton from "./LinkButton";
 const Container = styled.div`
   display: flex;
   flex-direction: row;
@@ -32,6 +32,7 @@ const H1 = styled.h1`
 function Teams() {
   return (
     <>
+      <LinkButton to="/">&larr;Back</LinkButton>
       <H1>Elecnovo Teams</H1>
       <Container>
         <Image src="elecnovoLogo.png" alt="photo" />

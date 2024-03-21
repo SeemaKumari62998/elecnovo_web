@@ -34,11 +34,12 @@ function App() {
             <Route path="productdetail" element={<ProductDetail />} />
             <Route path="achivements" element={<Achivements />} />
             <Route path="teams" element={<Teams />} />
+            <Route path="career" element={<Career />} />
 
+            <Route path="/" element={<Home />} />
             <Route path="technologies" element={<Technologies />} />
             <Route path="application" element={<Application />} />
             <Route path="solutions" element={<Solutions />} />
-            <Route path="career" element={<Career />} />
           </Route>
           <Route path="*" element={<PagenotFound />} />
         </Routes>

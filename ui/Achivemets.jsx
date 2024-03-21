@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import LinkButton from "./LinkButton";
 
 const Container = styled.div`
   display: flex;
@@ -33,6 +34,7 @@ const H1 = styled.h1`
 function Career() {
   return (
     <>
+      <LinkButton to="/">&larr;Back</LinkButton>
       <Container>
         <H1>Elecnovo's inventions</H1>
 

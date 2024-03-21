@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-
 import { useState } from "react";
 
 const Container = styled.div`
@@ -13,6 +12,13 @@ const ImageContainer = styled.ul`
   grid-template-rows: repeat(2, 1fr);
   gap: 70px;
   margin: 90px;
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    mmargin-bottom: 50px;
+  }
 `;
 
 const Image = styled.img`
@@ -27,7 +33,7 @@ const ImageItem = styled.li`
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: auto;
   position: relative;
 
   &:hover {
@@ -36,33 +42,47 @@ const ImageItem = styled.li`
       box-shadow: 0 0 8px rgb(0, 0, 0);
     }
   }
+
+  @media only screen and (max-width: 600px) {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 60px;
+  }
 `;
 
 const Span = styled.span`
   position: absolute;
   bottom: -210px;
-  left: 35%;
+  left: 38%;
   transform: translateX(-50%);
   color: var(--color-grey-200);
-  white-space: nowrap;
-  font-size: 2rem;
+  /* white-space: nowrap; */
+  /* font-size: 2rem; */
   padding: 150px 300px;
+
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+    margin-top: 40px;
+  }
 `;
 
 const H2 = styled(motion.h2)`
   text-align: center;
-  font-size: 3rem;
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--color-grey-200);
-  padding: 10px;
-  margin: 0;
 
-  @media (min-width: 768px) {
-    font-size: 3rem;
+  @media (max-width: 768px) {
+    font-size: 2.3rem;
+    text-align: center;
+    // margin-bottom: 20px;
+    margin-top: 10px;
   }
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--color-grey-600);
+  padding: 20px;
+  margin: 20px;
 `;
 const Overlay = styled.div`
   position: absolute;

@@ -19,6 +19,9 @@ const StyledHeader = styled.header`
   top: 0;
   left: 0;
   z-index: 100;
+  @media only screen and (max-width: 600px) {
+    padding: 8px 20px;
+  }
 `;
 const Overlay = styled.div`
   position: absolute;
@@ -33,6 +36,10 @@ const CenteredTopHeader = styled.div`
   display: flex;
   flex-grow: 1;
   justify-content: center;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 function Header() {

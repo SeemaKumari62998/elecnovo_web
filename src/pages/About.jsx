@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Footer from "../../ui/Footer";
 import { motion } from "framer-motion";
 import ScrollingAnimation from "../../ui/ScrollingAnimation";
+import LinkButton from "../../ui/LinkButton";
 
 const Wrapper = styled(motion.div)`
   display: flex;
@@ -9,8 +10,6 @@ const Wrapper = styled(motion.div)`
   align-items: center;
   justify-content: center;
   padding: 2%;
-  /* height: 100vh;
-  margin-top: 210px; */
 
   @media (min-width: 768px) {
     padding: 5%;
@@ -63,6 +62,7 @@ const H1 = styled.h1`
 function About() {
   return (
     <>
+      <LinkButton to="/">&larr;Back</LinkButton>
       <Container
         as={motion.div}
         initial={{ opacity: 0, scale: 0 }}

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { MdArrowBackIos } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   font-size: 18px;
@@ -34,10 +35,22 @@ function TopHeader() {
         <ArrowWrapper>
           <MdArrowBackIos />
         </ArrowWrapper>
-        <Li>Home</Li>
-        <Li>Technology</Li>
-        <Li>Application</Li>
-        <Li>Solutions</Li>
+
+        <Li>
+          <Link to="/">Home</Link>
+        </Li>
+
+        <Li>
+          <Link to="technology">Technology</Link>
+        </Li>
+
+        <Li>
+          <Link to="products">Application</Link>
+        </Li>
+
+        <Li>
+          <Link to="contact">Solutions</Link>
+        </Li>
         <ArrowWrapper>
           <MdArrowForwardIos />
         </ArrowWrapper>

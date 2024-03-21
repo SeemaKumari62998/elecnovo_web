@@ -7,11 +7,15 @@ import { motion } from "framer-motion";
 const Content = styled.div`
   position: absolute;
   top: 90%;
-  right: 1px;
+  /* right: 1px; */
   transform: translateY(-60%);
   text-align: center;
   color: var(--color-green-100);
   width: fit-content;
+
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 50px;
+  }
 `;
 
 const Video = styled.video`
@@ -32,6 +36,30 @@ const LiContainer = styled.div`
   margin: 20px;
   backdrop-filter: blur(60px);
   text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+  }
+`;
+
+const H1 = styled.h1`
+  position: absolute;
+  color: var(--color-grey-300);
+  padding-left: 40px;
+  top: 12%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 3rem;
+
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 50px;
+    font-size: 18px;
+    left: 25%;
+    top: 15%;
+  }
 `;
 
 const Li = styled.li`
@@ -56,6 +84,10 @@ const Ul = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media only screen and (max-width: 600px) {
+    margin-right: 0px;
+  }
 `;
 
 function Technologies() {

@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Button from "./Button";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineMailOutline, MdPhone } from "react-icons/md";
+import LinkButton from "./LinkButton";
 
 const Container = styled.div`
   display: flex;
@@ -40,7 +41,7 @@ const StyledLi = styled.li`
   justify-content: left;
   background-color: var(--color-grey-100);
   padding: 1px;
-  // margin: 50px;
+
   text-align: center;
   color: black;
   margin: 100px;
@@ -52,7 +53,7 @@ const StyledLi = styled.li`
   }
 
   span {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   @media only screen and (max-width: 600px) {
@@ -81,6 +82,11 @@ const Styledspan = styled.span`
   padding: 10px;
 `;
 
+const Span = styled.span`
+  color: var(--color-blue-700);
+  margin-top: 10px;
+`;
+
 function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -91,20 +97,24 @@ function ContactForm() {
 
   return (
     <>
+      <LinkButton to="/">&larr;Back</LinkButton>
       <Container>
         <ListContainer>
           <StyledLi>
             <MdOutlineMailOutline />
+            <Span>Email-</Span>
             <Styledspan>REACHUS@ELECNOVO.COM</Styledspan>
           </StyledLi>
 
           <StyledLi>
             <MdPhone />
+            <Span>Phone -</Span>
             <Styledspan>89712 84680</Styledspan>
           </StyledLi>
 
           <StyledLi>
             <CiLocationOn />
+            <Span> Address -</Span>
             <Styledspan>Elecnovo </Styledspan>
           </StyledLi>
         </ListContainer>
