@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link, Navigate, useNavigate, useRoutes } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const StyledLogo = styled.div`
   display: flex;

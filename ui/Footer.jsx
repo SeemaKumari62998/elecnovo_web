@@ -59,6 +59,9 @@ const MediaUl = styled.ul`
 const StyledUl = styled.ul`
   list-style: none;
   color: white;
+  @media only screen and (max-width: 600px) {
+    font-size: 15px;
+  }
 
   li {
     margin: 2px;
@@ -87,7 +90,7 @@ function Footer() {
       <StyledColumn>
         <h3>Address</h3>
         <StyledUl>
-          <span>Address</span>No. 18, First Floor, Sub Layout, 4th Phase,
+          No. 18, First Floor, Sub Layout, 4th Phase,
           <br />
           Bommasandra Industrial Area, <br /> Bengaluru, Karnataka 560099, INDIA
         </StyledUl>

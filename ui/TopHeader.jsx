@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { MdArrowBackIos } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
-import Home from "../src/pages/Home";
-// import { Link } from "react-scroll";
 
 const Container = styled.div`
   font-size: 18px;

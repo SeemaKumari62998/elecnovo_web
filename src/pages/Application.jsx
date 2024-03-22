@@ -47,8 +47,8 @@ const ImageItem = styled.li`
   @media only screen and (max-width: 600px) {
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
-    margin-top: 60px;
+    margin-bottom: 15px;
+    margin-top: 40px;
   }
 `;
 
@@ -58,27 +58,30 @@ const Span = styled.span`
   left: 38%;
   transform: translateX(-50%);
   color: var(--color-grey-200);
+  white-space: nowrap;
   padding: 150px 300px;
 
   @media only screen and (max-width: 600px) {
     text-align: center;
     margin-top: 40px;
+    padding: 180px 400px;
   }
 `;
 
 const H2 = styled(motion.h2)`
   text-align: center;
+  font-size: 2.5rem;
 
   @media (max-width: 768px) {
-    font-size: 2.3rem;
+    font-size: 2rem;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   position: absolute;
   top: 0;
   left: 0;
-  color: var(--color-grey-600);
+  color: var(--color-grey-300);
   padding: 20px;
   margin: 20px;
 `;
