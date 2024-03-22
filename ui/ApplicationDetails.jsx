@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import engine_2 from "../public/engine_2.mp4";
 import LinkButton from "./LinkButton";
+
 const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -10,6 +11,7 @@ const Container = styled.div`
   height: 100vh;
   background-color: black;
   overflow: hidden;
+  margin-top: 0;
 `;
 
 const Video = styled.video`

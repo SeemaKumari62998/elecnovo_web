@@ -43,8 +43,8 @@ const Heading = styled(motion.h1)`
   position: relative;
   color: var(--color-grey-300);
   padding-left: 40px;
-  margin-top: 37%;
-  font-size: 2rem;
+  margin-top: 42%;
+  font-size: 1.5rem;
   z-index: 10;
 
   @media only screen and (max-width: 600px) {
@@ -62,13 +62,13 @@ const H1 = styled.h1`
   left: 15%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  font-size: 3rem;
+  /* font-size: 3rem; */
 
   @media only screen and (max-width: 600px) {
     padding-bottom: 50px;
     font-size: 18px;
     left: 25%;
-    top: 15%;
+    top: 20%;
   }
 `;
 
@@ -112,27 +112,32 @@ const LiContainer = styled.div`
 
   @media only screen and (max-width: 600px) {
     width: 100px;
-    padding: 5px;
-    margin: 5px;
+    padding: 2px;
+    margin: 4px;
   }
 `;
 
 const Li = styled.li`
   margin: 10px;
   font-size: 15px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 9px;
+    margin: 7px;
+  }
 `;
 
 function Home() {
   return (
     <Container>
-      <Section>
+      <Section id="driving-green-mobility">
         <Video src={technology} autoPlay loop muted />
         <Heading>
           <h1>DRIVING GREEN MOBILITY</h1>
         </Heading>
       </Section>
 
-      <Section>
+      <Section id="elecnovo-technology">
         <Video src={motor} autoPlay loop muted />
         <Heading>
           <h1> ELECNOVO TECHNOLOGY</h1>

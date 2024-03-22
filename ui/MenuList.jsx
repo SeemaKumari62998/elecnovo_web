@@ -8,6 +8,10 @@ const MenuContainer = styled.div`
   font-weight: 500;
   margin-top: 10px;
   position: relative;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 2.2rem;
+  }
 `;
 
 const MenuList = styled.div`
@@ -21,12 +25,20 @@ const MenuList = styled.div`
   display: ${(props) => (props.isOpen ? "block" : "none")};
   padding: 30px;
   text-align: left;
+
+  @media only screen and (max-width: 600px) {
+    width: 200px;
+  }
 `;
 
 const MenuItem = styled.div`
   margin: 15px;
   color: var(--color-grey-100);
   font-size: 20px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 14px;
+  }
 
   &:hover {
     color: var(--color-grey-600);
@@ -35,6 +47,14 @@ const MenuItem = styled.div`
 
 const Border = styled.div`
   border-bottom: 2px solid grey;
+`;
+
+const H4 = styled.h4`
+  font-size: 25px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 19px;
+  }
 `;
 
 function Menu() {
@@ -111,7 +131,7 @@ function Menu() {
 
           <div>
             <img src="elecnovoLogo.png" alt="Logo" />
-            <h4>GreenMobility</h4>
+            <H4>GreenMobility</H4>
           </div>
         </MenuList>
       </MenuContainer>

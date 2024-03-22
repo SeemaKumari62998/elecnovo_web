@@ -24,7 +24,7 @@ const Img = styled.img`
 function Logo() {
   return (
     <StyledLogo>
-      <Link to="/home">
+      <Link to="/">
         <Img src="logo.png" alt="Logo" />
       </Link>
     </StyledLogo>

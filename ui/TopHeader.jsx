@@ -28,28 +28,29 @@ const ArrowWrapper = styled.div`
   font-size: 30px;
 `;
 
-function TopHeader() {
+function TopHeader({ navto }) {
   return (
     <Container>
       <Ul>
         <ArrowWrapper>
+          {/* <Home /> */}
           <MdArrowBackIos />
         </ArrowWrapper>
 
         <Li>
-          <Link to="/">Home</Link>
+          <Link to={"/"}>Home</Link>
         </Li>
 
         <Li>
-          <Link to="technology">Technology</Link>
+          <Link to={"/technologies"}>Technology</Link>
         </Li>
 
         <Li>
-          <Link to="products">Application</Link>
+          <Link to={"/products"}>Application</Link>
         </Li>
 
         <Li>
-          <Link to="contact">Solutions</Link>
+          <Link to={"/contact"}>Solutions</Link>
         </Li>
         <ArrowWrapper>
           <MdArrowForwardIos />
