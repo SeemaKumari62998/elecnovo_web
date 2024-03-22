@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { MdArrowBackIos } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
+import Home from "../src/pages/Home";
+// import { Link } from "react-scroll";
 
 const Container = styled.div`
   font-size: 18px;
@@ -28,28 +30,29 @@ const ArrowWrapper = styled.div`
   font-size: 30px;
 `;
 
-function TopHeader() {
+function TopHeader({ navto }) {
   return (
     <Container>
       <Ul>
         <ArrowWrapper>
+          {/* <Home /> */}
           <MdArrowBackIos />
         </ArrowWrapper>
 
         <Li>
-          <Link to="/">Home</Link>
+          <Link to={"/"}>Home</Link>
         </Li>
 
         <Li>
-          <Link to="technology">Technology</Link>
+          <Link to={"/technologies"}>Technology</Link>
         </Li>
 
         <Li>
-          <Link to="products">Application</Link>
+          <Link to={"/products"}>Application</Link>
         </Li>
 
         <Li>
-          <Link to="contact">Solutions</Link>
+          <Link to={"/contact"}>Solutions</Link>
         </Li>
         <ArrowWrapper>
           <MdArrowForwardIos />

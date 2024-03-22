@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import AppPopupDetails from "../../ui/AppPopupDetails";
 
 const Container = styled.div`
   position: relative;
@@ -57,8 +58,6 @@ const Span = styled.span`
   left: 38%;
   transform: translateX(-50%);
   color: var(--color-grey-200);
-  /* white-space: nowrap; */
-  /* font-size: 2rem; */
   padding: 150px 300px;
 
   @media only screen and (max-width: 600px) {
@@ -73,7 +72,6 @@ const H2 = styled(motion.h2)`
   @media (max-width: 768px) {
     font-size: 2.3rem;
     text-align: center;
-    // margin-bottom: 20px;
     margin-top: 10px;
   }
 
@@ -84,25 +82,33 @@ const H2 = styled(motion.h2)`
   padding: 20px;
   margin: 20px;
 `;
-const Overlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-`;
 
 const PopupContainer = styled.div`
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: ${({ position }) => position?.top}px;
+  left: ${({ position }) => position?.left}px;
+  transform: translate(-30%, -30%);
 `;
 
 function Application() {
   const [popDetail, setPopDetail] = useState(null);
-  const [popupPosition, setPopupPosition] = useState({ x: 0, y: 0 });
+  const [popupPosition, setPopupPosition] = useState(null);
+
+  const togglePopup = (position) => {
+    if (
+      popDetail &&
+      popupPosition &&
+      position.top === popupPosition.top &&
+      position.left === popupPosition.left
+    ) {
+      // Close the popup if it's already open and the same image is clicked
+      setPopDetail(null);
+      setPopupPosition(null);
+    } else {
+      setPopupPosition(position);
+      setPopDetail(<AppPopupDetails />);
+    }
+  };
 
   return (
     <>
@@ -117,8 +123,14 @@ function Application() {
               scale: [1, 1.2, 1.1],
               transition: { duration: 0.7 },
             }}
+            onClick={(e) =>
+              togglePopup({
+                top: e.currentTarget.offsetTop,
+                left: e.currentTarget.offsetLeft,
+              })
+            }
           >
-            <Image src="bike.png" alt="Application" onClick={""} />
+            <Image src="bike.png" alt="Application" />
             <Span>Electric Motorcycle</Span>
           </ImageItem>
 
@@ -128,6 +140,12 @@ function Application() {
               scale: [1, 1.2, 1.1],
               transition: { duration: 0.5 },
             }}
+            onClick={(e) =>
+              togglePopup({
+                top: e.currentTarget.offsetTop,
+                left: e.currentTarget.offsetLeft,
+              })
+            }
           >
             <Image src="scooter.png" alt="Application" />
             <Span> Electric Scooter</Span>
@@ -139,6 +157,12 @@ function Application() {
               scale: [1, 1.2, 1.1],
               transition: { duration: 0.5 },
             }}
+            onClick={(e) =>
+              togglePopup({
+                top: e.currentTarget.offsetTop,
+                left: e.currentTarget.offsetLeft,
+              })
+            }
           >
             <Image src="tractor.png" alt="Application" />
             <Span>Electric Tractor</Span>
@@ -151,6 +175,12 @@ function Application() {
 
               transition: { duration: 0.5 },
             }}
+            onClick={(e) =>
+              togglePopup({
+                top: e.currentTarget.offsetTop,
+                left: e.currentTarget.offsetLeft,
+              })
+            }
           >
             <Image src="Golfkart.png" alt="Application" />
             <Span>Electric Golfkart</Span>
@@ -162,6 +192,12 @@ function Application() {
               scale: [1, 1.2, 1.1],
               transition: { duration: 0.5 },
             }}
+            onClick={(e) =>
+              togglePopup({
+                top: e.currentTarget.offsetTop,
+                left: e.currentTarget.offsetLeft,
+              })
+            }
           >
             <Image src="boat.png" alt="Application" />
             <Span>Electric Boat</Span>
@@ -173,6 +209,12 @@ function Application() {
               scale: [1, 1.2, 1.1],
               transition: { duration: 0.5 },
             }}
+            onClick={(e) =>
+              togglePopup({
+                top: e.currentTarget.offsetTop,
+                left: e.currentTarget.offsetLeft,
+              })
+            }
           >
             <Image src="car.png" alt="Application" />
             <Span>Electric Car</Span>
@@ -184,6 +226,12 @@ function Application() {
               scale: [1, 1.2, 1.1],
               transition: { duration: 0.5 },
             }}
+            onClick={(e) =>
+              togglePopup({
+                top: e.currentTarget.offsetTop,
+                left: e.currentTarget.offsetLeft,
+              })
+            }
           >
             <Image src="loader.png" alt="Application" />
             <Span>Electric Goodsvehicle</Span>
@@ -194,17 +242,20 @@ function Application() {
               scale: [1, 1.2, 1.1],
               transition: { duration: 0.5 },
             }}
+            onClick={(e) =>
+              togglePopup({
+                top: e.currentTarget.offsetTop,
+                left: e.currentTarget.offsetLeft,
+              })
+            }
           >
             <Image src="cleaningMachine.png" alt="Application" />
             <Span>Electric Cleaningvehicle</Span>
           </ImageItem>
         </ImageContainer>
+
         {popDetail && (
-          <PopupContainer
-            style={{ top: popupPosition.y, left: popupPosition.x }}
-          >
-            {popDetail}
-          </PopupContainer>
+          <PopupContainer position={popupPosition}>{popDetail}</PopupContainer>
         )}
       </Container>
     </>

@@ -8,6 +8,7 @@ import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Application from "./Application";
 import PerformanceVideo from "../../ui/PerformanceVideo";
+import TopHeader from "../../ui/TopHeader";
 
 const Container = styled.div`
   display: flex;
@@ -43,7 +44,7 @@ const Heading = styled(motion.h1)`
   position: relative;
   color: var(--color-grey-300);
   padding-left: 40px;
-  margin-top: 37%;
+  margin-top: 42%;
   font-size: 2rem;
   z-index: 10;
 
@@ -125,14 +126,14 @@ const Li = styled.li`
 function Home() {
   return (
     <Container>
-      <Section>
+      <Section id="driving-green-mobility">
         <Video src={technology} autoPlay loop muted />
         <Heading>
           <h1>DRIVING GREEN MOBILITY</h1>
         </Heading>
       </Section>
 
-      <Section>
+      <Section id="elecnovo-technology">
         <Video src={motor} autoPlay loop muted />
         <Heading>
           <h1> ELECNOVO TECHNOLOGY</h1>
