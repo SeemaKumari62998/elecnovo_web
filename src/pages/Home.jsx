@@ -25,7 +25,7 @@ const Section = styled.div`
   border: 1px solid grey;
 
   @media only screen and (max-width: 600px) {
-    height: 31vh;
+    height: 25vh;
   }
 `;
 
@@ -130,14 +130,14 @@ const Li = styled.li`
 function Home() {
   return (
     <Container>
-      <Section id="driving-green-mobility">
+      <Section>
         <Video src={technology} autoPlay loop muted />
         <Heading>
           <h1>DRIVING GREEN MOBILITY</h1>
         </Heading>
       </Section>
 
-      <Section id="elecnovo-technology">
+      <Section>
         <Video src={motor} autoPlay loop muted />
         <Heading>
           <h1> ELECNOVO TECHNOLOGY</h1>

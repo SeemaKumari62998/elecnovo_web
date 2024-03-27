@@ -88,7 +88,7 @@ function Footer() {
       {/* <Logo /> */}
 
       <StyledColumn>
-        <h3>Address</h3>
+        <h3>Location</h3>
         <StyledUl>
           No. 18, First Floor, Sub Layout, 4th Phase,
           <br />
@@ -106,7 +106,7 @@ function Footer() {
             <StyledNavLink to="/">Home</StyledNavLink>
           </li>
           <li>
-            <StyledNavLink to="/about us">About us</StyledNavLink>
+            <StyledNavLink to="/about">About us</StyledNavLink>
           </li>
           <li>
             <StyledNavLink to="/contact">Contact</StyledNavLink>

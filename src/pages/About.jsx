@@ -22,6 +22,10 @@ const Paragrapg = styled.p`
   margin: 4% auto;
   font-size: 2rem;
   color: var(--color-grey-200);
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Container = styled.div`
@@ -57,12 +61,24 @@ const SectionContainer = styled.div`
 `;
 const H1 = styled.h1`
   color: var(--color-grey-200);
+
+  @media only screen and (max-width: 600px) {
+    font-size: 25px;
+  }
+`;
+
+const Span = styled.span`
+  @media only screen and (max-width: 600px) {
+    font-size: 15px;
+  }
 `;
 
 function About() {
   return (
     <>
-      <LinkButton to="/">&larr;Back</LinkButton>
+      <LinkButton to="/">
+        <Span>&larr;Back</Span>
+      </LinkButton>
       <Container
         as={motion.div}
         initial={{ opacity: 0, scale: 0 }}
