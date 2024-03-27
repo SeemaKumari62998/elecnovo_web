@@ -11,8 +11,8 @@ const StyledContainer = styled.div`
   color: var(--color-grey-200);
 
   @media only screen and (max-width: 600px) {
-    flex-direction: column;
     height: 100%;
+    margin-top: 1%;
   }
 `;
 
@@ -22,13 +22,12 @@ const StyledUl = styled.ul`
   margin: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   top: 0;
   left: 0;
   width: 100%;
 
   @media only screen and (max-width: 600px) {
-    grid-template-columns: repeat(1, 2fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
 
@@ -40,8 +39,8 @@ const StyledImage = styled.li`
   margin-top: 2px;
 
   @media only screen and (max-width: 600px) {
-    padding: 20px;
-    margin: 20px;
+    padding: 40px;
+    margin: 5px;
   }
 `;
 
@@ -49,12 +48,19 @@ const H3 = styled.h3`
   text-align: center;
   font-weight: 200px;
   font-size: 30px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 24px;
+    margin-top: 10px;
+  }
 `;
 
-// const StyledHeading = styled.h2`
-//   text-align: center;
-//   margin-top: 20px;
-// `;
+const Span = styled.span`
+  @media only screen and (max-width: 600px) {
+    font-size: 15px;
+  }
+`;
+
 function Products() {
   const navigate = useNavigate();
 
@@ -64,7 +70,9 @@ function Products() {
 
   return (
     <>
-      <LinkButton to="/">&larr;Back</LinkButton>
+      <LinkButton to="/">
+        <Span>&larr;Back</Span>
+      </LinkButton>
 
       <StyledContainer>
         {/* <StyledHeading>WELCOME</StyledHeading> */}

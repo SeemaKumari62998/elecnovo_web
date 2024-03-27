@@ -25,7 +25,7 @@ function LinkButton({ children, to }) {
 
 const StyledLink = styled(Link)`
   font-size: 20px;
-  color: blue;
+  color: yellow;
   text-decoration: none;
   position: relative;
   top: 30px;

@@ -12,6 +12,9 @@ const Container = styled.div`
   background-color: black;
   overflow: hidden;
   margin-top: 0;
+
+  @media only screen and (max-width: 600px) {
+  }
 `;
 
 const Video = styled.video`
@@ -24,10 +27,9 @@ const Video = styled.video`
   top: 150px;
 
   @media only screen and (max-width: 600px) {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 80%;
+    left: 50%;
+    top: 100px;
   }
 `;
 
@@ -45,24 +47,18 @@ const Div = styled.div`
   top: 40px;
   left: 20%;
   z-index: 1;
-
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-  }
 `;
 
 const H1 = styled.h1`
   color: white;
 
   @media only screen and (max-width: 600px) {
-    font-size: 22px;
+    font-size: 20px;
   }
 `;
 const Styleddiv = styled.div`
   position: absolute;
   border: 1px solid grey;
-
-  /* height: 60%; */
   text-align: center;
   left: 55%;
   max-width: 80%;
@@ -73,14 +69,22 @@ const Styleddiv = styled.div`
   @media only screen and (max-width: 600px) {
     left: 20%;
     max-width: 100%;
-    top: 45%;
+    top: 44%;
+    padding: 10px;
+  }
+`;
+const Span = styled.span`
+  @media only screen and (max-width: 600px) {
+    font-size: 15px;
   }
 `;
 
 function ApplicationDetails() {
   return (
     <>
-      <LinkButton to="/">&larr;Back</LinkButton>
+      <LinkButton to="/">
+        <Span> &larr;Back</Span>
+      </LinkButton>
 
       <Container>
         <Video src={engine_2} loop muted autoPlay />
