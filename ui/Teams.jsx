@@ -4,65 +4,55 @@ import LinkButton from "./LinkButton";
 const Container = styled.div`
   display: flex;
   flex-direction: row;
+
   color: var(--color-grey-200);
-  gap: 40px;
-  height: 100vh;
+  padding: 100px;
+  /* height: 100vh; */
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
 `;
 
 const Section = styled.div`
-  width: calc(30% - 40px);
-  padding: 20px;
   text-align: left;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-left: 10px;
 
   @media only screen and (max-width: 600px) {
-    width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
+    text-align: center;
   }
 `;
 
 const Image = styled.img`
   max-width: 100%;
   max-height: 200px;
-  margin-top: 100px;
-  margin-left: 50px;
+  margin-top: 20px;
   border-radius: 50%;
-
-  @media only screen and (max-width: 600px) {
-    margin-top: 50px;
-    margin-left: 50px;
-  }
 `;
 
 const H1 = styled.h1`
   color: white;
   text-align: center;
   margin-top: 20px;
-  font-size: 40px;
-
-  @media only screen and (max-width: 600px) {
-    font-size: 25px;
-    text-align: left;
-    margin-left: 90px;
-  }
+  font-size: 25px;
 `;
 
 const Span = styled.span`
-  @media only screen and (max-width: 600px) {
-    font-size: 15px;
-  }
+  font-size: 15px;
 `;
 
 const H3 = styled.h3`
   color: var(--color-grey-200);
-
-  @media only screen and (max-width: 600px) {
-    margin-right: 20px;
-  }
+  margin-top: 10px;
 `;
 
 const P = styled.p`
   font-size: 12px;
+  margin-top: 10px;
 `;
 
 function Teams() {
@@ -88,11 +78,13 @@ function Teams() {
 
         <Image src="ratul.jpg" alt="photo" />
         <Section>
-          <H3>Santanoo Medhi Co-Founder</H3>
+          <H3>
+            Ratul Borah <br /> Founder and CEO
+          </H3>
           <P>
-            B.E., M. Engg. 9 years experience as CEO / MD 28 years of management
-            & manufacturing 17 years of motor design, development &
-            manufacturing experience
+            B.E., M. Engg. Entrepreneur and innovation expert 26 years of
+            industrial & business experience 20 years of motor design,
+            development & manufacturing experience
           </P>
         </Section>
       </Container>

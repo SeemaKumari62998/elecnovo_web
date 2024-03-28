@@ -85,7 +85,6 @@ function ApplicationDetails() {
       <LinkButton to="/">
         <Span> &larr;Back</Span>
       </LinkButton>
-
       <Container>
         <Video src={engine_2} loop muted autoPlay />
         <TransparentSheet />

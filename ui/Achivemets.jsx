@@ -11,30 +11,59 @@ const Container = styled.div`
 `;
 
 const Ul = styled.ul`
-  margin: 2s0px;
+  margin: 20px;
+
+  @media only screen and (max-width: 600px) {
+    margin: 0;
+  }
 `;
 
 const Li = styled.li`
   padding: 25px;
   background-color: black;
   margin: 20px;
-  width: 0 auto;
+  width: 50%;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 const P = styled.p`
   margin: 5px;
   font-size: 2rem;
   text-align: left;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 15px;
+  }
 `;
 const H1 = styled.h1`
   margin: 20px;
   color: var(--color-grey-400);
+
+  @media only screen and (max-width: 600px) {
+    font-size: 22px;
+    margin: 3px;
+    text-align: center;
+  }
+`;
+
+const Span = styled.span`
+  @media only screen and (max-width: 600px) {
+    font-size: 15px;
+  }
 `;
 
 function Career() {
   return (
     <>
-      <LinkButton to="/">&larr;Back</LinkButton>
+      <LinkButton to="/">
+        <Span>&larr;Back</Span>
+      </LinkButton>
       <Container>
         <H1>Elecnovo's inventions</H1>
 
@@ -56,8 +85,6 @@ function Career() {
           in India solution with lower total cost Competent engineering and
           technical support
         </P>
-
-        <H1>Add Certificate here</H1>
       </Container>
     </>
   );

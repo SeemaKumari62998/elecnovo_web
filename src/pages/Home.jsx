@@ -4,10 +4,10 @@ import Footer from "../../ui/Footer";
 import motor from "../../public/motor.mp4";
 import technology from "../../public/technology.mp4";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
-
 import { Link } from "react-router-dom";
 import Application from "./Application";
 import PerformanceVideo from "../../ui/PerformanceVideo";
+import TopHeader from "../../ui/TopHeader";
 
 const Container = styled.div`
   display: flex;

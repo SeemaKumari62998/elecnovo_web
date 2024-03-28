@@ -6,8 +6,8 @@ const StyledLogo = styled.div`
   justify-content: flex-start;
   align-items: center;
   height: 100px;
-  width: 10%; /* Adjust this width as needed */
-  margin-right: auto; /* Pushes the logo to the left */
+  width: 10%;
+  margin-right: auto;
 
   @media only screen and (max-width: 600px) {
     width: 50%;
