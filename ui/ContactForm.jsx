@@ -128,11 +128,9 @@ function ContactForm() {
             <Input type="text" placeholder="Phone" />
           </FormContainer>
 
-          <StyledBtn>
-            <Button size="small" onClick={handleSubmit}>
-              Submit
-            </Button>
-          </StyledBtn>
+          <Button size="small" onClick={handleSubmit}>
+            Submit
+          </Button>
         </Form>
       </Container>
     </>

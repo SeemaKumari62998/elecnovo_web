@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Footer from "../../ui/Footer";
 import { motion } from "framer-motion";
-import ScrollingAnimation from "../../ui/ScrollingAnimation";
 import LinkButton from "../../ui/LinkButton";
 
 const Wrapper = styled(motion.div)`
@@ -38,6 +37,10 @@ const Img = styled.img`
   width: 100%;
   object-fit: cover;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+  @media only screen and (max-width: 600px) {
+    height: 20%;
+  }
 `;
 
 const Overlay = styled.div`
@@ -51,14 +54,6 @@ const Overlay = styled.div`
   z-index: 1;
 `;
 
-const SectionContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-  width: 100%;
-  margin-bottom: 40px;
-`;
 const H1 = styled.h1`
   color: var(--color-grey-200);
 
@@ -79,6 +74,7 @@ function About() {
       <LinkButton to="/">
         <Span>&larr;Back</Span>
       </LinkButton>
+
       <Container
         as={motion.div}
         initial={{ opacity: 0, scale: 0 }}
@@ -111,10 +107,3 @@ function About() {
 }
 
 export default About;
-
-/*Design, Development, Manufacture and Supply 
-of 
-Electric Motors
-for 
-Electric Vehicles
-*/

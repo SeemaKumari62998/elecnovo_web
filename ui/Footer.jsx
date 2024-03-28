@@ -106,7 +106,7 @@ function Footer() {
             <StyledNavLink to="/">Home</StyledNavLink>
           </li>
           <li>
-            <StyledNavLink to="/about">About us</StyledNavLink>
+            <StyledNavLink to="/about us">About us</StyledNavLink>
           </li>
           <li>
             <StyledNavLink to="/contact">Contact</StyledNavLink>

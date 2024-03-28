@@ -33,7 +33,6 @@ function TopHeader({ navto }) {
     <Container>
       <Ul>
         <ArrowWrapper>
-          {/* <Home /> */}
           <MdArrowBackIos />
         </ArrowWrapper>
 

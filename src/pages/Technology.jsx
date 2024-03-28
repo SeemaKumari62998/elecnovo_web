@@ -2,28 +2,44 @@ import styled from "styled-components";
 import LinkButton from "../../ui/LinkButton";
 
 const Container = styled.div`
-  max-height: 100vh;
+  height: 100vh;
   width: 100%;
-  padding: 80px;
   background-color: var(--color-grey-900);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: white;
+
+  @media only screen and (max-width: 600px) {
+    padding: 25px;
+  }
 `;
 const H1 = styled.h1`
   text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 16px;
+  }
 `;
 const H2 = styled.h2`
   text-align: center;
-  margin-top: 200px;
+  margin-top: 60px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 18px;
+    margin-top: 40px;
+    text-align: center;
+  }
 `;
 
 const Imagecontainer = styled.div`
-  margin-top: 50px;
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+
+  @media only screen and (max-width: 600px) {
+    margin: 20px;
+  }
 `;
 
 const Image = styled.img`
@@ -46,10 +62,18 @@ const P = styled.p`
   font-size: 20px;
 `;
 
+const Span = styled.span`
+  @media only screen and (max-width: 600px) {
+    font-size: 15px;
+  }
+`;
+
 function Technology() {
   return (
     <>
-      <LinkButton to="/">&larr;Back</LinkButton>
+      <LinkButton to="/">
+        <Span>&larr;Back</Span>
+      </LinkButton>
 
       <Container>
         <H1>Elecnovo's Motor Technologies</H1>
