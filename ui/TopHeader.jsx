@@ -37,19 +37,19 @@ function TopHeader({ navto }) {
         </ArrowWrapper>
 
         <Li>
-          <Link to={"/"}>Home</Link>
+          <Link to="/">Home</Link>
         </Li>
 
         <Li>
-          <Link to={"/technologies"}>Technology</Link>
+          <Link to="/technologies">Technology</Link>
         </Li>
 
         <Li>
-          <Link to={"/products"}>Application</Link>
+          <Link to="/application">Application</Link>
         </Li>
 
         <Li>
-          <Link to={"/contact"}>Solutions</Link>
+          <Link to="/contact">Solutions</Link>
         </Li>
         <ArrowWrapper>
           <MdArrowForwardIos />
