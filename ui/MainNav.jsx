@@ -1,6 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
 import Menu from "./MenuList";
+import { MdArrowBackIos } from "react-icons/md";
+import { MdArrowForwardIos } from "react-icons/md";
 
 const NavList = styled.ul`
   display: flex;
@@ -41,7 +43,6 @@ const StyledNavLink = styled(NavLink)`
     }
   }
 
-  /* This works because react-router places the active class on the active NavLink */
   &:hover,
   &:active,
   &.active:link,
@@ -50,25 +51,105 @@ const StyledNavLink = styled(NavLink)`
     background-color: var(--color-green-100);
     border-radius: 8px;
   }
+`;
 
-  /* & svg {
-    width: 2.4rem;
-    height: 2.4rem;
-    color: var(--color-grey-400);
-    transition: all 0.3s;
+const StyledLogo = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+  width: 10%;
+  margin-right: auto;
+
+  @media only screen and (max-width: 600px) {
+    width: 50%;
   }
+`;
 
-  &:hover svg,
-  &:active svg,
-  &.active:link svg,
-  &.active:visited svg {
-    color: var(--color-brand-600);
-  } */
+const Img = styled.img`
+  height: 50px;
+  width: 210px;
+  display: block;
+  margin: 0 auto;
+`;
+
+const Div = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  text-align: center;
+
+  span {
+    &:hover,
+    &:active,
+    &.active:link,
+    &.active:visited {
+      color: var(--color-grey-300);
+      /* background-color: var(--color-blue-100); */
+      border-radius: px;
+      box-shadow: 0 3px 5px white;
+    }
+  }
+`;
+
+const StyledLink = styled(NavLink)`
+  position: relative;
+`;
+
+const Ul = styled.ul`
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 20px;
+`;
+
+const ArrowWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  font-size: 30px;
 `;
 
 function MainNav() {
   return (
     <>
+      <StyledLogo>
+        <Link to="/">
+          <Img src="logo.png" alt="Logo" />
+        </Link>
+      </StyledLogo>
+
+      <Div>
+        <ArrowWrapper>
+          <MdArrowBackIos />
+        </ArrowWrapper>
+        <Ul>
+          <li>
+            <StyledLink to="/">
+              <span>Home</span>
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/technology">
+              <span>Technology</span>
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/application">
+              <span>Application</span>
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/solutions">
+              <span>Solution</span>
+            </StyledLink>
+          </li>
+        </Ul>
+        <ArrowWrapper>
+          <MdArrowForwardIos />
+        </ArrowWrapper>
+      </Div>
+
       <NavList>
         <li>
           <StyledNavLink to="/contact">
@@ -77,52 +158,7 @@ function MainNav() {
         </li>
       </NavList>
 
-      {/* <li>
-          <StyledNavLink to="/">
-            <span>Home</span>
-          </StyledNavLink>
-        </li>
-
-        <li>
-          <StyledNavLink to="/products">
-            <span>Products</span>
-          </StyledNavLink>
-        </li>
-
-        <li>
-          <StyledNavLink to="/about">
-            <span>About us</span>
-          </StyledNavLink>
-        </li> */}
-      <ul>
-        <li>
-          <NavLink to="/"></NavLink>
-        </li>
-        <li>
-          <NavLink to="/about us"></NavLink>
-        </li>
-
-        <li>
-          <NavLink to="/products"></NavLink>
-        </li>
-        <li>
-          <NavLink to="/technology"></NavLink>
-        </li>
-
-        <li>
-          <NavLink to="/career"></NavLink>
-        </li>
-        <li>
-          <NavLink to="/teams"></NavLink>
-        </li>
-        <li>
-          <NavLink to="/appication"></NavLink>
-        </li>
-
-        <li>
-          <Menu />
-        </li>
-      </ul>
+      <Menu />
     </>
   );
 }

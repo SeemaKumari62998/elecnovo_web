@@ -51,10 +51,10 @@ function Header() {
           style={{ width: "155px", height: "100px" }}
           alt="logo"
         /> */}
-        <Logo />
-        <CenteredTopHeader>
+        {/* <Logo /> */}
+        {/* <CenteredTopHeader>
           <TopHeader />
-        </CenteredTopHeader>
+        </CenteredTopHeader> */}
       </>
       <Overlay />
       <MainNav />
