@@ -91,6 +91,10 @@ const Div = styled.div`
       box-shadow: 0 3px 5px white;
     }
   }
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const StyledLink = styled(NavLink)`
