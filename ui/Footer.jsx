@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Logo from "../ui/Logo";
+
 import { NavLink } from "react-router-dom";
 import { MdOutlineMailOutline, MdPhone } from "react-icons/md";
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -82,10 +82,25 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 
+const Div = styled.div`
+  font-size: 13px;
+`;
+
+const Img = styled.img`
+  font-size: 5rem;
+  width: 150px;
+  height: 50%;
+  margin-left: 20px;
+  align-self: center;
+`;
+
 function Footer() {
   return (
     <StyledFooter>
-      {/* <Logo /> */}
+      <Div>
+        <Img src="elecnovoLogo.png" alt="Logo" />
+        <h3>Driving Green Mobility</h3>
+      </Div>
 
       <StyledColumn>
         <h3>Location</h3>

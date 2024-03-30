@@ -69,15 +69,12 @@ function Menu() {
       }
     }
 
-    // Bind the event listener only when the menu is open
     if (menuOpen) {
       document.addEventListener("click", handleClickOutside);
     } else {
-      // Unbind the event listener when the menu is closed
       document.removeEventListener("click", handleClickOutside);
     }
 
-    // Cleanup function to remove the event listener on component unmount
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
