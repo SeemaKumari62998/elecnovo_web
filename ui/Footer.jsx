@@ -9,7 +9,7 @@ const StyledFooter = styled.div`
   flex-direction: column;
   justify-content: center;
   background-color: var(--color-grey-800);
-  padding: 40px;
+  padding: 30px;
   color: var(--color-grey-600);
   width: 100%;
 
@@ -65,7 +65,7 @@ const StyledUl = styled.ul`
 
   li {
     margin: 2px;
-    padding: 4px;
+    padding: 2px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
@@ -84,13 +84,25 @@ const StyledNavLink = styled(NavLink)`
 
 const Div = styled.div`
   font-size: 13px;
+
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+const H3 = styled.h3`
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const Img = styled.img`
   font-size: 5rem;
   width: 150px;
   height: 50%;
-  margin-left: 20px;
+  margin-left: 1px;
   align-self: center;
 `;
 
@@ -99,7 +111,7 @@ function Footer() {
     <StyledFooter>
       <Div>
         <Img src="elecnovoLogo.png" alt="Logo" />
-        <h3>Driving Green Mobility</h3>
+        <H3>Driving Green Mobility</H3>
       </Div>
 
       <StyledColumn>
@@ -125,6 +137,9 @@ function Footer() {
           </li>
           <li>
             <StyledNavLink to="/contact">Contact</StyledNavLink>
+          </li>
+          <li>
+            <StyledNavLink to="/application">Application</StyledNavLink>
           </li>
         </StyledUl>
       </StyledColumn>
