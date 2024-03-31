@@ -39,8 +39,8 @@ const StyledImage = styled.li`
   margin-top: 2px;
 
   @media only screen and (max-width: 600px) {
-    padding: 40px;
-    margin: 5px;
+    padding: 20px;
+    margin: 4px;
   }
 `;
 
@@ -51,7 +51,7 @@ const H3 = styled.h3`
 
   @media only screen and (max-width: 600px) {
     font-size: 24px;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 `;
 
@@ -73,6 +73,7 @@ function Products() {
       <LinkButton to="/">
         <Span>&larr;Back</Span>
       </LinkButton>
+      <H3>Elecnovo Products</H3>
 
       <StyledContainer>
         {/* <StyledHeading>WELCOME</StyledHeading> */}
