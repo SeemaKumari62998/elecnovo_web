@@ -9,7 +9,6 @@ const H1 = styled.h1`
   left: 15%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  font-size: 3rem;
 
   @media only screen and (max-width: 600px) {
     padding-bottom: 50px;
@@ -22,7 +21,7 @@ const H1 = styled.h1`
 const Content = styled.div`
   position: absolute;
   top: 90%;
-  /* right: 1px; */
+  right: 1px;
   transform: translateY(-60%);
   text-align: center;
   color: var(--color-green-100);
@@ -35,9 +34,7 @@ const Content = styled.div`
 
 const Ul = styled.ul`
   list-style: none;
-  padding: 7px;
-  margin: 15px;
-  margin-right: 150px;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -58,46 +55,65 @@ const LiContainer = styled.div`
 
   @media only screen and (max-width: 600px) {
     width: 100px;
-    padding: 5px;
-    margin: 5px;
+    padding: 2px;
+    margin: 4px;
   }
 `;
 
 const Li = styled.li`
   margin: 20px;
   font-size: 15px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 9px;
+    margin: 7px;
+  }
+`;
+
+const Section = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  border: 1px solid grey;
+
+  @media only screen and (max-width: 600px) {
+    height: 25vh;
+  }
 `;
 
 function Solutions() {
   return (
     <>
-      <H1>ELECNOVO SOLUTIONS..</H1>
+      <Section>
+        <H1>ELECNOVO SOLUTIONS..</H1>
 
-      <PerformanceVideo />
-      <Content>
-        <Ul>
-          <LiContainer>
-            <Li>HIGH RELIABILITY</Li>
-          </LiContainer>
+        <PerformanceVideo />
+        <Content>
+          <Ul>
+            <LiContainer>
+              <Li>HIGH RELIABILITY</Li>
+            </LiContainer>
 
-          <LiContainer>
-            <Li>EASY TO ASSEMBLE</Li>
-          </LiContainer>
-          <LiContainer>
-            <Li>COST EFFECTIVE</Li>
-          </LiContainer>
+            <LiContainer>
+              <Li>EASY TO ASSEMBLE</Li>
+            </LiContainer>
+            <LiContainer>
+              <Li>COST EFFECTIVE</Li>
+            </LiContainer>
 
-          <LiContainer>
-            <Li>COMPACT SIZE</Li>
-          </LiContainer>
-          <LiContainer>
-            <Li>LIGHT WEIGHT</Li>
-          </LiContainer>
-          <LiContainer>
-            <Li>EASY TO CONTROL</Li>
-          </LiContainer>
-        </Ul>
-      </Content>
+            <LiContainer>
+              <Li>COMPACT SIZE</Li>
+            </LiContainer>
+            <LiContainer>
+              <Li>LIGHT WEIGHT</Li>
+            </LiContainer>
+            <LiContainer>
+              <Li>EASY TO CONTROL</Li>
+            </LiContainer>
+          </Ul>
+        </Content>
+      </Section>
     </>
   );
 }
