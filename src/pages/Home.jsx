@@ -48,8 +48,8 @@ const Heading = styled(motion.h1)`
 
   @media only screen and (max-width: 600px) {
     font-size: 10px;
-    padding-left: 10px;
-    margin-top: 180px;
+    padding-left: 20px;
+    margin-top: 160px;
   }
 `;
 
@@ -87,9 +87,6 @@ const Content = styled.div`
 
 const Ul = styled.ul`
   list-style: none;
-  /* padding: 7px;
-  margin: 15px;
-  margin-right: 150px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

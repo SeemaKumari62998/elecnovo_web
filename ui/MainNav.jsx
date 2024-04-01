@@ -20,7 +20,7 @@ const StyledNavLink = styled(NavLink)`
       border: 1px solid blue;
       position: absolute;
       top: 50%;
-      right: 0.5em;
+      right: 0.5rem;
       transform: translateY(-50%);
     }
   }
