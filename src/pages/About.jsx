@@ -99,9 +99,8 @@ function About() {
           duty goods vehicles and electric light duty passenger vehicles.
           Elecnovo is an iniative of R & D in India and Make in India.
         </Paragrapg>
-
-        <Footer />
       </Wrapper>
+      <Footer />
     </>
   );
 }

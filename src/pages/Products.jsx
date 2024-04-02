@@ -8,11 +8,11 @@ const StyledContainer = styled.div`
   display: flex;
   justify-content: center;
   height: 100vh;
+
   color: var(--color-grey-200);
 
   @media only screen and (max-width: 600px) {
     height: 100%;
-    margin-top: 1%;
   }
 `;
 
@@ -47,11 +47,12 @@ const StyledImage = styled.li`
 const H3 = styled.h3`
   text-align: center;
   font-weight: 200px;
-  font-size: 30px;
+  font-size: 3rem;
+  margin-top: 10px;
 
   @media only screen and (max-width: 600px) {
     font-size: 24px;
-    margin-top: 5px;
+    margin-top: 25px;
   }
 `;
 
@@ -76,7 +77,6 @@ function Products() {
       <H3>Elecnovo Products</H3>
 
       <StyledContainer>
-        {/* <StyledHeading>WELCOME</StyledHeading> */}
         <StyledUl>
           <StyledImage
             as={motion.li}
