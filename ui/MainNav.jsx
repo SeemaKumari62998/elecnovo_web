@@ -9,7 +9,11 @@ const NavList = styled.ul`
   justify-content: flex-end;
   margin-right: 50px;
   border: 0.3rem solid var(--color-grey-700);
+
   border-radius: 10px;
+  @media only screen and (max-width: 600px) {
+    margin-right: 10px;
+  }
 `;
 
 const StyledNavLink = styled(NavLink)`
