@@ -70,6 +70,11 @@ const StyledUl = styled.ul`
     display: flex;
     flex-direction: row;
   }
+
+  li a {
+    color: inherit;
+    text-decoration: none;
+  }
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -133,7 +138,7 @@ function Footer() {
             <StyledNavLink to="/">Home</StyledNavLink>
           </li>
           <li>
-            <StyledNavLink to="/about us">About us</StyledNavLink>
+            <StyledNavLink to="/about">About us</StyledNavLink>
           </li>
           <li>
             <StyledNavLink to="/contact">Contact</StyledNavLink>
@@ -157,7 +162,7 @@ function Footer() {
             <span>
               <MdPhone />
             </span>
-            Phone - 703693586
+            <a href="tel:703693586">Phone - 703693586</a>
           </li>
         </StyledUl>
       </StyledColumn>
