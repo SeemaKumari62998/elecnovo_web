@@ -162,7 +162,7 @@ function Footer() {
             <span>
               <MdPhone />
             </span>
-            <a href="tel:703693586">Phone - 703693586</a>
+            <a href="tel:703693586">Phone - 9019947524</a>
           </li>
         </StyledUl>
       </StyledColumn>
