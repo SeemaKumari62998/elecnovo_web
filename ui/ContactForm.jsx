@@ -97,7 +97,7 @@ function ContactForm() {
 
   return (
     <>
-      <LinkButton to="/">&larr;Back</LinkButton>
+      {/* <LinkButton to="/">&larr;Back</LinkButton> */}
       <Container>
         <ListContainer>
           <StyledLi>
