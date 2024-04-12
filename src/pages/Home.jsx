@@ -147,14 +147,14 @@ function Home() {
               <Li>BLDC MOTORS</Li>
             </LiContainer>
 
-            <LiContainer>
+            {/* <LiContainer>
               <Li>
                 <Link to="/products">
                   Tell me More
                   <BsBoxArrowInUpRight />
                 </Link>
               </Li>
-            </LiContainer>
+            </LiContainer> */}
           </Ul>
         </Content>
       </Section>
