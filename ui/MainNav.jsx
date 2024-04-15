@@ -62,7 +62,7 @@ const StyledLogo = styled.div`
   justify-content: flex-start;
   align-items: center;
   height: 100px;
-  width: 10%;
+  width: 15%;
   margin-right: auto;
 
   @media only screen and (max-width: 600px) {
@@ -71,8 +71,8 @@ const StyledLogo = styled.div`
 `;
 
 const Img = styled.img`
-  height: 50px;
-  width: 210px;
+  height: 250px;
+  width: 3500px;
   display: block;
   margin: 0 auto;
 `;
@@ -123,7 +123,8 @@ function MainNav() {
     <>
       <StyledLogo>
         <Link to="/">
-          <Img src="logo.png" alt="Logo" />
+          {/* <Img src="logo.png" alt="Logo" /> */}
+          <Img src="ElecnovoPageLogo.png" alt="Logo" />
         </Link>
       </StyledLogo>
 

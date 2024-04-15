@@ -146,6 +146,12 @@ function Home() {
             <LiContainer>
               <Li>BLDC MOTORS</Li>
             </LiContainer>
+            <LiContainer>
+              <Li>AF MOTORS</Li>
+            </LiContainer>
+            <LiContainer>
+              <Li> SRM MOTORS</Li>
+            </LiContainer>
 
             {/* <LiContainer>
               <Li>

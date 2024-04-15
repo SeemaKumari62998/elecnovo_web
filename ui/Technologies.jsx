@@ -106,6 +106,12 @@ function Technologies() {
             <Li>BLDC MOTORS</Li>
           </LiContainer>
           <LiContainer>
+            <Li>AF MOTORS</Li>
+          </LiContainer>
+          <LiContainer>
+            <Li> SRM MOTORS</Li>
+          </LiContainer>
+          <LiContainer>
             <Li>
               <Link to="/products">
                 Tell me more <BsBoxArrowInUpRight />

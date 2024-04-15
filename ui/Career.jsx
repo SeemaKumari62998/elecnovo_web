@@ -1,11 +1,91 @@
+import styled from "styled-components";
 import LinkButton from "./LinkButton";
+
+const Container = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-grey-200);
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+`;
+
+const Img = styled.img`
+  width: 40%;
+  height: 10%;
+  object-fit: cover;
+  padding: 40px;
+  margin: 20px;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+`;
+
+const ImageContainer = styled.div`
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 20px;
+  }
+`;
+
+const IconImg = styled.img`
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 10px;
+`;
+
+const Div = styled.div`
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+`;
+
+const Span = styled.span`
+  font-size: 15px;
+  color: black;
+`;
 
 function Carrer() {
   return (
-    <div>
-      <LinkButton to="/">&larr;Back</LinkButton>
-      <h1>CARRER PAGE</h1>
-    </div>
+    <>
+      <LinkButton to="/">
+        <Span>&larr;Back</Span>
+      </LinkButton>
+      <Container>
+        <Img src="Career4.jpg" alt="Career" />
+
+        <ImageContainer>
+          <Div>
+            <IconImg src="Invention1.jpg" alt="Img" />
+            <p> Learning based motor control system for EV (Patent granted)</p>
+          </Div>
+          <Div>
+            <IconImg src="Invention2.jpg" alt="Img" />
+            <p>Sensor-less control system for BLDC motor (Patent granted)</p>
+          </Div>
+          <Div></Div>
+          <Div>
+            <IconImg src="Invention3.jpg" alt="Img" />
+            <p>Intelligent motor control system for EV (Patent granted)</p>
+          </Div>
+
+          <Div>
+            <IconImg src="Invention4.jpg" alt="Img" />
+            <p>Commutation system for electric motor (Patent pending)</p>
+          </Div>
+        </ImageContainer>
+      </Container>
+    </>
   );
 }
 
