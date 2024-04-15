@@ -238,7 +238,7 @@ function Application() {
             }
           >
             <Image src="loader.png" alt="Application" />
-            <Span>Electric Goodsvehicle</Span>
+            <Span>Electric Goods Vehicle</Span>
           </ImageItem>
           <ImageItem
             as={motion.li}
@@ -254,7 +254,7 @@ function Application() {
             }
           >
             <Image src="cleaningMachine.png" alt="Application" />
-            <Span>Electric Cleaningvehicle</Span>
+            <Span>Electric Cleaning Vehicle</Span>
           </ImageItem>
         </ImageContainer>
 

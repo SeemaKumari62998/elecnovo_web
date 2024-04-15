@@ -19,8 +19,8 @@ const Container = styled.div`
 
 const ListContainer = styled.ul`
   flex: 1;
-  background-color: var(--color-grey-200);
-  width: 50%;
+  background-color: var(--color-grey-100);
+  align-content: center;
 
   @media only screen and (max-width: 600px) {
     width: 100%;
@@ -28,10 +28,10 @@ const ListContainer = styled.ul`
 `;
 
 const Input = styled.input`
-  border: 1px solid var(--color-grey-100);
-  background-color: var(--color-grey-200);
+  border: 1px solid var(--color-grey-200);
+  background-color: var(--color-grey-100);
   border-radius: var(--border-radius-sm);
-  padding: 2rem 3rem;
+  padding: 1.5rem 2rem;
   box-shadow: var(--shadow-sm);
 `;
 
@@ -68,7 +68,7 @@ const StyledBtn = styled(Button)`
 const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   width: 100%;
 
   @media only screen and (max-width: 600px) {
@@ -87,6 +87,18 @@ const Span = styled.span`
   margin-top: 10px;
 `;
 
+const StyledTextarea = styled.textarea`
+  border: 1px solid var(--color-grey-200);
+  background-color: var(--color-grey-100);
+  border-radius: var(--border-radius-sm);
+  padding: 2rem 2rem;
+  box-shadow: var(--shadow-sm);
+  max-width: 200%;
+  width: 100%;
+  max-height: 150px;
+  resize: none;
+`;
+
 function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -99,6 +111,10 @@ function ContactForm() {
     <>
       {/* <LinkButton to="/">&larr;Back</LinkButton> */}
       <Container>
+        <ListContainer>
+          <img src="Contact1.jpg" alt="Contact" />
+        </ListContainer>
+        {/*
         <ListContainer>
           <StyledLi>
             <MdOutlineMailOutline />
@@ -117,18 +133,22 @@ function ContactForm() {
             <Span> Address -</Span>
             <Styledspan>Elecnovo </Styledspan>
           </StyledLi>
-        </ListContainer>
+        </ListContainer> */}
 
         <Form>
           <h1>CONTACT US</h1>
+
+          <p>Fill out the form below</p>
           <FormContainer>
             <Input type="text" placeholder="Enter Your Name" />
-            <Input type="text" placeholder="Enter Your Company Name" />
+            <Input type="text" placeholder=" +91 Phone No." />
             <Input type="text" placeholder="Enter Your Email" />
-            <Input type="text" placeholder="Phone" />
+            <Input type="text" placeholder="Subject" />
+            {/* <Input type="text" placeholder="Message or question" /> */}
+            <StyledTextarea placeholder="Message or question" maxLength={200} />
           </FormContainer>
 
-          <Button size="small" onClick={handleSubmit}>
+          <Button size="small" variation="primary" onClick={handleSubmit}>
             Submit
           </Button>
         </Form>

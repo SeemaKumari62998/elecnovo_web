@@ -2,21 +2,24 @@ import styled, { css } from "styled-components";
 
 const sizes = {
   small: css`
-    font-size: 1.2rem;
-    padding: 0.4rem 0.8rem;
+    font-size: 2rem;
+    padding: 1rem 2rem;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
+
+    border-radius: 12px;
   `,
 };
 
 const variations = {
   primary: css`
-    color: var(--color-brand-50);
-    background-color: var(--color-brand-600);
+    color: var(--color-grey-500);
+    background-color: var(--color-grey-200);
 
     &:hover {
-      background-color: var(--color-brand-900);
+      background-color: var(--color-indigo-700);
+      color: var(--color-grey-200);
     }
   `,
 };
@@ -25,8 +28,10 @@ const Button = styled.button`
   border: none;
   border-radius: var(--border-radius-sm);
   box-shadow: var(--shadow-sm);
+  margin-top: 30px;
+  margin-left: 300px;
 
-  ${(props) => sizes[props.size]}/* ${(props) => variations[props.variation]} */
+  ${(props) => sizes[props.size]} ${(props) => variations[props.variation]}
 `;
 
 Button.defaultProps = {

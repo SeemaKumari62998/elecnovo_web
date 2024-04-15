@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 import { NavLink } from "react-router-dom";
 import { MdOutlineMailOutline, MdPhone } from "react-icons/md";
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -7,10 +6,11 @@ import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 const StyledFooter = styled.div`
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
   justify-content: center;
   background-color: var(--color-grey-800);
   padding: 30px;
-  color: var(--color-grey-600);
+  color: var(--color-grey-500);
   width: 100%;
 
   @media (min-width: 768px) {
@@ -87,37 +87,26 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 
-const Div = styled.div`
-  font-size: 13px;
-
-  @media only screen and (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-`;
-
-const H3 = styled.h3`
-  @media only screen and (max-width: 600px) {
-    margin-bottom: 20px;
-  }
-`;
-
 const Img = styled.img`
-  font-size: 5rem;
-  width: 150px;
-  height: 50%;
-  margin-left: 1px;
+  width: 300px;
+  height: 160px;
+  margin-bottom: 0;
   align-self: center;
+`;
+const H3 = styled.h3`
+  padding: 5px;
+  margin-bottom: 0; /* Remove default margin bottom */
+  margin-top: 10px; /* Add margin top for separation */
+  text-align: left;
 `;
 
 function Footer() {
   return (
     <StyledFooter>
-      <Div>
-        <Img src="elecnovoLogo.png" alt="Logo" />
-        <H3>Driving Green Mobility</H3>
-      </Div>
+      <div>
+        <Img src="ElecnovoPageLogo.png" alt="Logo" />
+        <h3>Driving Green Mobility</h3>
+      </div>
 
       <StyledColumn>
         <h3>Location</h3>
@@ -156,13 +145,13 @@ function Footer() {
             <span>
               <MdOutlineMailOutline />
             </span>
-            Email - REACHUS@ELECNOVO.COM
+            Email : REACHUS@ELECNOVO.COM
           </li>
           <li>
             <span>
               <MdPhone />
             </span>
-            <a href="tel:9019947524">Phone - 9019947524</a>
+            <a href="tel:9019947524">Phone : 9019947524</a>
           </li>
         </StyledUl>
       </StyledColumn>
