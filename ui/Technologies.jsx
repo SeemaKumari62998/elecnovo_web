@@ -103,7 +103,7 @@ function Technologies() {
             <Li>PMSM MOTORS</Li>
           </LiContainer>
           <LiContainer>
-            <Li>BLDC MOTORS</Li>
+            <Li>BLDC MOTORSsssss</Li>
           </LiContainer>
           <LiContainer>
             <Li>AF MOTORS</Li>

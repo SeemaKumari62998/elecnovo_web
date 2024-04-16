@@ -5,6 +5,7 @@ import Button from "./Button";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineMailOutline, MdPhone } from "react-icons/md";
 import LinkButton from "./LinkButton";
+import Footer from "./Footer";
 
 const Container = styled.div`
   display: flex;
@@ -99,6 +100,13 @@ const StyledTextarea = styled.textarea`
   resize: none;
 `;
 
+const Div = styled.div`
+  display: flex;
+`;
+const SpanOr = styled.strong`
+  text-align: center;
+`;
+
 function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -138,14 +146,23 @@ function ContactForm() {
         <Form>
           <h1>CONTACT US</h1>
 
-          <p>Fill out the form below</p>
+          <div>
+            <p> Email: REACHUS@ELECNOVO.COM </p>
+            <p>Phone: +91 89712 84680</p>
+          </div>
+
+          {/* <p>Fill out the form below</p> */}
           <FormContainer>
-            <Input type="text" placeholder="Enter Your Name" />
-            <Input type="text" placeholder=" +91 Phone No." />
-            <Input type="text" placeholder="Enter Your Email" />
-            <Input type="text" placeholder="Subject" />
-            {/* <Input type="text" placeholder="Message or question" /> */}
-            <StyledTextarea placeholder="Message or question" maxLength={200} />
+            <SpanOr>OR</SpanOr>
+
+            <Input type="text" placeholder="Enter your Name" />
+            <Input type="text" placeholder="Enter your phone number" />
+            <Input type="text" placeholder="Enter your Email" />
+            {/* <Input type="text" placeholder="Subject" /> */}
+            <StyledTextarea
+              placeholder=" Enter your Message or question"
+              maxLength={200}
+            />
           </FormContainer>
 
           <Button size="small" variation="primary" onClick={handleSubmit}>
@@ -153,6 +170,7 @@ function ContactForm() {
           </Button>
         </Form>
       </Container>
+      <Footer />
     </>
   );
 }

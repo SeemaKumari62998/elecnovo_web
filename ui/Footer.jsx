@@ -6,11 +6,10 @@ import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 const StyledFooter = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
-  background-color: var(--color-grey-800);
-  padding: 30px;
-  color: var(--color-grey-500);
+  background-color: var(--color-grey-300);
+  padding: 40px;
+  color: var(--color-grey-900);
   width: 100%;
 
   @media (min-width: 768px) {
@@ -46,7 +45,7 @@ const MediaUl = styled.ul`
   display: flex;
   gap: 20px;
   font-size: 25px;
-  color: white;
+  color: black;
   li {
     margin: 2px;
     padding: 4px;
@@ -58,7 +57,7 @@ const MediaUl = styled.ul`
 
 const StyledUl = styled.ul`
   list-style: none;
-  color: white;
+  color: black;
   @media only screen and (max-width: 600px) {
     font-size: 15px;
   }
@@ -93,20 +92,22 @@ const Img = styled.img`
   margin-bottom: 0;
   align-self: center;
 `;
-const H3 = styled.h3`
-  padding: 5px;
-  margin-bottom: 0; /* Remove default margin bottom */
-  margin-top: 10px; /* Add margin top for separation */
-  text-align: left;
+
+const Span = styled.span`
+  margin-top: 4px;
+  /* margin-right: px; */
+`;
+
+const Div = styled.div`
+  margin: 5px;
 `;
 
 function Footer() {
   return (
     <StyledFooter>
-      <div>
+      <Div>
         <Img src="ElecnovoPageLogo.png" alt="Logo" />
-        <h3>Driving Green Mobility</h3>
-      </div>
+      </Div>
 
       <StyledColumn>
         <h3>Location</h3>
@@ -121,16 +122,17 @@ function Footer() {
         <h3>Quick links </h3>
         <StyledUl>
           <li>
-            <StyledNavLink to="/products">Products</StyledNavLink>
-          </li>
-          <li>
             <StyledNavLink to="/">Home</StyledNavLink>
           </li>
+          <li>
+            <StyledNavLink to="/products">Products</StyledNavLink>
+          </li>
+
           <li>
             <StyledNavLink to="/about">About us</StyledNavLink>
           </li>
           <li>
-            <StyledNavLink to="/contact">Contact</StyledNavLink>
+            <StyledNavLink to="/contact">Contact us</StyledNavLink>
           </li>
           <li>
             <StyledNavLink to="/application">Application</StyledNavLink>
@@ -142,16 +144,16 @@ function Footer() {
         <h3>Contact Us</h3>
         <StyledUl>
           <li>
-            <span>
+            {/* <Span>
               <MdOutlineMailOutline />
-            </span>
-            Email : REACHUS@ELECNOVO.COM
+            </Span> */}
+            Email: REACHUS@ELECNOVO.COM
           </li>
           <li>
-            <span>
+            {/* <Span>
               <MdPhone />
-            </span>
-            <a href="tel:9019947524">Phone : 9019947524</a>
+            </Span> */}
+            <a href="tel:89712 84680">Phone: +91 89712 84680</a>
           </li>
         </StyledUl>
       </StyledColumn>

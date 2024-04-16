@@ -62,9 +62,9 @@ function Carrer() {
         <Span>&larr;Back</Span>
       </LinkButton>
       <Container>
-        <Img src="Career4.jpg" alt="Career" />
+        <Img src="career5.jpg" alt="Career" />
 
-        <ImageContainer>
+        {/* <ImageContainer>
           <Div>
             <IconImg src="Invention1.jpg" alt="Img" />
             <p> Learning based motor control system for EV (Patent granted)</p>
@@ -83,7 +83,7 @@ function Carrer() {
             <IconImg src="Invention4.jpg" alt="Img" />
             <p>Commutation system for electric motor (Patent pending)</p>
           </Div>
-        </ImageContainer>
+        </ImageContainer> */}
       </Container>
     </>
   );

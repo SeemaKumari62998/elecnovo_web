@@ -16,6 +16,7 @@ import Career from "../ui/Career";
 import Technologies from "../ui/Technologies";
 import Solutions from "./pages/Solutions";
 import Application from "./pages/Application";
+import Footer from "../ui/Footer";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
             <Route path="achivements" element={<Achivements />} />
             <Route path="teams" element={<Teams />} />
             <Route path="career" element={<Career />} />
+            <Route path="footer" element={<Footer />} />
 
             {/* <Route path="/" element={<Home />} /> */}
             <Route path="technologies" element={<Technologies />} />
