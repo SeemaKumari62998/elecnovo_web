@@ -70,9 +70,15 @@ const StyledLogo = styled.div`
   }
 `;
 
+// const Img = styled.img`
+//   height: 250px;
+//   width: 3500px;
+//   display: block;
+//   margin: 0 auto;
+// `;
 const Img = styled.img`
-  height: 250px;
-  width: 3500px;
+  height: 50px;
+  width: 200px;
   display: block;
   margin: 0 auto;
 `;
@@ -123,8 +129,8 @@ function MainNav() {
     <>
       <StyledLogo>
         <Link to="/">
-          {/* <Img src="logo.png" alt="Logo" /> */}
-          <Img src="ElecnovoPageLogo.png" alt="Logo" />
+          <Img src="logo.png" alt="Logo" />
+          {/* <Img src="ElecnovoPageLogo.png" alt="Logo" /> */}
         </Link>
       </StyledLogo>
 
@@ -162,7 +168,7 @@ function MainNav() {
       <NavList>
         <li>
           <StyledNavLink to="/contact">
-            <span>Contact</span>
+            <span>Contact us</span>
           </StyledNavLink>
         </li>
       </NavList>

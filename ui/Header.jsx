@@ -33,7 +33,7 @@ const Overlay = styled.div`
 function Header() {
   return (
     <StyledHeader>
-      <Overlay />
+      {/* <Overlay /> */}
       <MainNav />
     </StyledHeader>
   );

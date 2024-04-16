@@ -6,6 +6,7 @@ import AppPopupDetails from "../../ui/AppPopupDetails";
 const Container = styled.div`
   position: relative;
   border: 1px solid grey;
+  background-color: var(--color-grey-700);
 `;
 
 const ImageContainer = styled.ul`
