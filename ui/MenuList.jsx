@@ -8,6 +8,7 @@ const MenuContainer = styled.div`
   font-weight: 500;
   margin-top: 10px;
   position: relative;
+  color: var(--color-grey-900);
 
   @media only screen and (max-width: 600px) {
     font-size: 2.2rem;
@@ -20,7 +21,7 @@ const MenuList = styled.div`
   right: 15px;
   width: 280px;
   height: 100%;
-  background-color: black;
+  background-color: var(--color-grey-800);
   border-radius: 8px;
   display: ${(props) => (props.isOpen ? "block" : "none")};
   padding: 30px;
@@ -33,7 +34,7 @@ const MenuList = styled.div`
 
 const MenuItem = styled.div`
   margin: 15px;
-  color: var(--color-grey-100);
+  color: var(--color-grey-200);
   font-size: 20px;
 
   @media only screen and (max-width: 600px) {
@@ -46,11 +47,13 @@ const MenuItem = styled.div`
 `;
 
 const Border = styled.div`
-  border-bottom: 2px solid grey;
+  border-bottom: 5px solid grey;
 `;
 
-const H4 = styled.h4`
+const P = styled.p`
   font-size: 25px;
+  text-align: center;
+  color: var(--color-grey-900);
 
   @media only screen and (max-width: 600px) {
     font-size: 19px;
@@ -128,7 +131,7 @@ function Menu() {
 
           <div>
             <img src="elecnovoLogo.png" alt="Logo" />
-            <H4>GreenMobility</H4>
+            <P>GreenMobility</P>
           </div>
         </MenuList>
       </MenuContainer>
