@@ -19,7 +19,7 @@ const Container = styled.div`
 const Section = styled.div`
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
   border: 1px solid grey;
 
@@ -81,7 +81,7 @@ const Content = styled.div`
   width: fit-content;
 
   @media only screen and (max-width: 600px) {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
 `;
 
@@ -138,6 +138,7 @@ function Home() {
         <Heading>
           <h1> ELECNOVO TECHNOLOGY</h1>
         </Heading>
+
         <Content>
           <Ul>
             <LiContainer>

@@ -6,17 +6,16 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  background-color: black;
+  background-color: var(--color-grey-300);
   padding: 8px 50px;
 
   width: 100%;
-  color: white;
-
+  color: black;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
+
   @media only screen and (max-width: 600px) {
     padding: 8px 20px;
   }

@@ -5,16 +5,19 @@ import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const StyledFooter = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--color-grey-300);
-  padding: 40px;
-  color: var(--color-grey-900);
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  background-color: var(--color-grey-900);
+  padding: 60px 100px 60px 10px;
+  /* color: var(--color-grey-100); */
   width: 100%;
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-around;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 30px;
   }
 `;
 
@@ -22,19 +25,10 @@ const StyledColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 500px; */
+  color: var(--color-grey-500);
 
-  @media (min-width: 768px) {
-    margin-bottom: 0;
-  }
-`;
-const StyledMedia = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-
-  @media (min-width: 768px) {
+  @media only screen and(max-width: 600px) {
     margin-bottom: 0;
   }
 `;
@@ -42,32 +36,28 @@ const StyledMedia = styled.div`
 const MediaUl = styled.ul`
   list-style: none;
   margin-top: 20px;
+
   display: flex;
   gap: 20px;
   font-size: 25px;
-  color: black;
-  li {
-    margin: 2px;
-    padding: 4px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-  }
+  justify-content: center;
+  color: var(--color-grey-300);
+  cursor: pointer;
 `;
 
 const StyledUl = styled.ul`
   list-style: none;
-  color: black;
+  color: var(--color-grey-300);
+  margin: 10px;
+
   @media only screen and (max-width: 600px) {
     font-size: 15px;
   }
 
   li {
-    margin: 2px;
-    padding: 2px;
+    margin: 3px;
+    padding: 1px;
     cursor: pointer;
-    display: flex;
-    flex-direction: row;
   }
 
   li a {
@@ -78,7 +68,7 @@ const StyledUl = styled.ul`
 
 const StyledNavLink = styled(NavLink)`
   text-decoration: none;
-  color: white;
+  color: inherit;
 
   &:hover {
     color: var(--color-blue-700);
@@ -87,27 +77,21 @@ const StyledNavLink = styled(NavLink)`
 `;
 
 const Img = styled.img`
-  width: 300px;
-  height: 160px;
+  width: 200px;
+  height: auto;
   margin-bottom: 0;
-  align-self: center;
-`;
 
-const Span = styled.span`
-  margin-top: 4px;
-  /* margin-right: px; */
-`;
-
-const Div = styled.div`
-  margin: 5px;
+  @media only screen and (max-width: 600px) {
+  }
 `;
 
 function Footer() {
   return (
     <StyledFooter>
-      <Div>
+      <StyledColumn>
         <Img src="ElecnovoPageLogo.png" alt="Logo" />
-      </Div>
+        {/* <Img src="logo1.jpeg" alt="Logo" /> */}
+      </StyledColumn>
 
       <StyledColumn>
         <h3>Location</h3>
@@ -143,22 +127,14 @@ function Footer() {
       <StyledColumn>
         <h3>Contact Us</h3>
         <StyledUl>
+          <li>Email: REACHUS@ELECNOVO.COM</li>
           <li>
-            {/* <Span>
-              <MdOutlineMailOutline />
-            </Span> */}
-            Email: REACHUS@ELECNOVO.COM
-          </li>
-          <li>
-            {/* <Span>
-              <MdPhone />
-            </Span> */}
             <a href="tel:89712 84680">Phone: +91 89712 84680</a>
           </li>
         </StyledUl>
       </StyledColumn>
 
-      <StyledMedia>
+      <StyledColumn>
         <h3>Follow Us On</h3>
         <MediaUl>
           <FaFacebook />
@@ -166,7 +142,7 @@ function Footer() {
           <FaInstagram />
           <FaTwitter />
         </MediaUl>
-      </StyledMedia>
+      </StyledColumn>
     </StyledFooter>
   );
 }

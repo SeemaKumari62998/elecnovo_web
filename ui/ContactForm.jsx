@@ -11,6 +11,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 87vh;
 
   @media only screen and (max-width: 600px) {
     justify-content: center;
@@ -18,7 +19,7 @@ const Container = styled.div`
   }
 `;
 
-const ListContainer = styled.ul`
+const Div = styled.ul`
   flex: 1;
   background-color: var(--color-grey-100);
   align-content: center;
@@ -26,6 +27,9 @@ const ListContainer = styled.ul`
   @media only screen and (max-width: 600px) {
     width: 100%;
   }
+`;
+const Img = styled.img`
+  height: 100%;
 `;
 
 const Input = styled.input`
@@ -36,36 +40,6 @@ const Input = styled.input`
   box-shadow: var(--shadow-sm);
 `;
 
-const StyledLi = styled.li`
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  background-color: var(--color-grey-100);
-  padding: 1px;
-
-  text-align: center;
-  color: black;
-  margin: 100px;
-  width: 70%;
-
-  svg {
-    margin-bottom: 5px;
-    font-size: 30px;
-  }
-
-  span {
-    font-size: 15px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    width: 80%;
-    margin: 20px;
-  }
-`;
-const StyledBtn = styled(Button)`
-  margin-top: 30px;
-`;
-
 const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -74,18 +48,7 @@ const FormContainer = styled.div`
 
   @media only screen and (max-width: 600px) {
     width: 100%;
-    // margin: 20px;
   }
-`;
-
-const Styledspan = styled.span`
-  color: var(--color-grey-500);
-  padding: 10px;
-`;
-
-const Span = styled.span`
-  color: var(--color-blue-700);
-  margin-top: 10px;
 `;
 
 const StyledTextarea = styled.textarea`
@@ -100,9 +63,6 @@ const StyledTextarea = styled.textarea`
   resize: none;
 `;
 
-const Div = styled.div`
-  display: flex;
-`;
 const SpanOr = styled.strong`
   text-align: center;
 `;
@@ -119,29 +79,9 @@ function ContactForm() {
     <>
       {/* <LinkButton to="/">&larr;Back</LinkButton> */}
       <Container>
-        <ListContainer>
-          <img src="Contact1.jpg" alt="Contact" />
-        </ListContainer>
-        {/*
-        <ListContainer>
-          <StyledLi>
-            <MdOutlineMailOutline />
-            <Span>Email-</Span>
-            <Styledspan>REACHUS@ELECNOVO.COM</Styledspan>
-          </StyledLi>
-
-          <StyledLi>
-            <MdPhone />
-            <Span>Phone -</Span>
-            <Styledspan>89712 84680</Styledspan>
-          </StyledLi>
-
-          <StyledLi>
-            <CiLocationOn />
-            <Span> Address -</Span>
-            <Styledspan>Elecnovo </Styledspan>
-          </StyledLi>
-        </ListContainer> */}
+        <Div>
+          <Img src="Contact1.jpg" alt="Contact" />
+        </Div>
 
         <Form>
           <h1>CONTACT US</h1>
@@ -151,14 +91,12 @@ function ContactForm() {
             <p>Phone: +91 89712 84680</p>
           </div>
 
-          {/* <p>Fill out the form below</p> */}
           <FormContainer>
             <SpanOr>OR</SpanOr>
 
             <Input type="text" placeholder="Enter your Name" />
             <Input type="text" placeholder="Enter your phone number" />
             <Input type="text" placeholder="Enter your Email" />
-            {/* <Input type="text" placeholder="Subject" /> */}
             <StyledTextarea
               placeholder=" Enter your Message or question"
               maxLength={200}

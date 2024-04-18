@@ -8,7 +8,7 @@ const StyledContainer = styled.div`
   display: flex;
   justify-content: center;
   height: 100vh;
-
+  background-color: var(--color-grey-400);
   color: var(--color-grey-200);
 
   @media only screen and (max-width: 600px) {

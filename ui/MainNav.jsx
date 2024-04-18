@@ -1,16 +1,13 @@
 import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
 import Menu from "./MenuList";
-import { MdArrowBackIos } from "react-icons/md";
-import { MdArrowForwardIos } from "react-icons/md";
 
 const NavList = styled.ul`
   display: flex;
   justify-content: flex-end;
   margin-right: 50px;
-  border: 0.3rem solid var(--color-grey-700);
+  color: black;
 
-  border-radius: 10px;
   @media only screen and (max-width: 600px) {
     margin-right: 10px;
   }
@@ -19,9 +16,9 @@ const NavList = styled.ul`
 const StyledNavLink = styled(NavLink)`
   span {
     position: relative;
+    /* color: var(--color-grey-900); */
 
     &::after {
-      border: 1px solid blue;
       position: absolute;
       top: 50%;
       right: 0.5rem;
@@ -33,12 +30,12 @@ const StyledNavLink = styled(NavLink)`
   &:visited {
     display: flex;
     align-items: center;
-    color: var(--color-grey-300);
-    font-size: 2rem;
+
+    font-size: 1.7rem;
     font-weight: 500;
     padding: 1.2rem 2rem;
     transition: all 0.3s;
-    box-shadow: 0 3px 10px white;
+    box-shadow: 1px 1px 3px green;
     border-radius: 8px;
 
     @media only screen and (max-width: 600px) {
@@ -51,14 +48,16 @@ const StyledNavLink = styled(NavLink)`
   &:active,
   &.active:link,
   &.active:visited {
-    color: black;
-    background-color: var(--color-green-100);
+    font-size: 1.8rem;
+    background-color: var(--color-grey-900);
     border-radius: 8px;
+    color: white;
   }
 `;
 
 const StyledLogo = styled.div`
   display: flex;
+
   justify-content: flex-start;
   align-items: center;
   height: 100px;
@@ -70,35 +69,28 @@ const StyledLogo = styled.div`
   }
 `;
 
-// const Img = styled.img`
-//   height: 250px;
-//   width: 3500px;
-//   display: block;
-//   margin: 0 auto;
-// `;
 const Img = styled.img`
-  height: 50px;
-  width: 200px;
+  height: 200px;
+  width: 350px;
   display: block;
   margin: 0 auto;
 `;
 
 const Div = styled.div`
+  flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: 10px auto;
-  text-align: center;
+  align-items: center;
+  color: var(--color-green-500);
 
   span {
     &:hover,
     &:active,
     &.active:link,
     &.active:visited {
-      color: var(--color-grey-300);
-      /* background-color: var(--color-blue-100); */
-      border-radius: px;
-      box-shadow: 0 3px 5px white;
+      color: var(--color-grey-600);
+
+      text-decoration: underline;
     }
   }
 
@@ -118,26 +110,17 @@ const Ul = styled.ul`
   font-size: 20px;
 `;
 
-const ArrowWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-`;
-
 function MainNav() {
   return (
     <>
       <StyledLogo>
         <Link to="/">
-          <Img src="logo.png" alt="Logo" />
-          {/* <Img src="ElecnovoPageLogo.png" alt="Logo" /> */}
+          {/* <Img src="logo1.jpeg" alt="Logo" /> */}
+          <Img src="ElecnovoPageLogo.png" alt="Logo" />
         </Link>
       </StyledLogo>
 
       <Div>
-        <ArrowWrapper>
-          <MdArrowBackIos />
-        </ArrowWrapper>
         <Ul>
           <li>
             <StyledLink to="/">
@@ -160,9 +143,6 @@ function MainNav() {
             </StyledLink>
           </li>
         </Ul>
-        <ArrowWrapper>
-          <MdArrowForwardIos />
-        </ArrowWrapper>
       </Div>
 
       <NavList>

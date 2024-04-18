@@ -5,13 +5,12 @@ import LinkButton from "./LinkButton";
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* salign-items: center; */
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: black;
-  overflow: hidden;
-  margin-top: 0;
+  background-color: var(--color-grey-300);
+  /* overflow: hidden; */
 
   @media only screen and (max-width: 600px) {
   }
@@ -19,12 +18,13 @@ const Container = styled.div`
 
 const Video = styled.video`
   position: absolute;
-  left: 30%;
+  /* left: 0; */
+  top: 0;
   transform: translateX(-50%);
-  width: 40%;
+  width: 50%;
   height: auto;
   border-radius: 5px;
-  top: 150px;
+  /* top: 150px; */
 
   @media only screen and (max-width: 600px) {
     width: 80%;
@@ -44,12 +44,13 @@ const TransparentSheet = styled.div`
 
 const Div = styled.div`
   position: absolute;
-  top: 40px;
-  left: 20%;
+  top: 30%;
+  left: 10%;
+
   z-index: 1;
 `;
 
-const H1 = styled.h1`
+const P = styled.h1`
   color: white;
 
   @media only screen and (max-width: 600px) {
@@ -74,6 +75,7 @@ const Styleddiv = styled.div`
   }
 `;
 const Span = styled.span`
+  color: black;
   @media only screen and (max-width: 600px) {
     font-size: 15px;
   }
@@ -82,15 +84,15 @@ const Span = styled.span`
 function ApplicationDetails() {
   return (
     <>
-      <LinkButton to="/">
+      {/* <LinkButton to="/">
         <Span> &larr;Back</Span>
-      </LinkButton>
+      </LinkButton> */}
       <Container>
         <Video src={engine_2} loop muted autoPlay />
         <TransparentSheet />
-        <Div>
-          <H1>Elecnovo Applications</H1>
-        </Div>
+        {/* <Div>
+          <P>Elecnovo Applications</P>
+        </Div> */}
 
         <Styleddiv>
           <p>Core Technology details</p>

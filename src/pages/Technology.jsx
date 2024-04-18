@@ -4,7 +4,7 @@ import LinkButton from "../../ui/LinkButton";
 const Container = styled.div`
   height: 100vh;
   width: 100%;
-  background-color: var(--color-grey-900);
+  background-color: var(--color-grey-400);
   display: flex;
   flex-direction: column;
   color: white;

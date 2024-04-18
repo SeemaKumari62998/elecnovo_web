@@ -6,7 +6,8 @@ import AppPopupDetails from "../../ui/AppPopupDetails";
 const Container = styled.div`
   position: relative;
   border: 1px solid grey;
-  background-color: var(--color-grey-700);
+
+  background-color: var(--color-grey-600);
 `;
 
 const ImageContainer = styled.ul`
@@ -35,7 +36,7 @@ const ImageItem = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   margin-top: auto;
   position: relative;
 
@@ -56,12 +57,13 @@ const ImageItem = styled.li`
 
 const Span = styled.span`
   position: absolute;
-  bottom: -210px;
+  bottom: -220px;
   left: 38%;
   transform: translateX(-50%);
-  color: var(--color-grey-200);
+  color: var(--color-grey-300);
   white-space: nowrap;
   padding: 150px 300px;
+  font-size: 1.8rem;
 
   @media only screen and (max-width: 600px) {
     text-align: center;
@@ -71,21 +73,19 @@ const Span = styled.span`
 `;
 
 const H2 = styled(motion.h2)`
-  text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: var(--color-grey-300);
+  padding: 35px;
+  margin: 10px;
 
   @media (max-width: 768px) {
     font-size: 2rem;
     text-align: center;
     margin-top: 15px;
   }
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: var(--color-grey-300);
-  padding: 20px;
-  margin: 20px;
 `;
 
 const PopupContainer = styled.div`
