@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import engine_2 from "../public/engine_2.mp4";
 import LinkButton from "./LinkButton";
+import Application from "../src/pages/Application";
 
 const Container = styled.div`
   display: flex;
@@ -88,15 +89,13 @@ function ApplicationDetails() {
         <Span> &larr;Back</Span>
       </LinkButton> */}
       <Container>
-        <Video src={engine_2} loop muted autoPlay />
+        {/* <Video src={engine_2} loop muted autoPlay />
         <TransparentSheet />
-        {/* <Div>
-          <P>Elecnovo Applications</P>
-        </Div> */}
 
         <Styleddiv>
           <p>Core Technology details</p>
-        </Styleddiv>
+        </Styleddiv> */}
+        <Application />
       </Container>
     </>
   );
