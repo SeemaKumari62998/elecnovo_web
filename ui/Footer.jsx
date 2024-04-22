@@ -16,14 +16,15 @@ const StyledFooter = styled.div`
     flex-direction: column;
     align-items: flex-start;
     padding: 2px;
-    padding-left: 20px;
+    padding-left: 30px;
+    margin-bottom: 90px;
   }
 `;
 
 const StyledColumn = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   color: var(--color-grey-500);
 

@@ -67,7 +67,7 @@ const H1 = styled.h1`
     padding-bottom: 50px;
     font-size: 18px;
     left: 25%;
-    top: 20%;
+    top: 25%;
   }
 `;
 
@@ -93,7 +93,8 @@ const Ul = styled.ul`
   align-items: center;
 
   @media only screen and (max-width: 600px) {
-    margin: 15px;
+    margin: 25px;
+    margin-bottom: 35px;
   }
 `;
 
@@ -153,15 +154,6 @@ function Home() {
             <LiContainer>
               <Li> SRM MOTORS</Li>
             </LiContainer>
-
-            {/* <LiContainer>
-              <Li>
-                <Link to="/products">
-                  Tell me More
-                  <BsBoxArrowInUpRight />
-                </Link>
-              </Li>
-            </LiContainer> */}
           </Ul>
         </Content>
       </Section>

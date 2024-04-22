@@ -9,7 +9,7 @@ const NavList = styled.ul`
   color: black;
 
   @media only screen and (max-width: 600px) {
-    margin-right: 10px;
+    margin-right: 20px;
   }
 `;
 
@@ -39,7 +39,7 @@ const StyledNavLink = styled(NavLink)`
     border-radius: 8px;
 
     @media only screen and (max-width: 600px) {
-      font-size: 1.2rem;
+      font-size: 0.9rem;
       padding: 1rem 1.5rem;
     }
   }
@@ -65,7 +65,7 @@ const StyledLogo = styled.div`
   margin-right: auto;
 
   @media only screen and (max-width: 600px) {
-    width: 50%;
+    width: 54%;
   }
 `;
 
