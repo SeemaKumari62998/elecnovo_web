@@ -18,6 +18,8 @@ const StyledHeader = styled.header`
 
   @media only screen and (max-width: 600px) {
     padding: 5px 5px;
+
+    height: 60px;
   }
 `;
 const Overlay = styled.div`

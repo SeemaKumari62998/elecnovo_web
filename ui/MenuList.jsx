@@ -11,14 +11,15 @@ const MenuContainer = styled.div`
   color: var(--color-grey-900);
 
   @media only screen and (max-width: 600px) {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
+    margin-right: 10px;
   }
 `;
 
 const MenuList = styled.div`
   position: fixed;
-  top: 95px;
-  right: 15px;
+  top: 110px;
+  right: 30px;
   width: 280px;
   height: 100%;
   background-color: var(--color-grey-800);
@@ -28,7 +29,9 @@ const MenuList = styled.div`
   text-align: left;
 
   @media only screen and (max-width: 600px) {
-    width: 200px;
+    width: 195px;
+    right: 3px;
+    top: 70px;
   }
 `;
 

@@ -39,7 +39,7 @@ const ImageItem = styled.li`
   margin-bottom: 70px;
   margin-top: auto;
   position: relative;
-  /* text-align: center; */
+
   &:hover {
     ${Image} {
       transform: scale(1.2);
@@ -87,7 +87,7 @@ const H2 = styled(motion.h2)`
   @media (max-width: 768px) {
     font-size: 2rem;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 5px;
   }
 `;
 
