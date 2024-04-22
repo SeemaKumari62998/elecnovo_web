@@ -29,7 +29,14 @@ const Button = styled.button`
   border-radius: var(--border-radius-sm);
   box-shadow: var(--shadow-sm);
   margin-top: 30px;
-  margin-left: 300px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0.2rem 0%.3;
+    width: 40%;
+    font-size: 15px;
+  }
 
   ${(props) => sizes[props.size]} ${(props) => variations[props.variation]}
 `;

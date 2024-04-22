@@ -17,7 +17,7 @@ const MenuContainer = styled.div`
 
 const MenuList = styled.div`
   position: fixed;
-  top: 120px;
+  top: 95px;
   right: 15px;
   width: 280px;
   height: 100%;
@@ -53,7 +53,7 @@ const Border = styled.div`
 const P = styled.p`
   font-size: 25px;
   text-align: center;
-  color: var(--color-grey-900);
+  color: var(--color-grey-300);
 
   @media only screen and (max-width: 600px) {
     font-size: 19px;

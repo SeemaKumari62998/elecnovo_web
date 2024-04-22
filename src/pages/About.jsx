@@ -8,7 +8,7 @@ const Wrapper = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2%;
+  background-color: var(--color-grey-400);
 
   @media (min-width: 768px) {
     padding: 5%;
@@ -18,9 +18,9 @@ const Wrapper = styled(motion.div)`
 const Paragrapg = styled.p`
   text-align: left;
   max-width: 80%;
-  margin: 4% auto;
-  font-size: 2rem;
-  color: var(--color-grey-200);
+  margin: 1% auto;
+  font-size: 1.6rem;
+  color: var(--color-grey-300);
 
   @media only screen and (max-width: 600px) {
     font-size: 1.5rem;

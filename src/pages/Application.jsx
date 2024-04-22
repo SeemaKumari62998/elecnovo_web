@@ -39,7 +39,7 @@ const ImageItem = styled.li`
   margin-bottom: 70px;
   margin-top: auto;
   position: relative;
-
+  /* text-align: center; */
   &:hover {
     ${Image} {
       transform: scale(1.2);
@@ -48,10 +48,9 @@ const ImageItem = styled.li`
   }
 
   @media only screen and (max-width: 600px) {
-    justify-content: center;
-    align-items: center;
     margin-bottom: 15px;
     margin-top: 40px;
+    align-items: center;
   }
 `;
 
@@ -66,9 +65,13 @@ const Span = styled.span`
   font-size: 1.8rem;
 
   @media only screen and (max-width: 600px) {
-    text-align: center;
+    /* text-align: center;
     margin-top: 40px;
-    padding: 180px 400px;
+    padding: 180px 400px; */
+
+    bottom: -153px; /* Adjust position for mobile */
+    left: 50%;
+    padding: 120px; /* Adjust padding for mobile */
   }
 `;
 

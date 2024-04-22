@@ -7,7 +7,7 @@ const Container = styled.div`
   background-color: var(--color-grey-400);
   display: flex;
   flex-direction: column;
-  color: white;
+  color: var(--color-grey-900);
 
   @media only screen and (max-width: 600px) {
     padding: 25px;
@@ -18,7 +18,7 @@ const H1 = styled.h1`
   margin-top: 30px;
 
   @media only screen and (max-width: 600px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 `;
 const H2 = styled.h2`
@@ -27,27 +27,36 @@ const H2 = styled.h2`
 
   @media only screen and (max-width: 600px) {
     font-size: 18px;
-    margin-top: 40px;
+    margin-top: 5px;
     text-align: center;
   }
 `;
 
 const Imagecontainer = styled.div`
   margin-top: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  gap: 20px;
 
   @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 5px;
     margin: 20px;
   }
 `;
 
 const Image = styled.img`
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   height: auto;
   margin: 20px;
-  border: 1px solid white;
+  border: 1px solid grey;
+
+  @media only screen and (max-width: 600px) {
+    max-width: calc(100% - 50px);
+    margin: 20px;
+  }
 `;
 
 const Div = styled.div`
@@ -61,11 +70,17 @@ const P = styled.p`
   font-weight: bold;
   margin-top: 1px;
   font-size: 20px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
 `;
 
 const Span = styled.span`
   @media only screen and (max-width: 600px) {
     font-size: 15px;
+    /* position: fixed; */
   }
 `;
 
