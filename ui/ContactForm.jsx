@@ -16,6 +16,7 @@ const Container = styled.div`
   @media only screen and (max-width: 600px) {
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
   }
 `;
 
@@ -38,6 +39,12 @@ const Input = styled.input`
   border-radius: var(--border-radius-sm);
   padding: 1.5rem 2rem;
   box-shadow: var(--shadow-sm);
+
+  @media only screen and (max-width: 600px) {
+    padding: 0.7rem 1rem;
+    font-size: 10px;
+    width: 300px;
+  }
 `;
 
 const FormContainer = styled.div`
@@ -61,10 +68,22 @@ const StyledTextarea = styled.textarea`
   width: 100%;
   max-height: 150px;
   resize: none;
+
+  @media only screen and (max-width: 600px) {
+    width: 300px;
+    font-size: 10px;
+  }
 `;
 
 const SpanOr = styled.strong`
   text-align: center;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (max-width: 600px) {
+    width: 60%;
+  }
 `;
 
 function ContactForm() {
@@ -98,7 +117,7 @@ function ContactForm() {
             <Input type="text" placeholder="Enter your phone number" />
             <Input type="text" placeholder="Enter your Email" />
             <StyledTextarea
-              placeholder=" Enter your Message or question"
+              placeholder="Enter your Message or question"
               maxLength={200}
             />
           </FormContainer>

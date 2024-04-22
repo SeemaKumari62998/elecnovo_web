@@ -77,7 +77,7 @@ const Content = styled.div`
   right: 1px;
   transform: translateY(-60%);
   text-align: center;
-  color: var(--color-green-100);
+  color: var(--color-grey-100);
   width: fit-content;
 
   @media only screen and (max-width: 600px) {
@@ -93,7 +93,7 @@ const Ul = styled.ul`
   align-items: center;
 
   @media only screen and (max-width: 600px) {
-    margin-right: 0px;
+    margin: 15px;
   }
 `;
 
@@ -109,7 +109,7 @@ const LiContainer = styled.div`
   @media only screen and (max-width: 600px) {
     width: 100px;
     padding: 2px;
-    margin: 4px;
+    margin: 1px;
   }
 `;
 

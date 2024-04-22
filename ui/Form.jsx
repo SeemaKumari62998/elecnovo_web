@@ -4,7 +4,7 @@ const Form = styled.form`
   ${(props) =>
     props.type === "regular" &&
     css`
-      padding: 9.4rem 9rem;
+      padding: 9rem 5rem;
       width: 50%;
 
       /* Box */
@@ -13,7 +13,7 @@ const Form = styled.form`
 
       @media only screen and (max-width: 600px) {
         width: 100%;
-        padding: 9.4rem 2rem;
+        padding: 2rem 3rem;
       }
     `}
 

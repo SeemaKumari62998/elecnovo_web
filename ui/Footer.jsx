@@ -6,18 +6,17 @@ import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 const StyledFooter = styled.div`
   display: flex;
   flex-wrap: wrap;
-
   justify-content: space-between;
   background-color: var(--color-grey-900);
-  padding: 60px 100px 60px 10px;
+  padding: 20px 100px 10px 10px;
   /* color: var(--color-grey-100); */
   width: 100%;
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
-    align-items: center;
-    text-align: left;
-    padding: 30px;
+    align-items: flex-start;
+    padding: 2px;
+    padding-left: 20px;
   }
 `;
 
@@ -25,11 +24,12 @@ const StyledColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-bottom: 500px; */
+  justify-content: center;
   color: var(--color-grey-500);
 
   @media only screen and(max-width: 600px) {
-    margin-bottom: 0;
+    display: flex;
+    align-items: flex-start;
   }
 `;
 
@@ -48,10 +48,11 @@ const MediaUl = styled.ul`
 const StyledUl = styled.ul`
   list-style: none;
   color: var(--color-grey-300);
-  margin: 10px;
+  margin: 2px;
 
   @media only screen and (max-width: 600px) {
     font-size: 15px;
+    padding-bottom: 20px;
   }
 
   li {
@@ -77,11 +78,15 @@ const StyledNavLink = styled(NavLink)`
 `;
 
 const Img = styled.img`
-  width: 200px;
+  width: 300px;
   height: auto;
   margin-bottom: 0;
 
   @media only screen and (max-width: 600px) {
+    width: 70%;
+    /* height: 150px; */
+    margin: 0 auto;
+    display: block;
   }
 `;
 
@@ -90,7 +95,6 @@ function Footer() {
     <StyledFooter>
       <StyledColumn>
         <Img src="ElecnovoPageLogo.png" alt="Logo" />
-        {/* <Img src="logo1.jpeg" alt="Logo" /> */}
       </StyledColumn>
 
       <StyledColumn>
@@ -103,7 +107,7 @@ function Footer() {
       </StyledColumn>
 
       <StyledColumn>
-        <h3>Quick links </h3>
+        <h3>Quick links</h3>
         <StyledUl>
           <li>
             <StyledNavLink to="/">Home</StyledNavLink>

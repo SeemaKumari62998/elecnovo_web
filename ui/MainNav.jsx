@@ -39,7 +39,7 @@ const StyledNavLink = styled(NavLink)`
     border-radius: 8px;
 
     @media only screen and (max-width: 600px) {
-      font-size: 1rem;
+      font-size: 1.2rem;
       padding: 1rem 1.5rem;
     }
   }
@@ -48,7 +48,7 @@ const StyledNavLink = styled(NavLink)`
   &:active,
   &.active:link,
   &.active:visited {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     background-color: var(--color-grey-900);
     border-radius: 8px;
     color: white;

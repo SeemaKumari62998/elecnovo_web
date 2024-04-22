@@ -8,7 +8,7 @@ const StyledHeader = styled.header`
   align-items: center;
   background-color: var(--color-grey-300);
   padding: 8px 50px;
-
+  height: 90px;
   width: 100%;
   color: black;
   position: fixed;
@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
   z-index: 100;
 
   @media only screen and (max-width: 600px) {
-    padding: 8px 20px;
+    padding: 5px 5px;
   }
 `;
 const Overlay = styled.div`
