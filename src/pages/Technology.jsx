@@ -15,7 +15,7 @@ const Container = styled.div`
 `;
 const H1 = styled.h1`
   text-align: center;
-  margin-top: 70px;
+  margin-top: 30px;
 
   @media only screen and (max-width: 600px) {
     font-size: 18px;

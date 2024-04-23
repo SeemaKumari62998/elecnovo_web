@@ -7,7 +7,7 @@ import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Application from "./Application";
 import PerformanceVideo from "../../ui/PerformanceVideo";
-
+import Solutions from "./Solutions";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -24,8 +24,7 @@ const Section = styled.div`
   border: 1px solid grey;
 
   @media only screen and (max-width: 600px) {
-    height: 60vh;
-    border: none;
+    height: 25vh;
   }
 `;
 
@@ -34,50 +33,23 @@ const Video = styled.video`
   max-height: 100vh;
   object-fit: cover;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
   left: 0;
-
-  @media only screen and (max-width: 600px) {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 `;
 
-const Heading = styled(motion.h1)`
+const H1 = styled(motion.h1)`
   position: relative;
   color: var(--color-grey-300);
-  padding-left: 50px;
-  margin-top: 41%;
-  font-size: 1.5rem;
-  z-index: 10;
-  margin-bottom: 30px;
-
-  @media only screen and (max-width: 600px) {
-    font-size: 10px;
-    padding: 50px;
-    margin-top: 5px;
-    color: var(--color-grey-700);
-    text-align: center;
-  }
-`;
-
-const H1 = styled.h1`
-  position: absolute;
-  color: var(--color-grey-300);
   padding-left: 40px;
-  top: 12%;
-  left: 15%;
-  transform: translate(-50%, -50%);
+  margin-top: 43%;
+  font-size: 2.5rem;
   z-index: 10;
-  /* font-size: 3rem; */
+  bottom: 20px;
 
   @media only screen and (max-width: 600px) {
-    padding-bottom: 50px;
-    font-size: 18px;
-    left: 25%;
-    top: 25%;
+    font-size: 15px;
+    padding-left: 25px;
+    margin-top: 180px;
   }
 `;
 
@@ -91,7 +63,7 @@ const Content = styled.div`
   width: fit-content;
 
   @media only screen and (max-width: 600px) {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 `;
 
@@ -104,7 +76,7 @@ const Ul = styled.ul`
 
   @media only screen and (max-width: 600px) {
     margin: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 `;
 
@@ -125,11 +97,11 @@ const LiContainer = styled.div`
 `;
 
 const Li = styled.li`
-  margin: 10px;
+  margin: 3px;
   font-size: 15px;
 
   @media only screen and (max-width: 600px) {
-    font-size: 10px;
+    font-size: 9px;
     margin: 7px;
   }
 `;
@@ -139,16 +111,13 @@ function Home() {
     <Container>
       <Section>
         <Video src={technology} autoPlay loop muted />
-        <Heading>
-          <h1>DRIVING GREEN MOBILITY</h1>
-        </Heading>
+        <H1>DRIVING GREEN MOBILITY</H1>
       </Section>
 
       <Section>
         <Video src={motor} autoPlay loop muted />
-        <Heading>
-          <h1> ELECNOVO TECHNOLOGY</h1>
-        </Heading>
+
+        <H1> ELECNOVO TECHNOLOGY</H1>
 
         <Content>
           <Ul>
@@ -169,36 +138,8 @@ function Home() {
       </Section>
 
       <Application />
+      <Solutions />
 
-      <Section>
-        <H1>ELECNOVO SOLUTIONS..</H1>
-
-        <PerformanceVideo />
-        <Content>
-          <Ul>
-            <LiContainer>
-              <Li>HIGH RELIABILITY</Li>
-            </LiContainer>
-
-            <LiContainer>
-              <Li>EASY TO ASSEMBLE</Li>
-            </LiContainer>
-            <LiContainer>
-              <Li>COST EFFECTIVE</Li>
-            </LiContainer>
-
-            <LiContainer>
-              <Li>COMPACT SIZE</Li>
-            </LiContainer>
-            <LiContainer>
-              <Li>LIGHT WEIGHT</Li>
-            </LiContainer>
-            <LiContainer>
-              <Li>EASY TO CONTROL</Li>
-            </LiContainer>
-          </Ul>
-        </Content>
-      </Section>
       <Footer />
     </Container>
   );

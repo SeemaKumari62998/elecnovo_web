@@ -6,8 +6,8 @@ import AppPopupDetails from "../../ui/AppPopupDetails";
 const Container = styled.div`
   position: relative;
   border: 1px solid grey;
-  color: var(--color-grey-700);
-  background-color: var(--color-grey-400);
+
+  background-color: var(--color-grey-600);
 `;
 
 const ImageContainer = styled.ul`
@@ -22,10 +22,6 @@ const ImageContainer = styled.ul`
     grid-template-rows: repeat(1, 1fr);
     gap: 10px;
     margin-bottom: 50px;
-    height: 60vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    width: 73%;
   }
 `;
 
@@ -54,6 +50,7 @@ const ImageItem = styled.li`
   @media only screen and (max-width: 600px) {
     margin-bottom: 15px;
     margin-top: 40px;
+    align-items: center;
   }
 `;
 
@@ -62,15 +59,19 @@ const Span = styled.span`
   bottom: -220px;
   left: 38%;
   transform: translateX(-50%);
-
+  color: var(--color-grey-300);
   white-space: nowrap;
   padding: 150px 300px;
   font-size: 1.8rem;
 
   @media only screen and (max-width: 600px) {
-    bottom: -153px;
-    /* left: 20%; */
-    padding: 120px;
+    /* text-align: center;
+    margin-top: 40px;
+    padding: 180px 400px; */
+
+    bottom: -153px; /* Adjust position for mobile */
+    left: 50%;
+    padding: 120px; /* Adjust padding for mobile */
   }
 `;
 
@@ -79,6 +80,7 @@ const H2 = styled(motion.h2)`
   position: absolute;
   top: 10px;
   left: 0;
+  color: var(--color-grey-300);
   padding: 35px;
   margin: 10px;
 

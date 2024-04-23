@@ -1,20 +1,29 @@
 import styled from "styled-components";
 import PerformanceVideo from "../../ui/PerformanceVideo";
 
+const Section = styled.div`
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  border: 1px solid grey;
+
+  @media only screen and (max-width: 600px) {
+    height: 30vh;
+  }
+`;
 const H1 = styled.h1`
-  position: absolute;
+  position: relative;
   color: var(--color-grey-300);
   padding-left: 40px;
-  top: 12%;
-  left: 15%;
-  transform: translate(-50%, -50%);
+  margin-top: 2%;
+  font-size: 2.5rem;
   z-index: 10;
 
   @media only screen and (max-width: 600px) {
-    padding-bottom: 50px;
-    font-size: 18px;
-    left: 25%;
-    top: 15%;
+    font-size: 15px;
+    padding-left: 25px;
+    margin-top: 25px;
   }
 `;
 
@@ -24,23 +33,24 @@ const Content = styled.div`
   right: 1px;
   transform: translateY(-60%);
   text-align: center;
-  color: var(--color-green-100);
+  color: var(--color-grey-100);
   width: fit-content;
 
   @media only screen and (max-width: 600px) {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
 `;
 
 const Ul = styled.ul`
   list-style: none;
-  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 
   @media only screen and (max-width: 600px) {
-    margin-right: 0px;
+    margin: 25px;
+    margin-bottom: 35px;
   }
 `;
 
@@ -56,12 +66,12 @@ const LiContainer = styled.div`
   @media only screen and (max-width: 600px) {
     width: 100px;
     padding: 2px;
-    margin: 4px;
+    margin: 1px;
   }
 `;
 
 const Li = styled.li`
-  margin: 20px;
+  margin: 3px;
   font-size: 15px;
 
   @media only screen and (max-width: 600px) {
@@ -70,23 +80,11 @@ const Li = styled.li`
   }
 `;
 
-const Section = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  border: 1px solid grey;
-
-  @media only screen and (max-width: 600px) {
-    height: 25vh;
-  }
-`;
-
 function Solutions() {
   return (
     <>
       <Section>
-        <H1>ELECNOVO SOLUTIONS..</H1>
+        <H1>ELECNOVO SOLUTIONS</H1>
 
         <PerformanceVideo />
         <Content>
