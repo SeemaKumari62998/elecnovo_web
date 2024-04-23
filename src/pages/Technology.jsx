@@ -15,7 +15,7 @@ const Container = styled.div`
 `;
 const H1 = styled.h1`
   text-align: center;
-  margin-top: 30px;
+  margin-top: 70px;
 
   @media only screen and (max-width: 600px) {
     font-size: 18px;
@@ -80,7 +80,6 @@ const P = styled.p`
 const Span = styled.span`
   @media only screen and (max-width: 600px) {
     font-size: 15px;
-    /* position: fixed; */
   }
 `;
 

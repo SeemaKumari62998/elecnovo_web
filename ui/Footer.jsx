@@ -85,7 +85,7 @@ const Img = styled.img`
 
   @media only screen and (max-width: 600px) {
     width: 70%;
-    /* height: 150px; */
+
     margin: 0 auto;
     display: block;
   }
@@ -142,10 +142,27 @@ function Footer() {
       <StyledColumn>
         <h3>Follow Us On</h3>
         <MediaUl>
-          <FaFacebook />
-          <FaLinkedin />
-          <FaInstagram />
-          <FaTwitter />
+          <a
+            href="https://www.facebook.com/Elecnovo-269357897205345/"
+            alt="Facebook "
+            target="blank"
+          >
+            <FaFacebook />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/elecnovo-private-limited/"
+            alt="Linkedin"
+            target="blank"
+          >
+            <FaLinkedin />
+          </a>
+
+          <a href="https://www.youtube.com/" alt="youtube" target="blank">
+            <FaInstagram />
+          </a>
+          <a>
+            <FaTwitter />
+          </a>
         </MediaUl>
       </StyledColumn>
     </StyledFooter>

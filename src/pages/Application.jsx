@@ -21,7 +21,7 @@ const ImageContainer = styled.ul`
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 10px;
-    mmargin-bottom: 50px;
+    margin-bottom: 50px;
   }
 `;
 
@@ -65,13 +65,9 @@ const Span = styled.span`
   font-size: 1.8rem;
 
   @media only screen and (max-width: 600px) {
-    /* text-align: center;
-    margin-top: 40px;
-    padding: 180px 400px; */
-
-    bottom: -153px; /* Adjust position for mobile */
+    bottom: -153px;
     left: 50%;
-    padding: 120px; /* Adjust padding for mobile */
+    padding: 120px;
   }
 `;
 

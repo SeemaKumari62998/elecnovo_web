@@ -14,6 +14,7 @@ const Container = styled.div`
   align-items: center;
   overflow: hidden;
   width: 100vw;
+  background-color: black;
 `;
 
 const Section = styled.div`
@@ -24,7 +25,7 @@ const Section = styled.div`
   border: 1px solid grey;
 
   @media only screen and (max-width: 600px) {
-    height: 25vh;
+    height: 60vh;
   }
 `;
 
@@ -33,23 +34,32 @@ const Video = styled.video`
   max-height: 100vh;
   object-fit: cover;
   position: absolute;
-
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
+
+  @media only screen and (max-width: 600px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 `;
 
 const Heading = styled(motion.h1)`
   position: relative;
   color: var(--color-grey-300);
-  padding-left: 40px;
-  margin-top: 42%;
+  padding-left: 50px;
+  margin-top: 41%;
   font-size: 1.5rem;
   z-index: 10;
+  margin-bottom: 30px;
 
   @media only screen and (max-width: 600px) {
     font-size: 10px;
-    padding-left: 20px;
-    margin-top: 160px;
+    padding: 50px;
+    margin-top: 5px;
+    color: var(--color-green-700);
+    text-align: center;
   }
 `;
 
