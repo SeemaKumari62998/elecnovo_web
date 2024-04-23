@@ -14,7 +14,6 @@ const Container = styled.div`
   align-items: center;
   overflow: hidden;
   width: 100vw;
-  background-color: black;
 `;
 
 const Section = styled.div`
@@ -26,6 +25,7 @@ const Section = styled.div`
 
   @media only screen and (max-width: 600px) {
     height: 60vh;
+    border: none;
   }
 `;
 
@@ -58,7 +58,7 @@ const Heading = styled(motion.h1)`
     font-size: 10px;
     padding: 50px;
     margin-top: 5px;
-    color: var(--color-green-700);
+    color: var(--color-grey-700);
     text-align: center;
   }
 `;
@@ -91,7 +91,7 @@ const Content = styled.div`
   width: fit-content;
 
   @media only screen and (max-width: 600px) {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 `;
 
@@ -104,7 +104,7 @@ const Ul = styled.ul`
 
   @media only screen and (max-width: 600px) {
     margin: 25px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 `;
 
@@ -129,7 +129,7 @@ const Li = styled.li`
   font-size: 15px;
 
   @media only screen and (max-width: 600px) {
-    font-size: 9px;
+    font-size: 10px;
     margin: 7px;
   }
 `;
