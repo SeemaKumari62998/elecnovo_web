@@ -31,12 +31,12 @@ const StyledNavLink = styled(NavLink)`
     display: flex;
     align-items: center;
 
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 500;
     padding: 1.2rem 2rem;
     transition: all 0.3s;
-    box-shadow: 1px 1px 3px green;
-    border-radius: 8px;
+    /* box-shadow: 0 0 2px green; */
+    /* border-radius: 3spx; */
 
     @media only screen and (max-width: 600px) {
       font-size: 0.9rem;
@@ -50,7 +50,7 @@ const StyledNavLink = styled(NavLink)`
   &.active:visited {
     /* font-size: 1.8rem; */
     background-color: var(--color-grey-900);
-    border-radius: 8px;
+    /* border-radius: 8px; */
     color: white;
   }
 `;
@@ -60,9 +60,10 @@ const StyledLogo = styled.div`
 
   justify-content: flex-start;
   align-items: center;
-  height: 100px;
+  /* height: 1000px; */
   width: 15%;
   margin-right: auto;
+  overflow: hidden;
 
   @media only screen and (max-width: 600px) {
     width: 54%;
@@ -70,10 +71,11 @@ const StyledLogo = styled.div`
 `;
 
 const Img = styled.img`
-  height: 200px;
-  width: 350px;
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
   display: block;
-  margin: 0 auto;
 `;
 
 const Div = styled.div`
@@ -120,7 +122,7 @@ function MainNav() {
         </Link>
       </StyledLogo>
 
-      <Div>
+      {/* <Div>
         <Ul>
           <li>
             <StyledLink to="/">
@@ -143,7 +145,7 @@ function MainNav() {
             </StyledLink>
           </li>
         </Ul>
-      </Div>
+      </Div> */}
 
       <NavList>
         <li>

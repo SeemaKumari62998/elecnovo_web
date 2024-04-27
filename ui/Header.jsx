@@ -4,17 +4,18 @@ import MainNav from "./MainNav";
 
 const StyledHeader = styled.header`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: var(--color-grey-300);
-  padding: 8px 50px;
-  height: 90px;
+  /* padding: 30px 80px; */
+  height: 85px;
   width: 100%;
   color: black;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
+  padding: 0 20px;
 
   @media only screen and (max-width: 600px) {
     padding: 5px 5px;

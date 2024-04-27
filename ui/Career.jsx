@@ -6,6 +6,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   background-color: var(--color-grey-200);
+  margin-top: 30px;
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
@@ -62,7 +63,24 @@ function Carrer() {
         <Span>&larr;Back</Span>
       </LinkButton>
       <Container>
-        <Img src="career5.jpg" alt="Career" />
+        <Img src="career10.jpg" alt="Career" />
+
+        <div>
+          <p>
+            Elecnovo offers excellent carerr opportunity for Engineering
+            manifacturing human resource and business development please send
+            your interduction and resume to reach us on elecnovo.com if you want
+            to join the journey of elecnovo
+          </p>
+
+          {/* <p>
+            Elecnovo offers excellent carerr opportunity for Engineering
+            manifacturing human resource business development , supply chain
+            ,sells and marketing .. etc please send your interduction and resume
+            to reach us on elecnovo.com if you want to join the journey of
+            elecnovo
+          </p> */}
+        </div>
 
         {/* <ImageContainer>
           <Div>

@@ -8,6 +8,7 @@ const StyledContainer = styled.div`
   display: flex;
   justify-content: center;
   height: 100vh;
+
   background-color: var(--color-grey-400);
   color: var(--color-grey-200);
 
@@ -45,10 +46,9 @@ const StyledImage = styled.li`
 `;
 
 const H3 = styled.h3`
-  text-align: center;
-  font-weight: 200px;
   font-size: 3rem;
-  margin-top: 10px;
+  white-space: nowrap;
+  text-align: center;
 
   @media only screen and (max-width: 600px) {
     font-size: 24px;
@@ -71,9 +71,9 @@ function Products() {
 
   return (
     <>
-      <LinkButton to="/">
+      {/* <LinkButton to="/">
         <Span>&larr;Back</Span>
-      </LinkButton>
+      </LinkButton> */}
       <H3>Elecnovo Products</H3>
 
       <StyledContainer>
@@ -90,7 +90,7 @@ function Products() {
               duration: 1,
             }}
           >
-            <H3>Product 1</H3>
+            <h>Product 1</h>
             <img src="3D.PNG" alt="product" />
             <h2>1 KW BLDC/PMSM</h2>
             <h3>High Efficiency technology</h3>
@@ -98,18 +98,18 @@ function Products() {
           </StyledImage>
 
           <StyledImage
-            as={motion.h3}
-            initial={{ x: -100, opacity: 0 }}
+            as={motion.li}
+            initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
               delay: 0.4,
               x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 0.2 },
+              opacity: { duration: 1 },
               ease: "easeIn",
               duration: 1,
             }}
           >
-            <H3>Product2</H3>
+            <h>Product 1</h>
             <img src="3D.PNG" alt="product" />
             <h2>1 KW BLDC/PMSM</h2>
             <h3>High Efficiency technology</h3>
@@ -117,18 +117,18 @@ function Products() {
           </StyledImage>
 
           <StyledImage
-            as={motion.h3}
-            initial={{ y: -100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
+            as={motion.li}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{
               delay: 0.4,
-              y: { type: "spring", stiffness: 60 },
-              opacity: { duration: 0.2 },
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
               ease: "easeIn",
               duration: 1,
             }}
           >
-            <H3>Product 3</H3>
+            <h>Product 1</h>
             <img src="3D.PNG" alt="product" />
             <h2>1 KW BLDC/PMSM</h2>
             <h3>High Efficiency technology</h3>

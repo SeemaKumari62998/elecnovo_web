@@ -1,14 +1,19 @@
 import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import { TiThMenu } from "react-icons/ti";
+import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
 
 const MenuContainer = styled.div`
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 500;
   margin-top: 10px;
   position: relative;
+  margin-right: 60px;
   color: var(--color-grey-900);
+
+  &:hover {
+    font-size: 3.7rem;
+  }
 
   @media only screen and (max-width: 600px) {
     font-size: 2.4rem;
@@ -89,7 +94,7 @@ function Menu() {
   return (
     <>
       <MenuContainer ref={menuRef}>
-        <TiThMenu onClick={() => setMenuOpen(!menuOpen)} />
+        <HiOutlineMenuAlt2 onClick={() => setMenuOpen(!menuOpen)} />
 
         <MenuList isOpen={menuOpen}>
           <Border>

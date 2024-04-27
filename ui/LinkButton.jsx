@@ -24,8 +24,8 @@ const StyledLink = styled(Link)`
   font-size: 20px;
   color: yellow;
   text-decoration: none;
-  position: fixed;
-  top: 0x;
+  /* position: fixed; */
+  top: 90px;
   left: 20px;
   margin: 0;
   background-color: transparent;

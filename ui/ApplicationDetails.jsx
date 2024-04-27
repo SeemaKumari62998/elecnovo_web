@@ -85,9 +85,9 @@ const Span = styled.span`
 function ApplicationDetails() {
   return (
     <>
-      {/* <LinkButton to="/">
+      <LinkButton to="/">
         <Span> &larr;Back</Span>
-      </LinkButton> */}
+      </LinkButton>
       <Container>
         {/* <Video src={engine_2} loop muted autoPlay />
         <TransparentSheet />
