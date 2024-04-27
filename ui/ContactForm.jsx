@@ -96,7 +96,6 @@ function ContactForm() {
 
   return (
     <>
-      {/* <LinkButton to="/">&larr;Back</LinkButton> */}
       <Container>
         <Div>
           <Img src="Contact1.jpg" alt="Contact" />
@@ -106,7 +105,7 @@ function ContactForm() {
           <h1>CONTACT US</h1>
 
           <div>
-            <p> Email: REACHUS@ELECNOVO.COM </p>
+            <p> Email: reachus@elecnovo</p>
             <p>Phone: +91 89712 84680</p>
           </div>
 

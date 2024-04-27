@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import Application from "./Application";
 import PerformanceVideo from "../../ui/PerformanceVideo";
 import Solutions from "./Solutions";
+import Products from "./Products";
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -139,6 +141,7 @@ function Home() {
 
       <Application />
       <Solutions />
+      <Products />
 
       <Footer />
     </Container>
