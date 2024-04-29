@@ -9,6 +9,7 @@ import Application from "./Application";
 import PerformanceVideo from "../../ui/PerformanceVideo";
 import Solutions from "./Solutions";
 import Products from "./Products";
+import HomeApp from "../../ui/HomeApp";
 
 const Container = styled.div`
   display: flex;
@@ -21,37 +22,42 @@ const Container = styled.div`
 const Section = styled.div`
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100vh;
   overflow: hidden;
   border: 1px solid grey;
 
   @media only screen and (max-width: 600px) {
-    height: 25vh;
+    height: 26vh;
   }
 `;
 
 const Video = styled.video`
   width: 100%;
-  max-height: 100vh;
+  height: 100%;
   object-fit: cover;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
+  z-index: -1;
 `;
 
 const H1 = styled(motion.h1)`
-  position: relative;
-  color: var(--color-grey-300);
-  padding-left: 40px;
-  margin-top: 43%;
-  font-size: 2.5rem;
+  position: absolute;
+  top: 85px;
+  left: 20%;
+  transform: translateX(-50%);
+  color: white;
+
+  font-size: 3.5rem;
   z-index: 10;
-  bottom: 20px;
+  width: 100%;
+  text-align: center;
 
   @media only screen and (max-width: 600px) {
+    margin-left: 12%;
     font-size: 15px;
-    padding-left: 25px;
-    margin-top: 180px;
+    font-weight: 400;
+    top: 10%;
   }
 `;
 
@@ -112,14 +118,13 @@ function Home() {
   return (
     <Container>
       <Section>
+        {/* <H1>DRIVING GREEN MOBILITY</H1> */}
         <Video src={technology} autoPlay loop muted />
-        <H1>DRIVING GREEN MOBILITY</H1>
       </Section>
 
       <Section>
-        <Video src={motor} autoPlay loop muted />
-
         <H1> ELECNOVO TECHNOLOGY</H1>
+        <Video src={motor} autoPlay loop muted />
 
         <Content>
           <Ul>
@@ -140,6 +145,7 @@ function Home() {
       </Section>
 
       <Application />
+      {/* <HomeApp /> */}
       <Solutions />
       <Products />
 

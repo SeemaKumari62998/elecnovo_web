@@ -57,9 +57,9 @@ const Ul = styled.ul`
 const LiContainer = styled.div`
   width: 180px;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   margin: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(60px);
   text-align: center;
 

@@ -5,7 +5,7 @@ import { useState } from "react";
 const Container = styled.div`
   position: relative;
   border: 1px solid grey;
-  background-color: var(--color-grey-600);
+  background-color: var(--color-grey-200);
 `;
 
 const ImageContainer = styled.ul`
@@ -19,7 +19,7 @@ const ImageContainer = styled.ul`
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 `;
 
@@ -37,6 +37,7 @@ const ImageItem = styled.li`
   /* margin-bottom: 20px; */
   margin-top: 60px;
   position: relative;
+  align-items: center;
 
   &:hover {
     ${Image} {
@@ -46,8 +47,8 @@ const ImageItem = styled.li`
   }
 
   @media only screen and (max-width: 600px) {
-    margin-bottom: 15px;
-    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-top: 30px;
     align-items: center;
   }
 `;
@@ -58,7 +59,7 @@ const Span = styled.span`
   left: 35%;
   transform: translateX(-50%);
   text-align: center;
-  color: var(--color-grey-300);
+  color: black;
   white-space: nowrap;
   font-size: 1.8rem;
   padding: 2px 20px;
@@ -75,14 +76,14 @@ const H2 = styled(motion.h2)`
   position: absolute;
   top: 10px;
   left: 0;
-  color: var(--color-grey-300);
+  color: black;
   padding: 35px;
   margin: 10px;
 
   @media (max-width: 768px) {
     font-size: 2rem;
-    text-align: center;
-    margin-top: 5px;
+    margin-left: 70px;
+    margin-top: 2px;
   }
 `;
 
@@ -98,11 +99,26 @@ function Application() {
 
   const Paragraph = styled.p`
     overflow: hidden;
-    color: white;
+    color: black;
+    padding: 20px 20px;
+    text-align: center;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: ${showFullText ? "unset" : "3"};
     -webkit-box-orient: vertical;
+    /* border: 1px solid grey; */
+    background-color: var(--color-grey-200);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-top: 20px;
+
+    @media only screen and (max-width: 600px) {
+      padding: 20px 10px;
+      width: 300px;
+      font-size: 1rem;
+      text-align: center;
+      margin-top: 20px;
+    }
   `;
   const ShowMoreLink = styled.span`
     color: blue;
@@ -123,9 +139,14 @@ function Application() {
 
           <ImageItem
             as={motion.li}
-            whileHover={{
-              scale: [1, 1.2, 1.1],
-              transition: { duration: 0.7 },
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
             }}
           >
             <Image src="bike.png" alt="Application" />
@@ -161,9 +182,14 @@ function Application() {
 
           <ImageItem
             as={motion.li}
-            whileHover={{
-              scale: [1, 1.2, 1.1],
-              transition: { duration: 0.5 },
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
             }}
           >
             <Image src="scooter.png" alt="Application" />

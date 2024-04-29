@@ -11,13 +11,18 @@ const MenuContainer = styled.div`
   margin-right: 60px;
   color: var(--color-grey-900);
 
-  &:hover {
-    font-size: 3.7rem;
-  }
+  /* &:hover {
+    font-size: 2.7rem;
+  } */
 
   @media only screen and (max-width: 600px) {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     margin-right: 10px;
+
+    /* :hover,
+    :active {
+      font-size: 2rem;
+    } */
   }
 `;
 
