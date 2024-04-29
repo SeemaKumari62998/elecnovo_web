@@ -12,8 +12,13 @@ const StyledAppLayout = styled.div`
 `;
 
 const Main = styled.main`
-  background-color: var(--color-grey-400);
   margin-top: 85px;
+
+  background-color: var(--color-grey-400);
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 60px;
+  }
 `;
 
 function AppLayout() {

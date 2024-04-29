@@ -9,20 +9,25 @@ const NavList = styled.ul`
   color: black;
 
   @media only screen and (max-width: 600px) {
-    margin-right: 20px;
+    margin-right: 2px;
   }
 `;
 
 const StyledNavLink = styled(NavLink)`
   span {
     position: relative;
-    /* color: var(--color-grey-900); */
+    font-size: 2.8rem;
 
     &::after {
       position: absolute;
       top: 50%;
       right: 0.5rem;
       transform: translateY(-50%);
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.2rem;
+      white-space: nowrap;
     }
   }
 
@@ -39,7 +44,7 @@ const StyledNavLink = styled(NavLink)`
     /* border-radius: 3spx; */
 
     @media only screen and (max-width: 600px) {
-      font-size: 0.9rem;
+      font-size: 2.6rem;
       padding: 1rem 1.5rem;
     }
   }
@@ -52,6 +57,7 @@ const StyledNavLink = styled(NavLink)`
     background-color: var(--color-grey-900);
     /* border-radius: 8px; */
     color: white;
+    border-radius: 11px;
   }
 `;
 
@@ -66,7 +72,8 @@ const StyledLogo = styled.div`
   overflow: hidden;
 
   @media only screen and (max-width: 600px) {
-    width: 54%;
+    width: 52%;
+    margin-left: 2px;
   }
 `;
 
@@ -83,7 +90,6 @@ const Div = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-green-500);
 
   span {
     &:hover,
@@ -101,15 +107,17 @@ const Div = styled.div`
   }
 `;
 
-const StyledLink = styled(NavLink)`
-  position: relative;
-`;
-
-const Ul = styled.ul`
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  font-size: 20px;
+const Text = styled.h2`
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: var(--color-green-500);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  display: inline-block;
+  padding: 0.5rem 1rem; /* Add some padding */
+  border-radius: 10px; /* Add border radius */
 `;
 
 function MainNav() {
@@ -121,6 +129,10 @@ function MainNav() {
           <Img src="ElecnovoPageLogo.png" alt="Logo" />
         </Link>
       </StyledLogo>
+
+      <Div>
+        <Text>Diving Green Mobility</Text>
+      </Div>
 
       {/* <Div>
         <Ul>
