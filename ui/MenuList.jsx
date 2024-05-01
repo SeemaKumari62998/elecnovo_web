@@ -17,7 +17,7 @@ const MenuContainer = styled.div`
 
   @media only screen and (max-width: 600px) {
     font-size: 2.5rem;
-    margin-right: 10px;
+    margin-right: 20px;
 
     /* :hover,
     :active {
@@ -32,7 +32,7 @@ const MenuList = styled.div`
   right: 30px;
   width: 280px;
   height: 100%;
-  background-color: var(--color-grey-800);
+  background-color: var(--color-grey-900);
   border-radius: 8px;
   display: ${(props) => (props.isOpen ? "block" : "none")};
   padding: 30px;

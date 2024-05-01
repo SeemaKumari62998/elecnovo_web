@@ -86,9 +86,9 @@ const Span = styled.span`
 function Technology() {
   return (
     <>
-      <LinkButton to="/">
+      {/* <LinkButton to="/">
         <Span>&larr;Back</Span>
-      </LinkButton>
+      </LinkButton> */}
 
       <Container>
         <H1>Elecnovo's Motor Technologies</H1>

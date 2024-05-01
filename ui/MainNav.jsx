@@ -5,7 +5,7 @@ import Menu from "./MenuList";
 const NavList = styled.ul`
   display: flex;
   justify-content: flex-end;
-  margin-right: 50px;
+  margin-right: 20px;
   color: black;
 
   @media only screen and (max-width: 600px) {
@@ -16,7 +16,7 @@ const NavList = styled.ul`
 const StyledNavLink = styled(NavLink)`
   span {
     position: relative;
-    font-size: 2.8rem;
+    font-size: 2.3rem;
 
     &::after {
       position: absolute;
@@ -26,7 +26,7 @@ const StyledNavLink = styled(NavLink)`
     }
 
     @media only screen and (max-width: 600px) {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       white-space: nowrap;
     }
   }
@@ -40,8 +40,6 @@ const StyledNavLink = styled(NavLink)`
     font-weight: 500;
     padding: 1.2rem 2rem;
     transition: all 0.3s;
-    /* box-shadow: 0 0 2px green; */
-    /* border-radius: 3spx; */
 
     @media only screen and (max-width: 600px) {
       font-size: 2.6rem;
@@ -108,7 +106,7 @@ const Div = styled.div`
 `;
 
 const Text = styled.h2`
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 500;
   color: var(--color-green-500);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
@@ -118,6 +116,10 @@ const Text = styled.h2`
   display: inline-block;
   padding: 0.5rem 1rem; /* Add some padding */
   border-radius: 10px; /* Add border radius */
+
+  @media only screen and (max-width: 600px) {
+    font-size: 3rem;
+  }
 `;
 
 function MainNav() {

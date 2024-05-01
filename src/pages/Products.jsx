@@ -6,26 +6,28 @@ import LinkButton from "../../ui/LinkButton";
 
 const StyledContainer = styled.div`
   display: flex;
-  justify-content: center;
-  height: 100vh;
-
-  background-color: var(--color-grey-400);
-  color: var(--color-grey-200);
+  flex-direction: column;
+  align-items: center;
+  /* height: 100vh; */
+  background-color: var(--color-grey-200);
+  color: var(--color-grey-900);
+  border-top: 1px solid black;
 
   @media only screen and (max-width: 600px) {
     height: 100%;
+    top: 0;
   }
 `;
 
 const StyledUl = styled.ul`
   list-style-type: none;
   padding: 0;
-  margin: 10px;
+  margin: 0 auto;
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  top: 0;
-  left: 0;
-  width: 100%;
+  gap: 20px;
+  /* margin-top: 40px; */
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
@@ -34,21 +36,24 @@ const StyledUl = styled.ul`
 
 const StyledImage = styled.li`
   grid-column: span 1;
-  grid-row: span 2;
-  padding: 50px;
-  margin: 70px;
-  margin-top: 2px;
+  grid-row: span 1;
+  padding: 30px;
+  margin: 20px;
+  text-align: center;
+  height: 100%;
 
   @media only screen and (max-width: 600px) {
-    padding: 20px;
-    margin: 4px;
+    padding: 30px;
+    margin: 20px;
+    margin-top: 10px;
   }
 `;
 
 const H3 = styled.h3`
-  font-size: 3rem;
+  font-size: 4rem;
   white-space: nowrap;
-  text-align: center;
+  align-items: center;
+  margin-top: 40px;
 
   @media only screen and (max-width: 600px) {
     font-size: 24px;
@@ -56,10 +61,8 @@ const H3 = styled.h3`
   }
 `;
 
-const Span = styled.span`
-  @media only screen and (max-width: 600px) {
-    font-size: 15px;
-  }
+const Img = styled.img`
+  padding: 80px;
 `;
 
 function Products() {
@@ -74,9 +77,10 @@ function Products() {
       {/* <LinkButton to="/">
         <Span>&larr;Back</Span>
       </LinkButton> */}
-      <H3>Elecnovo Products</H3>
 
       <StyledContainer>
+        <H3>Elecnovo Products</H3>
+
         <StyledUl>
           <StyledImage
             as={motion.li}
@@ -109,7 +113,7 @@ function Products() {
               duration: 1,
             }}
           >
-            <h>Product 1</h>
+            <h>Product 2</h>
             <img src="3D.PNG" alt="product" />
             <h2>1 KW BLDC/PMSM</h2>
             <h3>High Efficiency technology</h3>
@@ -128,7 +132,64 @@ function Products() {
               duration: 1,
             }}
           >
-            <h>Product 1</h>
+            <h>Product 3</h>
+            <img src="3D.PNG" alt="product" />
+            <h2>1 KW BLDC/PMSM</h2>
+            <h3>High Efficiency technology</h3>
+            <Button onClick={handleExplore}>Explore</Button>
+          </StyledImage>
+
+          <StyledImage
+            as={motion.li}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+          >
+            <h>Product 3</h>
+            <img src="3D.PNG" alt="product" />
+            <h2>1 KW BLDC/PMSM</h2>
+            <h3>High Efficiency technology</h3>
+            <Button onClick={handleExplore}>Explore</Button>
+          </StyledImage>
+
+          <StyledImage
+            as={motion.li}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+          >
+            <h>Product 3</h>
+            <img src="3D.PNG" alt="product" />
+            <h2>1 KW BLDC/PMSM</h2>
+            <h3>High Efficiency technology</h3>
+            <Button onClick={handleExplore}>Explore</Button>
+          </StyledImage>
+
+          <StyledImage
+            as={motion.li}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+          >
+            <h>Product 3</h>
             <img src="3D.PNG" alt="product" />
             <h2>1 KW BLDC/PMSM</h2>
             <h3>High Efficiency technology</h3>

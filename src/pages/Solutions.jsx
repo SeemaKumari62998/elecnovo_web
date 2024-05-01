@@ -21,9 +21,10 @@ const H1 = styled.h1`
   z-index: 10;
 
   @media only screen and (max-width: 600px) {
-    font-size: 15px;
+    font-size: 17px;
     padding-left: 25px;
     margin-top: 25px;
+    text-align: center;
   }
 `;
 

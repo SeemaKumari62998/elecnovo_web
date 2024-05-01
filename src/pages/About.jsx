@@ -71,9 +71,9 @@ const Span = styled.span`
 function About() {
   return (
     <>
-      <LinkButton to="/">
+      {/* <LinkButton to="/">
         <Span>&larr;Back</Span>
-      </LinkButton>
+      </LinkButton> */}
 
       <Container
         as={motion.div}
