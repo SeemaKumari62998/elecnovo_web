@@ -15,7 +15,7 @@ const sizes = {
 const variations = {
   primary: css`
     color: var(--color-grey-500);
-    background-color: var(--color-grey-200);
+    background-color: var(--color-grey-300);
 
     &:hover {
       background-color: var(--color-indigo-700);

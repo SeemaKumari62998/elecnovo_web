@@ -146,9 +146,9 @@ function Home() {
 
       <Application />
       {/* <HomeApp /> */}
-      <Solutions />
       <Products />
 
+      <Solutions />
       <Footer />
     </Container>
   );

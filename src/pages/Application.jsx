@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const Container = styled.div`
   position: relative;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   background-color: var(--color-grey-200);
 `;
 
@@ -75,15 +75,15 @@ const H2 = styled(motion.h2)`
   font-size: 2.8rem;
   position: absolute;
   top: 10px;
-  left: 0;
+  left: 650px;
   color: black;
   padding: 35px;
   margin: 10px;
 
-  @media (max-width: 768px) {
-    font-size: 2rem;
-    margin-left: 70px;
-    margin-top: 2px;
+  @media only screen and (max-width: 600px) {
+    margin-top: 5px;
+    left: 13%;
+    font-size: 20px;
   }
 `;
 
@@ -106,7 +106,7 @@ function Application() {
     display: -webkit-box;
     -webkit-line-clamp: ${showFullText ? "unset" : "3"};
     -webkit-box-orient: vertical;
-    /* border: 1px solid grey; */
+
     background-color: var(--color-grey-200);
     box-shadow: 0 0 10px rgb(0, 0, 0);
     border-radius: 5px;
