@@ -70,7 +70,7 @@ function Products() {
   const navigate = useNavigate();
 
   function handleExplore() {
-    navigate("/productdetail");
+    navigate("/contact");
   }
 
   return (
@@ -98,8 +98,8 @@ function Products() {
             <h>Product 1</h>
             <img src="3D.PNG" alt="product" />
             <h2>1 kW BLDC / PMSM</h2>
-            <h3>High Efficiency technology</h3>
-            <Button onClick={handleExplore}>Explore</Button>
+
+            <Button onClick={handleExplore}>..more</Button>
           </StyledImage>
 
           <StyledImage
@@ -117,8 +117,8 @@ function Products() {
             <h>Product 2</h>
             <img src="3D.PNG" alt="product" />
             <h2>3 kW BLDC / PMSM</h2>
-            <h3>High Efficiency technology</h3>
-            <Button onClick={handleExplore}>Explore</Button>
+
+            <Button onClick={handleExplore}>..more</Button>
           </StyledImage>
 
           <StyledImage
@@ -136,8 +136,8 @@ function Products() {
             <h>Product 3</h>
             <img src="3D.PNG" alt="product" />
             <h2>5 kW BLDC / PMSM</h2>
-            <h3>High Efficiency technology</h3>
-            <Button onClick={handleExplore}>Explore</Button>
+
+            <Button onClick={handleExplore}>..more</Button>
           </StyledImage>
 
           <StyledImage
@@ -155,8 +155,8 @@ function Products() {
             <h>Product 3</h>
             <img src="3D.PNG" alt="product" />
             <h2>8 kW BLDC / PMSM</h2>
-            <h3>High Efficiency technology</h3>
-            <Button onClick={handleExplore}>Explore</Button>
+
+            <Button onClick={handleExplore}>..more</Button>
           </StyledImage>
 
           <StyledImage
@@ -174,8 +174,8 @@ function Products() {
             <h>Product 3</h>
             <img src="3D.PNG" alt="product" />
             <h2>10 kW BLDC / PMSM</h2>
-            <h3>High Efficiency technology</h3>
-            <Button onClick={handleExplore}>Explore</Button>
+
+            <Button onClick={handleExplore}>..more</Button>
           </StyledImage>
 
           <StyledImage
@@ -193,8 +193,8 @@ function Products() {
             <h>Product 3</h>
             <img src="3D.PNG" alt="product" />
             <h2>15 kW BLDC / PMSM</h2>
-            <h3>High Efficiency technology</h3>
-            <Button onClick={handleExplore}>Explore</Button>
+
+            <Button onClick={handleExplore}>..more</Button>
           </StyledImage>
         </StyledUl>
       </StyledContainer>
