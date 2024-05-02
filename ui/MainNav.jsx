@@ -132,9 +132,9 @@ function MainNav() {
         </Link>
       </StyledLogo>
 
-      <Div>
+      {/* <Div>
         <Text>Diving Green Mobility</Text>
-      </Div>
+      </Div> */}
 
       {/* <Div>
         <Ul>

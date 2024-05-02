@@ -9,7 +9,8 @@ const StyledContainer = styled.div`
   flex-direction: column;
   align-items: center;
   /* height: 100vh; */
-  background-color: var(--color-grey-200);
+  /* background-color: var(--color-grey-200); */
+  background-color: white;
   color: var(--color-grey-900);
   border-top: 1px solid black;
 
@@ -96,7 +97,7 @@ function Products() {
           >
             <h>Product 1</h>
             <img src="3D.PNG" alt="product" />
-            <h2>1 KW BLDC/PMSM</h2>
+            <h2>1 kW BLDC / PMSM</h2>
             <h3>High Efficiency technology</h3>
             <Button onClick={handleExplore}>Explore</Button>
           </StyledImage>
@@ -115,7 +116,7 @@ function Products() {
           >
             <h>Product 2</h>
             <img src="3D.PNG" alt="product" />
-            <h2>1 KW BLDC/PMSM</h2>
+            <h2>3 kW BLDC / PMSM</h2>
             <h3>High Efficiency technology</h3>
             <Button onClick={handleExplore}>Explore</Button>
           </StyledImage>
@@ -134,7 +135,7 @@ function Products() {
           >
             <h>Product 3</h>
             <img src="3D.PNG" alt="product" />
-            <h2>1 KW BLDC/PMSM</h2>
+            <h2>5 kW BLDC / PMSM</h2>
             <h3>High Efficiency technology</h3>
             <Button onClick={handleExplore}>Explore</Button>
           </StyledImage>
@@ -153,7 +154,7 @@ function Products() {
           >
             <h>Product 3</h>
             <img src="3D.PNG" alt="product" />
-            <h2>1 KW BLDC/PMSM</h2>
+            <h2>8 kW BLDC / PMSM</h2>
             <h3>High Efficiency technology</h3>
             <Button onClick={handleExplore}>Explore</Button>
           </StyledImage>
@@ -172,7 +173,7 @@ function Products() {
           >
             <h>Product 3</h>
             <img src="3D.PNG" alt="product" />
-            <h2>1 KW BLDC/PMSM</h2>
+            <h2>10 kW BLDC / PMSM</h2>
             <h3>High Efficiency technology</h3>
             <Button onClick={handleExplore}>Explore</Button>
           </StyledImage>
@@ -191,7 +192,7 @@ function Products() {
           >
             <h>Product 3</h>
             <img src="3D.PNG" alt="product" />
-            <h2>1 KW BLDC/PMSM</h2>
+            <h2>15 kW BLDC / PMSM</h2>
             <h3>High Efficiency technology</h3>
             <Button onClick={handleExplore}>Explore</Button>
           </StyledImage>

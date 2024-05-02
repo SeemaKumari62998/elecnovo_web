@@ -100,9 +100,10 @@ function Application() {
   const Paragraph = styled.p`
     overflow: hidden;
     color: black;
-    padding: 20px 20px;
+    padding: 25px 80px;
     text-align: center;
     text-overflow: ellipsis;
+    white-space: nowrap;
     display: -webkit-box;
     -webkit-line-clamp: ${showFullText ? "unset" : "3"};
     -webkit-box-orient: vertical;
@@ -113,11 +114,12 @@ function Application() {
     margin-top: 20px;
 
     @media only screen and (max-width: 600px) {
-      padding: 20px 10px;
-      width: 300px;
+      padding: 15px 5px;
+      width: 250px;
       font-size: 1rem;
       text-align: center;
       margin-top: 20px;
+      white-space: normal;
     }
   `;
   const ShowMoreLink = styled.span`
@@ -161,7 +163,7 @@ function Application() {
                   for more details
                 </>
               ) : (
-                "Elecnovo offers custom engineered"
+                "Electric Motorcycle "
               )}
               {!showFullText["Electric Motorcycle"] && (
                 <ShowMoreLink
@@ -204,7 +206,7 @@ function Application() {
                   for more details
                 </>
               ) : (
-                "Elecnovo offers custom engineered"
+                "Electric Scooter"
               )}
               {!showFullText["Electric Scooter"] && (
                 <ShowMoreLink
@@ -225,13 +227,18 @@ function Application() {
 
           <ImageItem
             as={motion.li}
-            whileHover={{
-              scale: [1, 1.2, 1.1],
-              transition: { duration: 0.5 },
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
             }}
           >
             <Image src="tractor.png" alt="Application" />
-            <Span>Electric Tractor</Span>
+
             <Paragraph>
               {showFullText["Electric Tractor"] ? (
                 <>
@@ -241,7 +248,7 @@ function Application() {
                   for more details
                 </>
               ) : (
-                "Elecnovo offers custom engineered"
+                "Electric Tractor"
               )}
               {!showFullText["Electric Tractor"] && (
                 <ShowMoreLink
@@ -262,14 +269,18 @@ function Application() {
 
           <ImageItem
             as={motion.li}
-            whileHover={{
-              scale: [1, 1.2, 1.1],
-
-              transition: { duration: 0.5 },
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
             }}
           >
             <Image src="Golfkart.png" alt="Application" />
-            <Span>Electric Golfkart</Span>
+
             <Paragraph>
               {showFullText["Electric Golfkart"] ? (
                 <>
@@ -279,7 +290,7 @@ function Application() {
                   for more details
                 </>
               ) : (
-                "Elecnovo offers custom engineered"
+                "Electric Golfkart"
               )}
               {!showFullText["Electric Golfkart"] && (
                 <ShowMoreLink
@@ -300,13 +311,18 @@ function Application() {
 
           <ImageItem
             as={motion.li}
-            whileHover={{
-              scale: [1, 1.2, 1.1],
-              transition: { duration: 0.5 },
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
             }}
           >
             <Image src="boat.png" alt="Application" />
-            <Span>Electric Boat</Span>
+
             <Paragraph>
               {showFullText["Electric Boat"] ? (
                 <>
@@ -315,7 +331,7 @@ function Application() {
                   for more details
                 </>
               ) : (
-                "Elecnovo offers custom engineered"
+                "Electric Boat"
               )}
               {!showFullText["Electric Boat"] && (
                 <ShowMoreLink onClick={() => handleShowMore("Electric Boat")}>
@@ -332,13 +348,18 @@ function Application() {
 
           <ImageItem
             as={motion.li}
-            whileHover={{
-              scale: [1, 1.2, 1.1],
-              transition: { duration: 0.5 },
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
             }}
           >
             <Image src="car.png" alt="Application" />
-            <Span>Electric Car</Span>
+
             <Paragraph>
               {showFullText["Electric Car"] ? (
                 <>
@@ -347,7 +368,7 @@ function Application() {
                   for more details
                 </>
               ) : (
-                "Elecnovo offers custom engineered"
+                "Electric Car"
               )}
               {!showFullText["Electric Car"] && (
                 <ShowMoreLink onClick={() => handleShowMore("Electric Car")}>
@@ -364,13 +385,18 @@ function Application() {
 
           <ImageItem
             as={motion.li}
-            whileHover={{
-              scale: [1, 1.2, 1.1],
-              transition: { duration: 0.5 },
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
             }}
           >
             <Image src="loader.png" alt="Application" />
-            <Span>Electric Goods Vehicle</Span>
+
             <Paragraph>
               {showFullText["Electric Goods Vehicle"] ? (
                 <>
@@ -380,7 +406,7 @@ function Application() {
                   for more details
                 </>
               ) : (
-                "Elecnovo offers custom engineered"
+                "Electric Goods Vehicle"
               )}
               {!showFullText["Electric Goods Vehicle"] && (
                 <ShowMoreLink
@@ -400,13 +426,18 @@ function Application() {
           </ImageItem>
           <ImageItem
             as={motion.li}
-            whileHover={{
-              scale: [1, 1.2, 1.1],
-              transition: { duration: 0.5 },
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
             }}
           >
             <Image src="cleaningMachine.png" alt="Application" />
-            <Span>Electric Cleaning Vehicle</Span>
+
             <Paragraph>
               {showFullText["Electric Cleaning Vehicle"] ? (
                 <>
@@ -416,7 +447,7 @@ function Application() {
                   for more details
                 </>
               ) : (
-                "Elecnovo offers custom engineered"
+                "Electric Cleaning Vehicle"
               )}
               {!showFullText["Electric Cleaning Vehicle"] && (
                 <ShowMoreLink
@@ -437,13 +468,17 @@ function Application() {
 
           <ImageItem
             as={motion.li}
-            whileHover={{
-              scale: [1, 1.2, 1.1],
-              transition: { duration: 0.5 },
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
             }}
           >
             <Image src="auto1.png" alt="Application" />
-            <Span>Electric Auto</Span>
             <Paragraph>
               {showFullText["Electric Auto"] ? (
                 <>
@@ -452,7 +487,7 @@ function Application() {
                   for more details
                 </>
               ) : (
-                "Elecnovo offers custom engineered"
+                "Electric Auto"
               )}
               {!showFullText["Electric Auto"] && (
                 <ShowMoreLink onClick={() => handleShowMore("Electric Auto")}>
@@ -469,13 +504,17 @@ function Application() {
 
           <ImageItem
             as={motion.li}
-            whileHover={{
-              scale: [1, 1.2, 1.1],
-              transition: { duration: 0.5 },
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
             }}
           >
             <Image src="Buggy.png" alt="Application" />
-            <Span>Electric Buggy</Span>
             <Paragraph>
               {showFullText["Electric Buggy"] ? (
                 <>
@@ -485,7 +524,7 @@ function Application() {
                   for more details
                 </>
               ) : (
-                "Elecnovo offers custom engineered"
+                "Electric Buggy"
               )}
               {!showFullText["Electric Buggy"] && (
                 <ShowMoreLink onClick={() => handleShowMore("Electric Buggy")}>
@@ -501,13 +540,18 @@ function Application() {
           </ImageItem>
           <ImageItem
             as={motion.li}
-            whileHover={{
-              scale: [1, 1.2, 1.1],
-              transition: { duration: 0.5 },
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
             }}
           >
             <Image src="Four Wheel Loader.png" alt="Application" />
-            <Span>Electric Four Wheeler Loader</Span>
+
             <Paragraph>
               {showFullText["Electric Four Wheeler Loader"] ? (
                 <>
@@ -517,7 +561,7 @@ function Application() {
                   for more details
                 </>
               ) : (
-                "Elecnovo offers custom engineered"
+                "Electric Four Wheeler Loader"
               )}
               {!showFullText["Electric Four Wheeler Loader"] && (
                 <ShowMoreLink
@@ -537,13 +581,18 @@ function Application() {
           </ImageItem>
           <ImageItem
             as={motion.li}
-            whileHover={{
-              scale: [1, 1.2, 1.1],
-              transition: { duration: 0.5 },
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
             }}
           >
             <Image src="Streeing wheel.png" alt="Application" />
-            <Span>Electric Streeing wheel</Span>
+
             <Paragraph>
               {showFullText["Electric Streeing wheel"] ? (
                 <>
@@ -553,7 +602,7 @@ function Application() {
                   for more details
                 </>
               ) : (
-                "Elecnovo offers custom engineered"
+                "Electric Streeing wheel"
               )}
               {!showFullText["Electric Streeing wheel"] && (
                 <ShowMoreLink
