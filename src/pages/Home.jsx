@@ -10,6 +10,9 @@ import PerformanceVideo from "../../ui/PerformanceVideo";
 import Solutions from "./Solutions";
 import Products from "./Products";
 import HomeApp from "../../ui/HomeApp";
+import SPM from "../../public/SPM.mp4";
+
+import productVideo from "../../public/productVideo.mp4";
 
 const Container = styled.div`
   display: flex;
@@ -24,7 +27,9 @@ const Section = styled.div`
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  border: 1px solid grey;
+
+  /* border: 1px solid grey; */
+  /* margin-top: 20px; */
 
   @media only screen and (max-width: 600px) {
     height: 26vh;
@@ -39,6 +44,15 @@ const Video = styled.video`
   top: 0;
   left: 0;
   z-index: -1;
+  /* margin-left: 10%; */
+`;
+
+const Video1 = styled.video`
+  width: 80%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  margin-left: 10%;
 `;
 
 const H1 = styled(motion.h1)`
@@ -83,8 +97,10 @@ const Ul = styled.ul`
   align-items: center;
 
   @media only screen and (max-width: 600px) {
-    margin: 25px;
-    margin-bottom: 35px;
+    margin: 7px;
+    margin-bottom: 15px;
+
+    flex-direction: column;
   }
 `;
 
@@ -98,7 +114,7 @@ const LiContainer = styled.div`
   text-align: center;
 
   @media only screen and (max-width: 600px) {
-    width: 100px;
+    width: 60px;
     padding: 2px;
     margin: 1px;
   }
@@ -109,8 +125,8 @@ const Li = styled.li`
   font-size: 15px;
 
   @media only screen and (max-width: 600px) {
-    font-size: 9px;
-    margin: 7px;
+    font-size: 6px;
+    margin: 2px;
   }
 `;
 
@@ -119,12 +135,14 @@ function Home() {
     <Container>
       <Section>
         {/* <H1>DRIVING GREEN MOBILITY</H1> */}
-        <Video src={technology} autoPlay loop muted />
+        {/* <Video src={technology} autoPlay loop muted /> */}
+        {/* <Video src={SPM} autoPlay loop muted /> */}
+        <Video1 src={productVideo} autoPlay loop muted />
       </Section>
 
       <Section>
         <H1> ELECNOVO TECHNOLOGY</H1>
-        <Video src={motor} autoPlay loop muted />
+        <Video src={SPM} autoPlay loop muted />
 
         <Content>
           <Ul>
