@@ -3,8 +3,10 @@ import LinkButton from "./LinkButton";
 
 const Container = styled.div`
   width: 100%;
+
   display: flex;
   flex-direction: row;
+
   background-color: var(--color-grey-200);
 
   @media only screen and (max-width: 600px) {
@@ -14,7 +16,7 @@ const Container = styled.div`
 
 const Img = styled.img`
   width: 40%;
-  height: 10%;
+
   object-fit: cover;
   padding: 40px;
   margin: 20px;
@@ -31,11 +33,17 @@ const Span = styled.span`
   color: black;
 `;
 
-const StyledParagraph = styled.h1`
-  font-size: 18px;
-  line-height: 1.6;
-  color: var(--color-text); /* Adjust color as needed */
-  margin: 20px;
+const StyledParagraph = styled.p`
+  font-size: 19px;
+  text-align: left;
+  margin: 40px;
+  margin-top: 200px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1.4rem;
+    margin: 20px;
+    padding: 10px;
+  }
 `;
 
 function Carrer() {
@@ -47,14 +55,12 @@ function Carrer() {
       <Container>
         <Img src="career10.jpg" alt="Career" />
 
-        <div>
-          <StyledParagraph>
-            Elecnovo offers excellent carerr opportunity for Engineering
-            manifacturing human resource and business development please send
-            your interduction and resume to reach us on elecnovo.com if you want
-            to join the journey of elecnovo
-          </StyledParagraph>
-        </div>
+        <StyledParagraph>
+          Elecnovo offers excellent career opportunities for engineering,
+          manufacturing, human resources, and business development. Please send
+          your introduction and resume to reach us at elecnovo.com if you want
+          to join the journey of Elecnovo.
+        </StyledParagraph>
       </Container>
     </>
   );

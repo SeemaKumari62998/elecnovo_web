@@ -85,8 +85,8 @@ function Products() {
         <StyledUl>
           <StyledImage
             as={motion.li}
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
             transition={{
               delay: 0.4,
               x: { type: "spring", stiffness: 60 },
@@ -104,8 +104,8 @@ function Products() {
 
           <StyledImage
             as={motion.li}
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
             transition={{
               delay: 0.4,
               x: { type: "spring", stiffness: 60 },
@@ -123,8 +123,8 @@ function Products() {
 
           <StyledImage
             as={motion.li}
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
             transition={{
               delay: 0.4,
               x: { type: "spring", stiffness: 60 },
@@ -142,8 +142,8 @@ function Products() {
 
           <StyledImage
             as={motion.li}
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
             transition={{
               delay: 0.4,
               x: { type: "spring", stiffness: 60 },
@@ -161,8 +161,8 @@ function Products() {
 
           <StyledImage
             as={motion.li}
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
             transition={{
               delay: 0.4,
               x: { type: "spring", stiffness: 60 },
@@ -180,8 +180,8 @@ function Products() {
 
           <StyledImage
             as={motion.li}
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
             transition={{
               delay: 0.4,
               x: { type: "spring", stiffness: 60 },

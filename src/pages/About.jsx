@@ -8,7 +8,7 @@ const Wrapper = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-grey-400);
+  background-color: var(--color-grey-300);
 
   @media (min-width: 768px) {
     padding: 5%;
@@ -17,13 +17,16 @@ const Wrapper = styled(motion.div)`
 
 const Paragrapg = styled.p`
   text-align: left;
-  max-width: 80%;
-  margin: 1% auto;
-  font-size: 1.6rem;
-  color: var(--color-grey-300);
+  max-width: 100%;
+  margin: 2% auto;
+  font-size: 1.8rem;
+  color: balck;
 
   @media only screen and (max-width: 600px) {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin: 20px;
+
+    text-align: left;
   }
 `;
 
@@ -36,7 +39,7 @@ const Img = styled.img`
   height: 400px;
   width: 100%;
   object-fit: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
 
   @media only screen and (max-width: 600px) {
     height: 20%;
@@ -55,10 +58,11 @@ const Overlay = styled.div`
 `;
 
 const H1 = styled.h1`
-  color: var(--color-grey-200);
+  color: black;
 
   @media only screen and (max-width: 600px) {
     font-size: 25px;
+    margin-top: 25px;
   }
 `;
 
@@ -82,13 +86,13 @@ function About() {
         transition={{ duration: 0.6 }}
       >
         <Img src="aboutpageimage.jpg" alt="About" />
-        <Overlay />
+        {/* <Overlay /> */}
       </Container>
 
       <Wrapper>
         <H1>ABOUT US</H1>
         <Paragrapg>
-          ELECNOVO is engaged in Design, Development and Supply of Intelligent,
+          Elecnovo is engaged in Design, Development and Supply of Intelligent,
           Efficient and Reliable electric motors and controllers for electric
           vehicles (EV). Based in Bangalore, India, elecnovo team consists of
           motor experts, electronics engineers, electrical engineers, mechanical
