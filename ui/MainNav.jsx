@@ -132,35 +132,6 @@ function MainNav() {
         </Link>
       </StyledLogo>
 
-      {/* <Div>
-        <Text>Diving Green Mobility</Text>
-      </Div> */}
-
-      {/* <Div>
-        <Ul>
-          <li>
-            <StyledLink to="/">
-              <span>Home</span>
-            </StyledLink>
-          </li>
-          <li>
-            <StyledLink to="/technology">
-              <span>Technology</span>
-            </StyledLink>
-          </li>
-          <li>
-            <StyledLink to="/application">
-              <span>Application</span>
-            </StyledLink>
-          </li>
-          <li>
-            <StyledLink to="/solutions">
-              <span>Solution</span>
-            </StyledLink>
-          </li>
-        </Ul>
-      </Div> */}
-
       <NavList>
         <li>
           <StyledNavLink to="/contact">

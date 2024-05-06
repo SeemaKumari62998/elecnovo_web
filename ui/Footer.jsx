@@ -157,12 +157,9 @@ function Footer() {
             <FaLinkedin />
           </a>
 
-          <a href="https://www.youtube.com/" alt="youtube" target="blank">
-            <FaInstagram />
-          </a>
-          <a>
-            <FaTwitter />
-          </a>
+          <FaInstagram />
+
+          <FaTwitter />
         </MediaUl>
       </StyledColumn>
     </StyledFooter>

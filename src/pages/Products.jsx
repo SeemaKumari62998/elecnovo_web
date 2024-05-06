@@ -8,8 +8,7 @@ const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: 100vh; */
-  /* background-color: var(--color-grey-200); */
+
   background-color: white;
   color: var(--color-grey-900);
   border-top: 1px solid black;
@@ -28,7 +27,6 @@ const StyledUl = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  /* margin-top: 40px; */
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);

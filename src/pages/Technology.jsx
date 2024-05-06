@@ -4,7 +4,7 @@ import LinkButton from "../../ui/LinkButton";
 const Container = styled.div`
   height: 100vh;
   width: 100%;
-  background-color: var(--color-grey-400);
+  background-color: white;
   display: flex;
   flex-direction: column;
   color: var(--color-grey-900);
@@ -51,7 +51,7 @@ const Image = styled.img`
   max-width: 250px;
   height: auto;
   margin: 20px;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
 
   @media only screen and (max-width: 600px) {
     max-width: calc(100% - 50px);
