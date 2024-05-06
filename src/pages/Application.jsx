@@ -100,10 +100,10 @@ function Application() {
   const Paragraph = styled.p`
     overflow: hidden;
     color: black;
-    padding: 25px 80px;
-    text-align: center;
+    padding: 15px 40px;
+    text-align: left;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     display: -webkit-box;
     -webkit-line-clamp: ${showFullText ? "unset" : "3"};
     -webkit-box-orient: vertical;
@@ -111,7 +111,7 @@ function Application() {
     background-color: var(--color-grey-200);
     box-shadow: 0 0 10px rgb(0, 0, 0);
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
 
     @media only screen and (max-width: 600px) {
       padding: 15px 5px;
@@ -156,7 +156,7 @@ function Application() {
             <Paragraph>
               {showFullText["Electric Motorcycle"] ? (
                 <>
-                  <h3>Electric Motorcycle :</h3>
+                  <h3>Electric Motorcycle : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   Motorcycle{" "}
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
@@ -199,7 +199,7 @@ function Application() {
             <Paragraph>
               {showFullText["Electric Scooter"] ? (
                 <>
-                  <h3> Electric Scooter</h3>
+                  <h3> Electric Scooter : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   Scooter
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
@@ -237,11 +237,169 @@ function Application() {
               duration: 1,
             }}
           >
+            <Image src="Four Wheel Loader.png" alt="Application" />
+
+            <Paragraph>
+              {showFullText["Electric Four Wheeler Loader"] ? (
+                <>
+                  <h3>Electric Four Wheeler Loader : </h3>
+                  Elecnovo offers custom engineered motorsolutions to electric
+                  Four Wheeler Loader{" "}
+                  <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  for more details
+                </>
+              ) : (
+                "Electric Four Wheeler Loader"
+              )}
+              {!showFullText["Electric Four Wheeler Loader"] && (
+                <ShowMoreLink
+                  onClick={() => handleShowMore("Electric Four Wheeler Loader")}
+                >
+                  ...more
+                </ShowMoreLink>
+              )}
+              {showFullText["Electric Four Wheeler Loader"] && (
+                <ShowMoreLink
+                  onClick={() => handleShowMore("Electric Four Wheeler Loader")}
+                >
+                  ...less
+                </ShowMoreLink>
+              )}
+            </Paragraph>
+          </ImageItem>
+
+          <ImageItem
+            as={motion.li}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+          >
+            <Image src="car.png" alt="Application" />
+
+            <Paragraph>
+              {showFullText["Electric Car"] ? (
+                <>
+                  <h3>Electric Car : </h3>
+                  Elecnovo offers custom engineered motorsolutions to electric
+                  Car <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  for more details
+                </>
+              ) : (
+                "Electric Car"
+              )}
+              {!showFullText["Electric Car"] && (
+                <ShowMoreLink onClick={() => handleShowMore("Electric Car")}>
+                  ...more
+                </ShowMoreLink>
+              )}
+              {showFullText["Electric Car"] && (
+                <ShowMoreLink onClick={() => handleShowMore("Electric Car")}>
+                  ...less
+                </ShowMoreLink>
+              )}
+            </Paragraph>
+          </ImageItem>
+
+          <ImageItem
+            as={motion.li}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+          >
+            <Image src="Buggy.png" alt="Application" />
+            <Paragraph>
+              {showFullText["Electric Buggy"] ? (
+                <>
+                  <h3>Electric Buggy : </h3>
+                  Elecnovo offers custom engineered motorsolutions to electric
+                  Buggy{" "}
+                  <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  for more details
+                </>
+              ) : (
+                "Electric Buggy"
+              )}
+              {!showFullText["Electric Buggy"] && (
+                <ShowMoreLink onClick={() => handleShowMore("Electric Buggy")}>
+                  ...more
+                </ShowMoreLink>
+              )}
+              {showFullText["Electric Buggy"] && (
+                <ShowMoreLink onClick={() => handleShowMore("Electric Buggy")}>
+                  ...less
+                </ShowMoreLink>
+              )}
+            </Paragraph>
+          </ImageItem>
+
+          <ImageItem
+            as={motion.li}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+          >
+            <Image src="boat.png" alt="Application" />
+
+            <Paragraph>
+              {showFullText["Electric Boat"] ? (
+                <>
+                  <h3>Electric Boat : </h3>
+                  Elecnovo offers custom engineered motorsolutions to electric
+                  Boat <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  for more details
+                </>
+              ) : (
+                "Electric Boat"
+              )}
+              {!showFullText["Electric Boat"] && (
+                <ShowMoreLink onClick={() => handleShowMore("Electric Boat")}>
+                  ...more
+                </ShowMoreLink>
+              )}
+              {showFullText["Electric Boat"] && (
+                <ShowMoreLink onClick={() => handleShowMore("Electric Boat")}>
+                  ...less
+                </ShowMoreLink>
+              )}
+            </Paragraph>
+          </ImageItem>
+
+          <ImageItem
+            as={motion.li}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+          >
             <Image src="tractor.png" alt="Application" />
 
             <Paragraph>
               {showFullText["Electric Tractor"] ? (
                 <>
+                  <h3>Electric Tractor : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   Tractor{" "}
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
@@ -284,6 +442,7 @@ function Application() {
             <Paragraph>
               {showFullText["Electric Golfkart"] ? (
                 <>
+                  <h3>Electric Golfkart : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   Golfkart{" "}
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
@@ -321,85 +480,12 @@ function Application() {
               duration: 1,
             }}
           >
-            <Image src="boat.png" alt="Application" />
-
-            <Paragraph>
-              {showFullText["Electric Boat"] ? (
-                <>
-                  Elecnovo offers custom engineered motorsolutions to electric
-                  Boat <ContactLink href="/contact"> "Contact us" </ContactLink>
-                  for more details
-                </>
-              ) : (
-                "Electric Boat"
-              )}
-              {!showFullText["Electric Boat"] && (
-                <ShowMoreLink onClick={() => handleShowMore("Electric Boat")}>
-                  ...more
-                </ShowMoreLink>
-              )}
-              {showFullText["Electric Boat"] && (
-                <ShowMoreLink onClick={() => handleShowMore("Electric Boat")}>
-                  ...less
-                </ShowMoreLink>
-              )}
-            </Paragraph>
-          </ImageItem>
-
-          <ImageItem
-            as={motion.li}
-            initial={{ scale: 0.3, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{
-              delay: 0.4,
-              x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-              duration: 1,
-            }}
-          >
-            <Image src="car.png" alt="Application" />
-
-            <Paragraph>
-              {showFullText["Electric Car"] ? (
-                <>
-                  Elecnovo offers custom engineered motorsolutions to electric
-                  Car <ContactLink href="/contact"> "Contact us" </ContactLink>
-                  for more details
-                </>
-              ) : (
-                "Electric Car"
-              )}
-              {!showFullText["Electric Car"] && (
-                <ShowMoreLink onClick={() => handleShowMore("Electric Car")}>
-                  ...more
-                </ShowMoreLink>
-              )}
-              {showFullText["Electric Car"] && (
-                <ShowMoreLink onClick={() => handleShowMore("Electric Car")}>
-                  ...less
-                </ShowMoreLink>
-              )}
-            </Paragraph>
-          </ImageItem>
-
-          <ImageItem
-            as={motion.li}
-            initial={{ scale: 0.3, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{
-              delay: 0.4,
-              x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-              duration: 1,
-            }}
-          >
             <Image src="loader.png" alt="Application" />
 
             <Paragraph>
               {showFullText["Electric Goods Vehicle"] ? (
                 <>
+                  <h3>Electric Goods Vehicle : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   Goods Vehicle{" "}
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
@@ -441,6 +527,7 @@ function Application() {
             <Paragraph>
               {showFullText["Electric Cleaning Vehicle"] ? (
                 <>
+                  <h3>Electric Cleaning Vehicle : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   Cleaning Vehicle{" "}
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
@@ -482,6 +569,7 @@ function Application() {
             <Paragraph>
               {showFullText["Electric Auto"] ? (
                 <>
+                  <h3>Electric Auto : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   Auto <ContactLink href="/contact"> "Contact us" </ContactLink>
                   for more details
@@ -514,88 +602,12 @@ function Application() {
               duration: 1,
             }}
           >
-            <Image src="Buggy.png" alt="Application" />
-            <Paragraph>
-              {showFullText["Electric Buggy"] ? (
-                <>
-                  Elecnovo offers custom engineered motorsolutions to electric
-                  Buggy{" "}
-                  <ContactLink href="/contact"> "Contact us" </ContactLink>
-                  for more details
-                </>
-              ) : (
-                "Electric Buggy"
-              )}
-              {!showFullText["Electric Buggy"] && (
-                <ShowMoreLink onClick={() => handleShowMore("Electric Buggy")}>
-                  ...more
-                </ShowMoreLink>
-              )}
-              {showFullText["Electric Buggy"] && (
-                <ShowMoreLink onClick={() => handleShowMore("Electric Buggy")}>
-                  ...less
-                </ShowMoreLink>
-              )}
-            </Paragraph>
-          </ImageItem>
-          <ImageItem
-            as={motion.li}
-            initial={{ scale: 0.3, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{
-              delay: 0.4,
-              x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-              duration: 1,
-            }}
-          >
-            <Image src="Four Wheel Loader.png" alt="Application" />
-
-            <Paragraph>
-              {showFullText["Electric Four Wheeler Loader"] ? (
-                <>
-                  Elecnovo offers custom engineered motorsolutions to electric
-                  Four Wheeler Loader{" "}
-                  <ContactLink href="/contact"> "Contact us" </ContactLink>
-                  for more details
-                </>
-              ) : (
-                "Electric Four Wheeler Loader"
-              )}
-              {!showFullText["Electric Four Wheeler Loader"] && (
-                <ShowMoreLink
-                  onClick={() => handleShowMore("Electric Four Wheeler Loader")}
-                >
-                  ...more
-                </ShowMoreLink>
-              )}
-              {showFullText["Electric Four Wheeler Loader"] && (
-                <ShowMoreLink
-                  onClick={() => handleShowMore("Electric Four Wheeler Loader")}
-                >
-                  ...less
-                </ShowMoreLink>
-              )}
-            </Paragraph>
-          </ImageItem>
-          <ImageItem
-            as={motion.li}
-            initial={{ scale: 0.3, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{
-              delay: 0.4,
-              x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-              duration: 1,
-            }}
-          >
             <Image src="Streeing wheel.png" alt="Application" />
 
             <Paragraph>
               {showFullText["Electric Streeing wheel"] ? (
                 <>
+                  <h3>Electric Streeing wheel : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   Streeing wheel{" "}
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
