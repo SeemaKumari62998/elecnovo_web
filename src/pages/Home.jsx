@@ -1,17 +1,10 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import Footer from "../../ui/Footer";
-import motor from "../../public/motor.mp4";
-import technology from "../../public/technology.mp4";
-import { BsBoxArrowInUpRight } from "react-icons/bs";
-import { Link } from "react-router-dom";
 import Application from "./Application";
-import PerformanceVideo from "../../ui/PerformanceVideo";
 import Solutions from "./Solutions";
 import Products from "./Products";
-import HomeApp from "../../ui/HomeApp";
 import SPM from "../../public/SPM.mp4";
-
 import productVideo from "../../public/productVideo.mp4";
 
 const Container = styled.div`
@@ -28,9 +21,6 @@ const Section = styled.div`
   height: 100vh;
   overflow: hidden;
 
-  /* border: 1px solid grey; */
-  /* margin-top: 20px; */
-
   @media only screen and (max-width: 600px) {
     height: 26vh;
   }
@@ -40,11 +30,10 @@ const Video = styled.video`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* position: absolute; */
+
   top: 0;
   left: 0;
   z-index: -1;
-  /* margin-left: 10%; */
 `;
 
 const Video1 = styled.video`
@@ -163,7 +152,7 @@ function Home() {
       </Section>
 
       <Application />
-      {/* <HomeApp /> */}
+
       <Products />
 
       <Solutions />

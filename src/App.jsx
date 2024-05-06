@@ -8,14 +8,12 @@ import PagenotFound from "./pages/PagenotFound";
 import GlobalStyles from "./styles/GlobalStyles";
 import AppLayout from "../ui/AppLayout";
 import { Toaster } from "react-hot-toast";
-import ApplicationDetails from "../ui/ApplicationDetails";
-import ProductDetail from "../ui/ProductDetail";
 import Achivements from "../ui/Achivemets";
 import Teams from "../ui/Teams";
 import Career from "../ui/Career";
-import Technologies from "../ui/Technologies";
+
 import Solutions from "./pages/Solutions";
-import Application from "./pages/Application";
+import MenuApplication from "../ui/MenuApplication";
 import Footer from "../ui/Footer";
 
 function App() {
@@ -31,16 +29,13 @@ function App() {
             <Route path="technology" element={<Technology />} />
             <Route path="products" element={<Products />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="applicationdetails" element={<ApplicationDetails />} />
-            <Route path="productdetail" element={<ProductDetail />} />
             <Route path="achivements" element={<Achivements />} />
             <Route path="teams" element={<Teams />} />
             <Route path="career" element={<Career />} />
             <Route path="footer" element={<Footer />} />
 
             {/* <Route path="/" element={<Home />} /> */}
-            <Route path="technologies" element={<Technologies />} />
-            <Route path="application" element={<Application />} />
+            <Route path="application" element={<MenuApplication />} />
             <Route path="solutions" element={<Solutions />} />
           </Route>
           <Route path="*" element={<PagenotFound />} />

@@ -4,7 +4,6 @@ import { useState } from "react";
 
 const Container = styled.div`
   position: relative;
-  /* border: 1px solid grey; */
   background-color: var(--color-grey-200);
 `;
 
@@ -34,7 +33,7 @@ const ImageItem = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* margin-bottom: 20px; */
+
   margin-top: 60px;
   position: relative;
   align-items: center;
@@ -50,6 +49,7 @@ const ImageItem = styled.li`
     margin-bottom: 20px;
     margin-top: 30px;
     align-items: center;
+    /* right: 2px; */
   }
 `;
 
@@ -82,7 +82,7 @@ const H2 = styled(motion.h2)`
 
   @media only screen and (max-width: 600px) {
     margin-top: 5px;
-    left: 13%;
+    left: 10%;
     font-size: 20px;
   }
 `;
@@ -159,7 +159,7 @@ function Application() {
                   <h3>Electric Motorcycle : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   Motorcycle{" "}
-                  <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  <ContactLink href="/career"> "Contact us" </ContactLink>
                   for more details
                 </>
               ) : (

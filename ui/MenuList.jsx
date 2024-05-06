@@ -109,10 +109,7 @@ function Menu() {
           </Border>
 
           <Border>
-            <NavLink
-              to="/applicationdetails"
-              onClick={() => setMenuOpen(false)}
-            >
+            <NavLink to="/application" onClick={() => setMenuOpen(false)}>
               <MenuItem>Application</MenuItem>
             </NavLink>
 
