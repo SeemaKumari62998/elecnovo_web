@@ -47,17 +47,16 @@ const Video1 = styled.video`
 const H1 = styled(motion.h1)`
   position: absolute;
   top: 85px;
-  left: 20%;
+  left: 17%;
   transform: translateX(-50%);
-  color: white;
-
-  font-size: 3.5rem;
+  color: black;
+  font-size: 3rem;
   z-index: 10;
-  width: 100%;
+  /* width: 50%; */
   text-align: center;
 
   @media only screen and (max-width: 600px) {
-    margin-left: 12%;
+    margin-left: 14%;
     font-size: 15px;
     font-weight: 400;
     top: 10%;

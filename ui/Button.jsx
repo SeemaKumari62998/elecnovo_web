@@ -28,9 +28,10 @@ const Button = styled.button`
   border: none;
   border-radius: var(--border-radius-sm);
   box-shadow: var(--shadow-sm);
-  margin-top: 30px;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
+  padding: 7px 15px;
 
   @media only screen and (max-width: 600px) {
     padding: 0.2rem 0%.3;

@@ -4,6 +4,8 @@ import Application from "../src/pages/Application";
 const Div = styled.div`
   margin-top: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media only screen and (max-width: 600px) {
     display: flex;
