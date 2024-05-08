@@ -22,7 +22,7 @@ const StyledUl = styled.ul`
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 70px;
+  gap: 20px;
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
@@ -33,9 +33,11 @@ const StyledUl = styled.ul`
 
 const StyledImage = styled.li`
   padding: 10px;
-  margin: 5px;
+  margin: 100px;
   text-align: center;
   height: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
 
   h2 {
     font-size: 2.1rem;
@@ -103,9 +105,9 @@ function Products() {
               duration: 1,
             }}
           >
-            <Img src="3D.PNG" alt="product" />
-
+            <img src="1KW SPM R1.jpg" alt="product" />
             <h2>1 kW BLDC / PMSM</h2>
+
             <Button onClick={handleExplore}>..more</Button>
           </StyledImage>
 
@@ -121,7 +123,25 @@ function Products() {
               duration: 1,
             }}
           >
-            <img src="3D.PNG" alt="product" />
+            <img src="2KW SPM R1.jpg" alt="product" />
+            <h2>2 kW BLDC / PMSM</h2>
+
+            <Button onClick={handleExplore}>..more</Button>
+          </StyledImage>
+
+          <StyledImage
+            as={motion.li}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+          >
+            <img src="3KW SPM R1.jpg" alt="product" />
             <h2>3 kW BLDC / PMSM</h2>
 
             <Button onClick={handleExplore}>..more</Button>
@@ -139,7 +159,7 @@ function Products() {
               duration: 1,
             }}
           >
-            <img src="3D.PNG" alt="product" />
+            <img src="5KW SPM R1.jpg" alt="product" />
             <h2>5 kW BLDC / PMSM</h2>
 
             <Button onClick={handleExplore}>..more</Button>
@@ -157,7 +177,7 @@ function Products() {
               duration: 1,
             }}
           >
-            <img src="3D.PNG" alt="product" />
+            <img src="8KW SPM R1.jpg" alt="product" />
             <h2>8 kW BLDC / PMSM</h2>
 
             <Button onClick={handleExplore}>..more</Button>
@@ -175,25 +195,7 @@ function Products() {
               duration: 1,
             }}
           >
-            <img src="3D.PNG" alt="product" />
-            <h2>10 kW BLDC / PMSM</h2>
-
-            <Button onClick={handleExplore}>..more</Button>
-          </StyledImage>
-
-          <StyledImage
-            as={motion.li}
-            initial={{ scale: 0.3, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{
-              delay: 0.4,
-              x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-              duration: 1,
-            }}
-          >
-            <img src="3D.PNG" alt="product" />
+            <img src="173 IPM.jpg" alt="product" />
             <h2>15 kW BLDC / PMSM</h2>
 
             <Button onClick={handleExplore}>..more</Button>
