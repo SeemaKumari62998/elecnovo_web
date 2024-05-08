@@ -5,14 +5,16 @@ import { useState } from "react";
 const Container = styled.div`
   position: relative;
   background-color: var(--color-grey-200);
+  padding: 20px;
 `;
 
 const ImageContainer = styled.ul`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 40px;
-  margin: 90px;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 70px;
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
@@ -34,7 +36,7 @@ const ImageItem = styled.li`
   flex-direction: column;
   justify-content: space-around;
 
-  margin-top: 60px;
+  /* margin-top: 60px; */
   position: relative;
   align-items: center;
 
@@ -48,42 +50,26 @@ const ImageItem = styled.li`
   @media only screen and (max-width: 600px) {
     margin-bottom: 20px;
     margin-top: 30px;
-    align-items: center;
+    /* align-items: center; */
+    align-content: center;
     /* right: 2px; */
-  }
-`;
-
-const Span = styled.span`
-  position: absolute;
-  top: 0;
-  left: 35%;
-  transform: translateX(-50%);
-  text-align: center;
-  color: black;
-  white-space: nowrap;
-  font-size: 1.8rem;
-  padding: 2px 20px;
-
-  @media only screen and (max-width: 600px) {
-    bottom: -153px;
-    left: 50%;
-    padding: 120px;
   }
 `;
 
 const H2 = styled(motion.h2)`
   font-size: 2.8rem;
   position: absolute;
-  top: 10px;
-  left: 650px;
+  top: 20px;
+  left: 38%;
   color: black;
-  padding: 35px;
-  margin: 10px;
+  padding: 10px 0;
+  /* margin: 10px; */
 
   @media only screen and (max-width: 600px) {
     margin-top: 5px;
     left: 10%;
     font-size: 20px;
+    justify-content: center;
   }
 `;
 

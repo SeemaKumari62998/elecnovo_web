@@ -8,43 +8,53 @@ const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   background-color: white;
-  color: var(--color-grey-900);
-  border-top: 1px solid black;
+  color: black;
 
   @media only screen and (max-width: 600px) {
     height: 100%;
     top: 0;
+    margin-top: 5px;
   }
 `;
 
 const StyledUl = styled.ul`
   list-style-type: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 70px;
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+    margin-top: 0;
   }
 `;
 
 const StyledImage = styled.li`
-  grid-column: span 1;
-  grid-row: span 1;
-  padding: 30px;
-  margin: 20px;
+  padding: 10px;
+  margin: 5px;
   text-align: center;
   height: 100%;
 
+  h2 {
+    font-size: 2.1rem;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.9rem;
+    }
+  }
+
+  Button {
+    @media only screen and (max-width: 600px) {
+      font-size: 1.5rem;
+    }
+  }
+
   @media only screen and (max-width: 600px) {
-    padding: 30px;
+    padding: 40px;
     margin: 20px;
-    margin-top: 10px;
+    margin-top: 0;
   }
 `;
 
@@ -55,13 +65,13 @@ const H3 = styled.h3`
   margin-top: 40px;
 
   @media only screen and (max-width: 600px) {
-    font-size: 24px;
+    font-size: 25px;
     margin-top: 25px;
   }
 `;
 
 const Img = styled.img`
-  padding: 80px;
+  margin-top: 20px;
 `;
 
 function Products() {
@@ -93,10 +103,9 @@ function Products() {
               duration: 1,
             }}
           >
-            <h>Product 1</h>
-            <img src="3D.PNG" alt="product" />
-            <h2>1 kW BLDC / PMSM</h2>
+            <Img src="3D.PNG" alt="product" />
 
+            <h2>1 kW BLDC / PMSM</h2>
             <Button onClick={handleExplore}>..more</Button>
           </StyledImage>
 
@@ -112,7 +121,6 @@ function Products() {
               duration: 1,
             }}
           >
-            <h>Product 2</h>
             <img src="3D.PNG" alt="product" />
             <h2>3 kW BLDC / PMSM</h2>
 
@@ -131,7 +139,6 @@ function Products() {
               duration: 1,
             }}
           >
-            <h>Product 3</h>
             <img src="3D.PNG" alt="product" />
             <h2>5 kW BLDC / PMSM</h2>
 
@@ -150,7 +157,6 @@ function Products() {
               duration: 1,
             }}
           >
-            <h>Product 3</h>
             <img src="3D.PNG" alt="product" />
             <h2>8 kW BLDC / PMSM</h2>
 
@@ -169,7 +175,6 @@ function Products() {
               duration: 1,
             }}
           >
-            <h>Product 3</h>
             <img src="3D.PNG" alt="product" />
             <h2>10 kW BLDC / PMSM</h2>
 
@@ -188,7 +193,6 @@ function Products() {
               duration: 1,
             }}
           >
-            <h>Product 3</h>
             <img src="3D.PNG" alt="product" />
             <h2>15 kW BLDC / PMSM</h2>
 

@@ -2,12 +2,12 @@ import styled from "styled-components";
 import LinkButton from "../../ui/LinkButton";
 
 const Container = styled.div`
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
-  color: var(--color-grey-900);
+  color: black;
 
   @media only screen and (max-width: 600px) {
     padding: 25px;
@@ -15,47 +15,51 @@ const Container = styled.div`
 `;
 const H1 = styled.h1`
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
 
   @media only screen and (max-width: 600px) {
-    font-size: 18px;
+    font-size: 20px;
   }
 `;
 const H2 = styled.h2`
   text-align: center;
-  margin-top: 60px;
+  margin-top: 90px;
 
   @media only screen and (max-width: 600px) {
-    font-size: 18px;
-    margin-top: 5px;
+    font-size: 15px;
+    margin-top: 20px;
     text-align: center;
+    margin-bottom: 5px;
   }
 `;
 
 const Imagecontainer = styled.div`
-  margin-top: 60px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;
-  gap: 20px;
+  gap: 30px;
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
-    gap: 5px;
-    margin: 20px;
+    gap: 40px;
+    margin: 10px;
   }
 `;
 
 const Image = styled.img`
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  margin: 20px;
-  /* border: 1px solid grey; */
+  width: 80%;
+  max-height: 280px;
+  height: 80%;
+  /* margin: 10px; */
+  margin-bottom: 10px;
+
+  /* object-fit: cover; */
 
   @media only screen and (max-width: 600px) {
     max-width: calc(100% - 50px);
     margin: 20px;
+    align-items: center;
   }
 `;
 
@@ -72,8 +76,8 @@ const P = styled.p`
   font-size: 20px;
 
   @media only screen and (max-width: 600px) {
-    font-size: 15px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
   }
 `;
 
@@ -114,8 +118,8 @@ function Technology() {
         </Imagecontainer>
 
         <H2>
-          BLDC: Brushless Direct Current; PMSM: Permanent Magnet Synchronous
-          Motor; AF: Axial Flux; SRM: Switch Reluctance Motor
+          BLDC: Brushless Direct Current, PMSM: Permanent Magnet Synchronous
+          Motor, AF: Axial Flux, SRM: Switch Reluctance Motor
         </H2>
       </Container>
     </>
