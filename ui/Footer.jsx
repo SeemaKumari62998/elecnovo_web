@@ -132,7 +132,7 @@ function Footer() {
       <StyledColumn>
         <h3>Contact Us</h3>
         <StyledUl>
-          <li>Email: REACHUS@ELECNOVO.COM</li>
+          <li>Email: reachus@elecnovo.com</li>
           <li>
             <a href="tel:89712 84680">Phone: +91 89712 84680</a>
           </li>

@@ -64,7 +64,7 @@ const Border = styled.div`
 `;
 
 const P = styled.p`
-  font-size: 25px;
+  font-size: 26px;
   text-align: center;
   color: var(--color-grey-300);
 
@@ -117,16 +117,16 @@ function Menu() {
               <MenuItem>Technology</MenuItem>
             </NavLink>
 
-            <NavLink to="/products" onClick={() => setMenuOpen(false)}>
-              <MenuItem>Products</MenuItem>
-            </NavLink>
-          </Border>
-
-          <Border>
             <NavLink to="/about" onClick={() => setMenuOpen(false)}>
               <MenuItem>About us</MenuItem>
             </NavLink>
 
+            {/* <NavLink to="/products" onClick={() => setMenuOpen(false)}>
+              <MenuItem>Products</MenuItem>
+            </NavLink> */}
+          </Border>
+
+          <Border>
             <NavLink to="/career" onClick={() => setMenuOpen(false)}>
               <MenuItem>Career</MenuItem>
             </NavLink>
@@ -141,7 +141,7 @@ function Menu() {
 
           <div>
             <img src="elecnovoLogo.png" alt="Logo" />
-            <P>GreenMobility</P>
+            <P> Driving Green Mobility</P>
           </div>
         </MenuList>
       </MenuContainer>

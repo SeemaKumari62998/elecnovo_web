@@ -15,6 +15,7 @@ import Career from "../ui/Career";
 import Solutions from "./pages/Solutions";
 import MenuApplication from "../ui/MenuApplication";
 import Footer from "../ui/Footer";
+import Productdetail from "../ui/Productdetail";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
             <Route path="teams" element={<Teams />} />
             <Route path="career" element={<Career />} />
             <Route path="footer" element={<Footer />} />
-
+            <Route path="productdetails" element={<Productdetail />}></Route>
             {/* <Route path="/" element={<Home />} /> */}
             <Route path="application" element={<MenuApplication />} />
             <Route path="solutions" element={<Solutions />} />

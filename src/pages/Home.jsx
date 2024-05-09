@@ -50,7 +50,7 @@ const H1 = styled(motion.h1)`
   left: 17%;
   transform: translateX(-50%);
   color: black;
-  font-size: 3rem;
+  font-size: 4rem;
   z-index: 10;
   /* width: 50%; */
   text-align: center;
@@ -92,7 +92,7 @@ const Ul = styled.ul`
   }
 `;
 
-const LiContainer = styled.div`
+const LiContainer = styled.h1`
   width: 180px;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -109,8 +109,11 @@ const LiContainer = styled.div`
 `;
 
 const Li = styled.li`
-  margin: 3px;
-  font-size: 15px;
+  margin: 1px;
+  font-size: 4rem;
+  color: Black;
+  padding: 60px;
+  margin-bottom: 250px;
 
   @media only screen and (max-width: 600px) {
     font-size: 6px;
@@ -121,23 +124,23 @@ const Li = styled.li`
 function Home() {
   return (
     <Container>
-      <Section>
-        {/* <H1>DRIVING GREEN MOBILITY</H1> */}
-        {/* <Video src={technology} autoPlay loop muted /> */}
-        {/* <Video src={SPM} autoPlay loop muted /> */}
-        <Video1 src={productVideo} autoPlay loop muted />
-      </Section>
+      {/* <Section> */}
+      {/* <H1>DRIVING GREEN MOBILITY</H1> */}
+      {/* <Video src={technology} autoPlay loop muted /> */}
+      {/* <Video src={SPM} autoPlay loop muted /> */}
+      {/* <Video1 src={productVideo} autoPlay loop muted /> */}
+      {/* </Section> */}
 
       <Section>
-        <H1> ELECNOVO TECHNOLOGY</H1>
+        <H1> Electric Motor</H1>
         <Video src={SPM} autoPlay loop muted />
 
         <Content>
           <Ul>
-            <LiContainer>
-              <Li>PMSM MOTORS</Li>
-            </LiContainer>
-            <LiContainer>
+            <div>
+              <Li>Patented Technology</Li>
+            </div>
+            {/* <LiContainer>
               <Li>BLDC MOTORS</Li>
             </LiContainer>
             <LiContainer>
@@ -145,7 +148,7 @@ function Home() {
             </LiContainer>
             <LiContainer>
               <Li> SRM MOTORS</Li>
-            </LiContainer>
+            </LiContainer> */}
           </Ul>
         </Content>
       </Section>
