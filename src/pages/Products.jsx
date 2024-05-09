@@ -22,7 +22,7 @@ const StyledUl = styled.ul`
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  /* gap: 10px; */
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
@@ -33,7 +33,7 @@ const StyledUl = styled.ul`
 
 const StyledImage = styled.li`
   padding: 10px;
-  margin: 100px;
+  margin: 50px;
   text-align: center;
   height: 100%;
   margin-top: 30px;
@@ -73,14 +73,16 @@ const H3 = styled.h3`
 `;
 
 const Img = styled.img`
-  margin-top: 20px;
+  padding-top: 10px;
+  height: 500px;
+  width: 600px;
 `;
 
 function Products() {
   const navigate = useNavigate();
 
   function handleExplore() {
-    navigate("/contact");
+    navigate("/productdetails");
   }
 
   return (
@@ -195,7 +197,8 @@ function Products() {
               duration: 1,
             }}
           >
-            <img src="173 IPM.jpg" alt="product" />
+            <img src="173 IPM R3.jpg" alt="product" />
+
             <h2>15 kW BLDC / PMSM</h2>
 
             <Button onClick={handleExplore}>..more</Button>

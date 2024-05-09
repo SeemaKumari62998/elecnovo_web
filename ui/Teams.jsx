@@ -5,7 +5,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
 
-  color: var(--color-grey-200);
+  color: black;
   padding: 100px;
   /* height: 100vh; */
 
@@ -29,13 +29,14 @@ const Section = styled.div`
 
 const Image = styled.img`
   max-width: 100%;
-  max-height: 200px;
-  margin-top: 20px;
+  max-height: 400px;
+  margin-top: 10px;
   border-radius: 50%;
+  width: 250px;
 `;
 
 const H1 = styled.h1`
-  color: white;
+  color: black;
   text-align: center;
   margin-top: 20px;
   font-size: 25px;
@@ -46,7 +47,7 @@ const Span = styled.span`
 `;
 
 const H3 = styled.h3`
-  color: var(--color-grey-200);
+  color: black;
   margin-top: 10px;
 `;
 
@@ -64,7 +65,7 @@ function Teams() {
 
       <H1>Elecnovo Teams</H1>
       <Container>
-        <Image src="ratul.jpg" alt="photo" />
+        <Image src="RatulPic.jpg" alt="photo" />
         <Section>
           <H3>
             Ratul Borah <br /> Founder and CEO
@@ -76,8 +77,9 @@ function Teams() {
           </P>
         </Section>
 
-        <Image src="ratul.jpg" alt="photo" />
-        <Section>
+        {/* 
+        <Image src="ratul.jpg" alt="photo" /> */}
+        {/* <Section>
           <H3>
             Ratul Borah <br /> Founder and CEO
           </H3>
@@ -86,8 +88,11 @@ function Teams() {
             industrial & business experience 20 years of motor design,
             development & manufacturing experience
           </P>
-        </Section>
+        </Section> */}
       </Container>
+      <div>
+        <img src="grouppic.jpg" alt="" />
+      </div>
     </>
   );
 }

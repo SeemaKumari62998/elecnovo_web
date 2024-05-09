@@ -105,19 +105,20 @@ function ContactForm() {
           <h1>CONTACT US</h1>
 
           <div>
-            <p> Email: reachus@elecnovo</p>
+            <p> Email: reachus@elecnovo.com</p>
             <p>Phone: +91 89712 84680</p>
           </div>
 
           <FormContainer>
             <SpanOr>OR</SpanOr>
 
-            <Input type="text" placeholder="Enter your Name" />
-            <Input type="text" placeholder="Enter your phone number" />
-            <Input type="text" placeholder="Enter your Email" />
+            <Input type="text" placeholder="Enter your Name" required />
+            <Input type="text" placeholder="Enter your phone number" required />
+            <Input type="text" placeholder="Enter your Email" required />
             <StyledTextarea
               placeholder="Enter your Message or question"
               maxLength={200}
+              required
             />
           </FormContainer>
 

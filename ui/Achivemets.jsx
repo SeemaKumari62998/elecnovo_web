@@ -52,6 +52,10 @@ const H1 = styled.h1`
   }
 `;
 
+const Div = styled.div`
+  gap: 200px;
+`;
+
 const Span = styled.span`
   @media only screen and (max-width: 600px) {
     font-size: 15px;
@@ -85,6 +89,13 @@ function Career() {
           in India solution with lower total cost Competent engineering and
           technical support
         </P>
+
+        <Div>
+          <img src="certificate1.png" alt="Certification" />
+          <img src="certificate2.png" alt="Certification" />
+          <img src="certificate3.png" alt="Certification" />
+          <img src="certificate4.png" alt="Certification" />
+        </Div>
       </Container>
     </>
   );

@@ -98,12 +98,12 @@ function Technology() {
         <H1>Elecnovo's Motor Technologies</H1>
         <Imagecontainer>
           <Div>
-            <Image src="Picture1.png" alt="technology" />
+            <Image src="Picture2.png" alt="technology" />
             <P>BLDC</P>
           </Div>
 
           <Div>
-            <Image src="Picture2.png" alt="technology" />
+            <Image src="5KW SPM R1.jpg" alt="technology" />
             <P>PMSM</P>
           </Div>
           <Div>

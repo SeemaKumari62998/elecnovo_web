@@ -16,7 +16,6 @@ const Container = styled.div`
 
 const Img = styled.img`
   width: 40%;
-
   object-fit: cover;
   padding: 40px;
   margin: 20px;
@@ -34,7 +33,7 @@ const Span = styled.span`
 `;
 
 const StyledParagraph = styled.p`
-  font-size: 19px;
+  font-size: 23px;
   text-align: left;
   margin: 40px;
   margin-top: 200px;
@@ -58,8 +57,8 @@ function Carrer() {
         <StyledParagraph>
           Elecnovo offers excellent career opportunities for engineering,
           manufacturing, human resources, and business development. Please send
-          your introduction and resume to reach us at elecnovo.com if you want
-          to join the journey of Elecnovo.
+          your introduction and resume to reach us at reachus@elecnovo.com if
+          you want to join the journey of Elecnovo.
         </StyledParagraph>
       </Container>
     </>
