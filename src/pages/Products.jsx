@@ -33,11 +33,11 @@ const StyledUl = styled.ul`
 
 const StyledImage = styled.li`
   padding: 10px;
-  margin: 50px;
+  margin: 10px;
   text-align: center;
   height: 100%;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 
   h2 {
     font-size: 2.1rem;
@@ -54,8 +54,8 @@ const StyledImage = styled.li`
   }
 
   @media only screen and (max-width: 600px) {
-    padding: 40px;
-    margin: 20px;
+    padding: 10px;
+    margin: 30px;
     margin-top: 0;
   }
 `;

@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import LinkButton from "./LinkButton";
+import { motion } from "framer-motion";
 
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-
   color: black;
-  padding: 100px;
-  /* height: 100vh; */
+  padding: 50px;
+  margin-left: 50px;
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
@@ -17,9 +17,8 @@ const Container = styled.div`
 `;
 
 const Section = styled.div`
-  text-align: left;
-  margin-top: 50px;
-  margin-left: 10px;
+  margin-left: 50px;
+  justify-content: center;
 
   @media only screen and (max-width: 600px) {
     margin-top: 10px;
@@ -29,8 +28,7 @@ const Section = styled.div`
 
 const Image = styled.img`
   max-width: 100%;
-  max-height: 400px;
-  margin-top: 10px;
+  max-height: 390px;
   border-radius: 50%;
   width: 250px;
 `;
@@ -38,22 +36,40 @@ const Image = styled.img`
 const H1 = styled.h1`
   color: black;
   text-align: center;
-  margin-top: 20px;
-  font-size: 25px;
+  margin-top: 10px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
 `;
 
 const Span = styled.span`
+  color: black;
   font-size: 15px;
 `;
 
 const H3 = styled.h3`
   color: black;
-  margin-top: 10px;
+  margin-top: 80px;
+  font-size: 27px;
 `;
 
 const P = styled.p`
-  font-size: 12px;
+  font-size: 18px;
+  line-height: 25px;
   margin-top: 10px;
+`;
+
+const Img = styled.img`
+  height: 50%;
+  width: 50%;
+
+  margin: 50px;
+`;
+
+const Box = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 `;
 
 function Teams() {
@@ -67,32 +83,20 @@ function Teams() {
       <Container>
         <Image src="RatulPic.jpg" alt="photo" />
         <Section>
-          <H3>
-            Ratul Borah <br /> Founder and CEO
-          </H3>
+          <H3>Ratul Borah Founder and CEO</H3>
           <P>
             B.E., M. Engg. Entrepreneur and innovation expert 26 years of
-            industrial & business experience 20 years of motor design,
-            development & manufacturing experience
+            industrial & <br />
+            business experience 20 years of motor design, development &
+            manufacturing experience
           </P>
         </Section>
-
-        {/* 
-        <Image src="ratul.jpg" alt="photo" /> */}
-        {/* <Section>
-          <H3>
-            Ratul Borah <br /> Founder and CEO
-          </H3>
-          <P>
-            B.E., M. Engg. Entrepreneur and innovation expert 26 years of
-            industrial & business experience 20 years of motor design,
-            development & manufacturing experience
-          </P>
-        </Section> */}
       </Container>
-      <div>
-        <img src="grouppic.jpg" alt="" />
-      </div>
+
+      <Box>
+        <H1>We are a group of hardworking, passionate individuals!</H1>
+        <Img src="grouppic.jpg" alt="picture" />
+      </Box>
     </>
   );
 }

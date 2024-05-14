@@ -85,6 +85,7 @@ function Application() {
 
   const Paragraph = styled.p`
     overflow: hidden;
+
     color: black;
     padding: 15px 40px;
     text-align: left;
