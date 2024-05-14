@@ -108,7 +108,7 @@ const LiContainer = styled.h1`
   }
 `;
 
-const Li = styled.li`
+const Li = styled.h1`
   margin: 1px;
   font-size: 4rem;
   color: Black;
@@ -132,23 +132,39 @@ function Home() {
       {/* </Section> */}
 
       <Section>
-        <H1> Electric Motor</H1>
+        <H1
+          as={motion.h1}
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+        >
+          Electric Motor
+        </H1>
+
         <Video src={SPM} autoPlay loop muted />
 
         <Content>
           <Ul>
-            <div>
-              <Li>Patented Technology</Li>
-            </div>
-            {/* <LiContainer>
-              <Li>BLDC MOTORS</Li>
-            </LiContainer>
-            <LiContainer>
-              <Li>AF MOTORS</Li>
-            </LiContainer>
-            <LiContainer>
-              <Li> SRM MOTORS</Li>
-            </LiContainer> */}
+            <Li
+              as={motion.li}
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 1,
+              }}
+            >
+              Patented Technology
+            </Li>
           </Ul>
         </Content>
       </Section>
