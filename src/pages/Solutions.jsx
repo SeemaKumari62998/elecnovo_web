@@ -31,12 +31,15 @@ const H1 = styled.h1`
 
 const Content = styled.div`
   position: absolute;
-  top: 90%;
-  right: 1px;
+  top: 95%;
+  /* right: 1px; */
   transform: translateY(-60%);
-  text-align: center;
-  color: var(--color-grey-100);
-  width: fit-content;
+  /* text-align: center; */
+  color: var(--color-grey-200);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media only screen and (max-width: 600px) {
     padding-bottom: 20px;
@@ -47,8 +50,6 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 
   @media only screen and (max-width: 600px) {
     margin: 25px;
@@ -57,13 +58,12 @@ const Ul = styled.ul`
 `;
 
 const LiContainer = styled.div`
-  width: 180px;
-  padding: 9px;
-  border-radius: 10px;
+  width: auto;
+  padding: 20px;
+  border-radius: 8px;
   margin: 20px;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(60px);
-  text-align: center;
 
   @media only screen and (max-width: 600px) {
     width: 100px;
@@ -74,7 +74,7 @@ const LiContainer = styled.div`
 
 const Li = styled.li`
   margin: 3px;
-  font-size: 15px;
+  font-size: 17px;
 
   @media only screen and (max-width: 600px) {
     font-size: 9px;
@@ -92,27 +92,27 @@ function Solutions() {
         <Content>
           <Ul>
             <LiContainer>
-              <Li>HIGH RELIABILITY</Li>
+              <Li> High Reliability</Li>
             </LiContainer>
 
             <LiContainer>
-              <Li>EASY TO ASSEMBLE</Li>
+              <Li>Easy to assemble</Li>
             </LiContainer>
             <LiContainer>
-              <Li>COST EFFECTIVE</Li>
+              <Li>Cost effective</Li>
             </LiContainer>
 
             <LiContainer>
-              <Li>COMPACT SIZE</Li>
+              <Li>Compact size</Li>
             </LiContainer>
             <LiContainer>
-              <Li>LIGHT WEIGHT</Li>
+              <Li>Light weight</Li>
             </LiContainer>
             <LiContainer>
-              <Li>EASY TO CONTROL</Li>
+              <Li>Easy to control</Li>
             </LiContainer>
             <LiContainer>
-              <Li>TECHNICALSUPPORT</Li>
+              <Li>Technical support</Li>
             </LiContainer>
           </Ul>
         </Content>

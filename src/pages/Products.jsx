@@ -61,21 +61,16 @@ const StyledImage = styled.li`
 `;
 
 const H3 = styled.h3`
-  font-size: 4rem;
+  font-size: 3.6rem;
   white-space: nowrap;
   align-items: center;
   margin-top: 40px;
+  color: var(--color-grey-600);
 
   @media only screen and (max-width: 600px) {
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 25px;
   }
-`;
-
-const Img = styled.img`
-  padding-top: 10px;
-  height: 500px;
-  width: 600px;
 `;
 
 function Products() {

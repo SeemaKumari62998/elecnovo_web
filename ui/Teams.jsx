@@ -38,15 +38,13 @@ const Image = styled.img`
 `;
 
 const H1 = styled.h1`
-  color: black;
+  color: var(--color-grey-700);
   text-align: center;
   margin-top: 10px;
   font-size: 35px;
-  font-weight: bold;
-  font-family: Georgia, "Times New Roman", Times, serif;
 
   @media only screen and (max-width: 600px) {
-    font-size: 20px;
+    font-size: 15px;
   }
 `;
 
@@ -72,6 +70,11 @@ const Img = styled.img`
   width: 50%;
 
   margin: 50px;
+
+  @media only screen and (max-width: 600px) {
+    height: 60%;
+    width: 60%;
+  }
 `;
 
 const Box = styled.div`
@@ -104,6 +107,10 @@ function Teams() {
       <Box>
         <H1>We are a group of hardworking, passionate individuals!</H1>
         <Img src="grouppic.jpg" alt="picture" />
+        <Img
+          src="https://www.elecnovo.com/team/img/team/team2.jpg"
+          alt="picture"
+        />
       </Box>
     </>
   );
