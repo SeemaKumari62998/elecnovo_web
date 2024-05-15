@@ -16,8 +16,9 @@ const H1 = styled.h1`
   position: relative;
   color: var(--color-grey-300);
   padding-left: 40px;
+
   margin-top: 2%;
-  font-size: 2.5rem;
+  font-size: 4rem;
   z-index: 10;
 
   @media only screen and (max-width: 600px) {
@@ -57,7 +58,7 @@ const Ul = styled.ul`
 
 const LiContainer = styled.div`
   width: 180px;
-  padding: 10px;
+  padding: 9px;
   border-radius: 10px;
   margin: 20px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -85,7 +86,7 @@ function Solutions() {
   return (
     <>
       <Section>
-        <H1>ELECNOVO SOLUTIONS</H1>
+        <H1>Elecnovo Solutions</H1>
 
         <PerformanceVideo />
         <Content>
@@ -109,6 +110,9 @@ function Solutions() {
             </LiContainer>
             <LiContainer>
               <Li>EASY TO CONTROL</Li>
+            </LiContainer>
+            <LiContainer>
+              <Li>TECHNICALSUPPORT</Li>
             </LiContainer>
           </Ul>
         </Content>

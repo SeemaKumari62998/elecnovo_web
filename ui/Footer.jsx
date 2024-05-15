@@ -130,7 +130,7 @@ function Footer() {
       </StyledColumn>
 
       <StyledColumn>
-        <h3>Contact Us</h3>
+        <h3>Contact us</h3>
         <StyledUl>
           <li>Email: reachus@elecnovo.com</li>
           <li>
@@ -140,7 +140,7 @@ function Footer() {
       </StyledColumn>
 
       <StyledColumn>
-        <h3>Follow Us On</h3>
+        <h3>Follow us on</h3>
         <MediaUl>
           <a
             href="https://www.facebook.com/Elecnovo-269357897205345/"

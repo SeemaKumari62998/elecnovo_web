@@ -12,19 +12,28 @@ const Div = styled.div`
   grid-template-columns: repeat(2, 1fr);
   margin: 20px;
   gap: 100px;
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
 `;
 
 const Span = styled.span`
   color: black;
   margin: 20px;
   @media only screen and (max-width: 600px) {
-    font-size: 15px;
+    font-size: 13px;
   }
 `;
 
 const Img = styled.img`
   width: 600px;
   height: 400px;
+
+  @media only screen and (max-width: 600px) {
+    height: 350px;
+  }
 `;
 
 const H1 = styled.h1`
@@ -34,6 +43,10 @@ const H1 = styled.h1`
   font-size: 35px;
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 20px;
+  }
 `;
 
 function Career() {

@@ -197,7 +197,7 @@ function Products() {
               duration: 1,
             }}
           >
-            <img src="173 IPM R3.jpg" alt="product" />
+            <img src="173 IPM R4.jpg" alt="product" />
 
             <h2>15 kW BLDC / PMSM</h2>
 
