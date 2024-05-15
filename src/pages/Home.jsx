@@ -48,14 +48,15 @@ const H1 = styled(motion.h1)`
   position: absolute;
   top: 85px;
   left: 5%;
-  transform: translateX(-50%);
-  color: white;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: var(--color-grey-700);
   font-size: 5rem;
   z-index: 10;
   text-align: center;
 
   @media only screen and (max-width: 600px) {
-    margin-left: 14%;
+    /* margin-left: %; */
     font-size: 15px;
     font-weight: 400;
     top: 10%;
@@ -91,26 +92,9 @@ const Ul = styled.ul`
   }
 `;
 
-const LiContainer = styled.h1`
-  width: 180px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-  margin: 20px;
-  backdrop-filter: blur(60px);
-  text-align: center;
-
-  @media only screen and (max-width: 600px) {
-    width: 60px;
-    padding: 2px;
-    margin: 1px;
-  }
-`;
-
 const Li = styled.h1`
   margin: 1px;
   font-size: 5rem;
-
   color: var(--color-grey-600);
   padding: 80px;
   margin-bottom: 80px;

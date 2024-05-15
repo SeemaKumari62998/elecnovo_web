@@ -57,13 +57,12 @@ const ImageItem = styled.li`
 `;
 
 const H2 = styled(motion.h2)`
-  font-size: 4rem;
+  font-size: 3.6rem;
   position: absolute;
   top: 20px;
   left: 38%;
-  color: black;
+  color: var(--color-grey-600);
   padding: 10px 0;
-  /* margin: 10px; */
 
   @media only screen and (max-width: 600px) {
     margin-top: 5px;
@@ -90,11 +89,9 @@ function Application() {
     padding: 15px 40px;
     text-align: left;
     text-overflow: ellipsis;
-    /* white-space: nowrap; */
     display: -webkit-box;
     -webkit-line-clamp: ${showFullText ? "unset" : "3"};
     -webkit-box-orient: vertical;
-
     background-color: var(--color-grey-200);
     box-shadow: 0 0 10px rgb(0, 0, 0);
     border-radius: 5px;
