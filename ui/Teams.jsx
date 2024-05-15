@@ -31,6 +31,10 @@ const Image = styled.img`
   max-height: 390px;
   border-radius: 50%;
   width: 250px;
+
+  @media only screen and (max-width: 600px) {
+    height: 300px;
+  }
 `;
 
 const H1 = styled.h1`
@@ -40,6 +44,10 @@ const H1 = styled.h1`
   font-size: 35px;
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 20px;
+  }
 `;
 
 const Span = styled.span`
@@ -79,7 +87,7 @@ function Teams() {
         <Span>&larr;Back</Span>
       </LinkButton>
 
-      <H1>Elecnovo Teams</H1>
+      <H1>Elecnovo Team</H1>
       <Container>
         <Image src="RatulPic.jpg" alt="photo" />
         <Section>

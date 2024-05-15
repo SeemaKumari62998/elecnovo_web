@@ -47,12 +47,11 @@ const Video1 = styled.video`
 const H1 = styled(motion.h1)`
   position: absolute;
   top: 85px;
-  left: 17%;
+  left: 5%;
   transform: translateX(-50%);
-  color: black;
-  font-size: 4rem;
+  color: white;
+  font-size: 5rem;
   z-index: 10;
-  /* width: 50%; */
   text-align: center;
 
   @media only screen and (max-width: 600px) {
@@ -110,14 +109,17 @@ const LiContainer = styled.h1`
 
 const Li = styled.h1`
   margin: 1px;
-  font-size: 4rem;
-  color: Black;
-  padding: 60px;
-  margin-bottom: 250px;
+  font-size: 5rem;
+
+  color: var(--color-grey-600);
+  padding: 80px;
+  margin-bottom: 80px;
 
   @media only screen and (max-width: 600px) {
-    font-size: 6px;
-    margin: 2px;
+    font-size: 15px;
+    margin: 1px;
+    padding: 5px;
+    margin-top: 40px;
   }
 `;
 

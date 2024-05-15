@@ -57,7 +57,7 @@ const ImageItem = styled.li`
 `;
 
 const H2 = styled(motion.h2)`
-  font-size: 2.8rem;
+  font-size: 4rem;
   position: absolute;
   top: 20px;
   left: 38%;
@@ -67,8 +67,8 @@ const H2 = styled(motion.h2)`
 
   @media only screen and (max-width: 600px) {
     margin-top: 5px;
-    left: 10%;
-    font-size: 20px;
+    left: 25%;
+    font-size: 17px;
     justify-content: center;
   }
 `;
@@ -124,7 +124,7 @@ function Application() {
     <>
       <Container>
         <ImageContainer>
-          <H2> ELECNOVO APPLICATIONS</H2>
+          <H2> Elecnovo Application</H2>
 
           <ImageItem
             as={motion.li}
@@ -236,7 +236,7 @@ function Application() {
                   for more details
                 </>
               ) : (
-                "Electric Four Wheeler Loader"
+                "Electric Truck"
               )}
               {!showFullText["Electric Four Wheeler Loader"] && (
                 <ShowMoreLink
