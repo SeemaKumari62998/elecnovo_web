@@ -16,7 +16,7 @@ const H1 = styled.h1`
   position: relative;
   color: var(--color-grey-300);
   padding-left: 40px;
-
+  font-weight: 500;
   margin-top: 2%;
   font-size: 4rem;
   z-index: 10;
