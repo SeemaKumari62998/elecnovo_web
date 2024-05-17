@@ -62,6 +62,7 @@ const StyledImage = styled.li`
 
 const H3 = styled.h3`
   font-size: 3.6rem;
+  font-weight: 500;
   white-space: nowrap;
   align-items: center;
   margin-top: 40px;

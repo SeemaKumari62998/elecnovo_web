@@ -11,8 +11,10 @@ const Container = styled.div`
 const ImageContainer = styled.ul`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
+  /* grid-template-rows: auto; */
+  /* gap: 15px; */
+  grid-gap: 20px;
+  grid-row-gap: 40px;
   padding: 20px;
   margin-top: 70px;
 
@@ -25,8 +27,9 @@ const ImageContainer = styled.ul`
 `;
 
 const Image = styled.img`
-  width: 70%;
-  height: auto;
+  width: 65%;
+  height: 72%;
+
   transition: transform 0.4s;
 `;
 
@@ -34,30 +37,27 @@ const ImageItem = styled.li`
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-
-  /* margin-top: 60px; */
-  position: relative;
+  justify-content: flex-start;
   align-items: center;
+  height: 100%;
 
   &:hover {
     ${Image} {
-      transform: scale(1);
-      /* box-shadow: 0 0 5px rgb(0, 0, 0); */
+      transform: scale(1.05);
     }
   }
 
   @media only screen and (max-width: 600px) {
     margin-bottom: 20px;
     margin-top: 30px;
-    /* align-items: center; */
+
     align-content: center;
-    /* right: 2px; */
   }
 `;
 
 const H2 = styled(motion.h2)`
   font-size: 3.6rem;
+  font-weight: 500;
   position: absolute;
   top: 20px;
   left: 38%;
@@ -72,6 +72,46 @@ const H2 = styled(motion.h2)`
   }
 `;
 
+const Paragraph = styled.p`
+  overflow: hidden;
+  color: black;
+
+  padding: ${(props) => (props.showFullText ? "20px 45px" : "15px 35px")};
+  text-align: left;
+
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: ${(props) => (props.showFullText ? "unset" : "5")};
+  -webkit-box-orient: vertical;
+  background-color: var(--color-grey-200);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  border-radius: 5px;
+  margin-top: ${(props) => (props.showFullText ? "25px" : "20px")};
+  margin-bottom: ${(props) => (props.showFullText ? "30px" : "20px")};
+
+  @media only screen and (max-width: 600px) {
+    padding: ${(props) => (props.showFullText ? "20px 10px" : "15px 5px")};
+    width: 250px;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: ${(props) => (props.showFullText ? "25px" : "20px")};
+    margin-bottom: ${(props) => (props.showFullText ? "30px" : "20px")};
+    white-space: normal;
+  }
+`;
+
+const ShowMoreLink = styled.span`
+  color: blue;
+  cursor: pointer;
+`;
+
+const ContactLink = styled.a`
+  color: blue;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 5px;
+`;
+
 function Application() {
   const [showFullText, setShowFullText] = useState({});
 
@@ -82,41 +122,6 @@ function Application() {
     }));
   };
 
-  const Paragraph = styled.p`
-    overflow: hidden;
-
-    color: black;
-    padding: 15px 40px;
-    text-align: left;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: ${showFullText ? "unset" : "3"};
-    -webkit-box-orient: vertical;
-    background-color: var(--color-grey-200);
-    box-shadow: 0 0 10px rgb(0, 0, 0);
-    border-radius: 5px;
-    margin-top: 10px;
-
-    @media only screen and (max-width: 600px) {
-      padding: 15px 5px;
-      width: 250px;
-      font-size: 1rem;
-      text-align: center;
-      margin-top: 20px;
-      white-space: normal;
-    }
-  `;
-  const ShowMoreLink = styled.span`
-    color: blue;
-    cursor: pointer;
-  `;
-
-  const ContactLink = styled.a`
-    color: blue;
-    cursor: pointer;
-    text-decoration: none;
-    margin-left: 5px;
-  `;
   return (
     <>
       <Container>
@@ -143,7 +148,7 @@ function Application() {
                   <h3>Electric Motorcycle : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   Motorcycle{" "}
-                  <ContactLink href="/career"> "Contact us" </ContactLink>
+                  <ContactLink href="/contact"> "Contact us" </ContactLink>
                   for more details
                 </>
               ) : (
@@ -224,9 +229,9 @@ function Application() {
             <Image src="Four Wheel Loader.png" alt="Application" />
 
             <Paragraph>
-              {showFullText["Electric Four Wheeler Loader"] ? (
+              {showFullText["Electric Truck"] ? (
                 <>
-                  <h3>Electric Four Wheeler Loader : </h3>
+                  <h3>Electric Truck : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   Four Wheeler Loader{" "}
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
@@ -235,17 +240,13 @@ function Application() {
               ) : (
                 "Electric Truck"
               )}
-              {!showFullText["Electric Four Wheeler Loader"] && (
-                <ShowMoreLink
-                  onClick={() => handleShowMore("Electric Four Wheeler Loader")}
-                >
+              {!showFullText["Electric Truck"] && (
+                <ShowMoreLink onClick={() => handleShowMore("Electric Truck")}>
                   ...more
                 </ShowMoreLink>
               )}
-              {showFullText["Electric Four Wheeler Loader"] && (
-                <ShowMoreLink
-                  onClick={() => handleShowMore("Electric Four Wheeler Loader")}
-                >
+              {showFullText["Electric Truck"] && (
+                <ShowMoreLink onClick={() => handleShowMore("Electric Truck")}>
                   ...less
                 </ShowMoreLink>
               )}
@@ -284,82 +285,6 @@ function Application() {
               )}
               {showFullText["Electric Car"] && (
                 <ShowMoreLink onClick={() => handleShowMore("Electric Car")}>
-                  ...less
-                </ShowMoreLink>
-              )}
-            </Paragraph>
-          </ImageItem>
-
-          <ImageItem
-            as={motion.li}
-            initial={{ scale: 0.3, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{
-              delay: 0.4,
-              x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-              duration: 1,
-            }}
-          >
-            <Image src="Buggy.png" alt="Application" />
-            <Paragraph>
-              {showFullText["Electric Buggy"] ? (
-                <>
-                  <h3>Electric Buggy : </h3>
-                  Elecnovo offers custom engineered motorsolutions to electric
-                  Buggy{" "}
-                  <ContactLink href="/contact"> "Contact us" </ContactLink>
-                  for more details
-                </>
-              ) : (
-                "Electric Buggy"
-              )}
-              {!showFullText["Electric Buggy"] && (
-                <ShowMoreLink onClick={() => handleShowMore("Electric Buggy")}>
-                  ...more
-                </ShowMoreLink>
-              )}
-              {showFullText["Electric Buggy"] && (
-                <ShowMoreLink onClick={() => handleShowMore("Electric Buggy")}>
-                  ...less
-                </ShowMoreLink>
-              )}
-            </Paragraph>
-          </ImageItem>
-
-          <ImageItem
-            as={motion.li}
-            initial={{ scale: 0.3, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{
-              delay: 0.4,
-              x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-              duration: 1,
-            }}
-          >
-            <Image src="boat.png" alt="Application" />
-
-            <Paragraph>
-              {showFullText["Electric Boat"] ? (
-                <>
-                  <h3>Electric Boat : </h3>
-                  Elecnovo offers custom engineered motorsolutions to electric
-                  Boat <ContactLink href="/contact"> "Contact us" </ContactLink>
-                  for more details
-                </>
-              ) : (
-                "Electric Boat"
-              )}
-              {!showFullText["Electric Boat"] && (
-                <ShowMoreLink onClick={() => handleShowMore("Electric Boat")}>
-                  ...more
-                </ShowMoreLink>
-              )}
-              {showFullText["Electric Boat"] && (
-                <ShowMoreLink onClick={() => handleShowMore("Electric Boat")}>
                   ...less
                 </ShowMoreLink>
               )}
@@ -446,6 +371,82 @@ function Application() {
                 <ShowMoreLink
                   onClick={() => handleShowMore("Electric Golfkart")}
                 >
+                  ...less
+                </ShowMoreLink>
+              )}
+            </Paragraph>
+          </ImageItem>
+
+          <ImageItem
+            as={motion.li}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+          >
+            <Image src="Buggy.png" alt="Application" />
+            <Paragraph>
+              {showFullText["Electric Buggy"] ? (
+                <>
+                  <h3>Electric Buggy : </h3>
+                  Elecnovo offers custom engineered motorsolutions to electric
+                  Buggy{" "}
+                  <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  for more details
+                </>
+              ) : (
+                "Electric Buggy"
+              )}
+              {!showFullText["Electric Buggy"] && (
+                <ShowMoreLink onClick={() => handleShowMore("Electric Buggy")}>
+                  ...more
+                </ShowMoreLink>
+              )}
+              {showFullText["Electric Buggy"] && (
+                <ShowMoreLink onClick={() => handleShowMore("Electric Buggy")}>
+                  ...less
+                </ShowMoreLink>
+              )}
+            </Paragraph>
+          </ImageItem>
+
+          <ImageItem
+            as={motion.li}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+          >
+            <Image src="boat.png" alt="Application" />
+
+            <Paragraph>
+              {showFullText["Electric Boat"] ? (
+                <>
+                  <h3>Electric Boat : </h3>
+                  Elecnovo offers custom engineered motorsolutions to electric
+                  Boat <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  for more details
+                </>
+              ) : (
+                "Electric Boat"
+              )}
+              {!showFullText["Electric Boat"] && (
+                <ShowMoreLink onClick={() => handleShowMore("Electric Boat")}>
+                  ...more
+                </ShowMoreLink>
+              )}
+              {showFullText["Electric Boat"] && (
+                <ShowMoreLink onClick={() => handleShowMore("Electric Boat")}>
                   ...less
                 </ShowMoreLink>
               )}

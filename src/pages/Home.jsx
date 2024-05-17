@@ -50,7 +50,7 @@ const H1 = styled(motion.h1)`
   left: 5%;
   letter-spacing: 1px;
   font-weight: 500;
-  color: var(--color-grey-700);
+  color: var(--color-cream-100);
   font-size: 5rem;
   z-index: 10;
   text-align: center;
