@@ -59,7 +59,10 @@ function Career() {
       <H1>Certificates & Achivements</H1>
       <Container>
         <Div>
-          <Img src="Admirable_Logo.pdf" alt="certificate" />
+          <Img src="certificate1.png" />
+          <Img src="certificate3.png" />
+          <Img src="certificate2.png" />
+          <Img src="certificate4.png" />
         </Div>
       </Container>
     </>
