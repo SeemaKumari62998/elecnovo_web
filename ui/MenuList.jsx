@@ -121,9 +121,9 @@ function Menu() {
               <MenuItem>About us</MenuItem>
             </NavLink>
 
-            {/* <NavLink to="/products" onClick={() => setMenuOpen(false)}>
+            <NavLink to="/products" onClick={() => setMenuOpen(false)}>
               <MenuItem>Products</MenuItem>
-            </NavLink> */}
+            </NavLink>
           </Border>
 
           <Border>
