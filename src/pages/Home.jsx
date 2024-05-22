@@ -180,6 +180,11 @@ function Home() {
         </Content>
       </Section>
 
+      <Application />
+
+      <Products />
+
+      <Solutions />
       <Div
         as={motion.div}
         initial={{ scale: 0.3, opacity: 0 }}
@@ -197,12 +202,6 @@ function Home() {
         <Img src="A9.png" />
         <Img src="A10.png" />
       </Div>
-
-      <Application />
-
-      <Products />
-
-      <Solutions />
       <Footer />
     </Container>
   );
