@@ -7,12 +7,12 @@ const Container = styled.div`
   flex-direction: row;
   color: black;
   padding: 50px;
-  margin-left: 50px;
+  margin-left: 40px;
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     margin-left: 0;
   }
 `;
@@ -23,29 +23,32 @@ const Section = styled.div`
 
   @media only screen and (max-width: 600px) {
     margin-top: 10px;
-    /* text-align: center; */
+    text-align: center;
+    margin-left: 0;
   }
 `;
 
 const Image = styled.img`
   max-width: 100%;
-  max-height: 390px;
+  max-height: 400px;
   border-radius: 50%;
-  width: 250px;
+  margin-top: 20px;
 
   @media only screen and (max-width: 600px) {
     height: 300px;
+    width: auto;
   }
 `;
 
 const H1 = styled.h1`
   color: var(--color-grey-700);
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
+
   font-size: 35px;
 
   @media only screen and (max-width: 600px) {
-    font-size: 15px;
+    font-size: 16px;
   }
 `;
 
@@ -54,25 +57,25 @@ const Span = styled.span`
   font-size: 15px;
 `;
 
-const H3 = styled.h3`
-  color: black;
-  margin-top: 50px;
-  font-size: 27px;
-
-  @media only screen and (max-width: 600px) {
-    font-size: 15px;
-    text-align: left;
-  }
-`;
-
 const P = styled.p`
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.6;
   margin-top: 20px;
+  color: var(--color-grey-800);
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
 
   @media only screen and (max-width: 600px) {
-    font-size: 13px;
+    font-size: 14px;
+    margin: 10px 0;
     text-align: left;
+    padding: 10px;
+    text-align: justify;
+    margin: 10px;
   }
 `;
 
@@ -109,13 +112,13 @@ function Teams() {
       <Container>
         <Image src="RatulPic.jpg" alt="photo" />
         <Section>
-          <H3>Ratul Borah Founder and CEO</H3>
           <P>
-            Ratul is an entrepreneur, engineer business strategist and
-            motivational speaker. He had managed global engineering, innovation,
-            marketing and business with his 25 years plus multicultural and
-            multinational experience in India, USA, Germany, Japan, China,
-            France, Italy, Thailand, Hong Kong and Singapore.
+            Ratul Borah Founder and CEO. Ratul is an entrepreneur, engineer
+            business strategist and motivational speaker. He had managed global
+            engineering, innovation, marketing and business with his 25 years
+            plus multicultural and multinational experience in India, USA,
+            Germany, Japan, China, France, Italy, Thailand, Hong Kong and
+            Singapore.
             <StyledBr marginBottom="30px" />
             He had done his bachelor’s in Mechanical Engineering. He did his
             master’s in Industrial Engineering. He was awarded Gold Medal for

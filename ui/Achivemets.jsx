@@ -32,7 +32,7 @@ const Img = styled.img`
   height: 400px;
 
   @media only screen and (max-width: 600px) {
-    height: 350px;
+    height: 300px;
   }
 `;
 
@@ -59,10 +59,10 @@ function Career() {
       <H1>Certificates & Achivements</H1>
       <Container>
         <Div>
-          <Img src="certificate1.png" />
-          <Img src="certificate3.png" />
-          <Img src="certificate2.png" />
-          <Img src="certificate4.png" />
+          <Img src="A1.png" />
+          <Img src="A3.png" />
+          <Img src="A2.png" />
+          <Img src="A4.png" />
         </Div>
       </Container>
     </>

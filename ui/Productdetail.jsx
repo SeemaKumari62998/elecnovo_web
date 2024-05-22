@@ -14,6 +14,13 @@ const Container = styled.div`
   background-color: white;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   position: fixed;
+
+  @media only screen and (max-width: 600px) {
+    top: 3%;
+    height: auto;
+    padding: 25px;
+    margin: 5px;
+  }
 `;
 
 const Span = styled.span`
@@ -27,29 +34,57 @@ const Span = styled.span`
 const Img = styled.img`
   height: 200px;
   width: 250px;
+
+  @media only screen and (max-width: 600px) {
+    height: 100px;
+    width: 125px;
+  }
 `;
 
 const Ul = styled.ul`
   display: flex;
   font-size: 3.5rem;
   gap: 10px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1.5rem;
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 
 const Li = styled.li`
-  background-color: var(--color-grey-100);
+  background-color: var(--color-grey-200);
   border-radius: 10px;
   margin: 30px;
   padding: 10px 30px;
   justify-content: center;
+
+  @media only screen and (max-width: 600px) {
+    margin: 10px;
+    padding: 10px 25px;
+  }
 `;
 
 const Div = styled.div`
   margin-top: 60px;
   text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
 `;
 
 const Contact = styled.div`
   text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1.3rem;
+  }
 `;
 
 function Productdetail() {
