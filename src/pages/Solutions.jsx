@@ -28,12 +28,36 @@ const H1 = styled.h1`
     text-align: center;
   }
 `;
+const H2 = styled.h2`
+  position: relative;
+  padding-left: 75%;
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--color-cream-200);
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1.1rem;
+  }
+`;
+const H3 = styled.h3`
+  position: relative;
+  padding-left: 80%;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--color-cream-200);
+  margin-top: 200px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1.1rem;
+    margin-top: 25px;
+  }
+`;
 
 const Content = styled.div`
   position: absolute;
   top: 95%;
   transform: translateY(-60%);
-  color: var(--color-grey-200);
+  color: var(--color-green-100);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -41,6 +65,8 @@ const Content = styled.div`
 
   @media only screen and (max-width: 600px) {
     padding-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 `;
 
@@ -51,8 +77,8 @@ const Ul = styled.ul`
 
   @media only screen and (max-width: 600px) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
     margin: 0;
     padding: 0;
   }
@@ -63,12 +89,12 @@ const LiContainer = styled.div`
   padding: 20px;
   border-radius: 8px;
   margin: 20px;
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(60px);
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  /* backdrop-filter: blur(60px); */
 
   @media only screen and (max-width: 600px) {
     width: 95px;
-    padding: 0px;
+    padding: 2px;
     margin: 0px;
   }
 `;
@@ -79,7 +105,7 @@ const Li = styled.li`
 
   @media only screen and (max-width: 600px) {
     font-size: 9px;
-    margin: 7px;
+    margin: 2px;
   }
 `;
 
@@ -90,15 +116,18 @@ function Solutions() {
         <H1>Elecnovo Solutions</H1>
 
         <PerformanceVideo />
+        <H2>Motor control system</H2>
+        <H2>AI based</H2>
+        <H3>Powertrain</H3>
         <Content>
           <Ul>
             <LiContainer>
               <Li> High Reliability</Li>
             </LiContainer>
-
             <LiContainer>
-              <Li>Easy to assemble</Li>
+              <Li>Light weight</Li>
             </LiContainer>
+
             <LiContainer>
               <Li>Cost effective</Li>
             </LiContainer>
@@ -107,16 +136,18 @@ function Solutions() {
               <Li>Compact size</Li>
             </LiContainer>
             <LiContainer>
-              <Li>Light weight</Li>
+              <Li>Easy to assemble</Li>
             </LiContainer>
+
             <LiContainer>
-              <Li>Easy to control</Li>
+              <Li>Custom-engineering</Li>
             </LiContainer>
             <LiContainer>
               <Li>Technical support</Li>
             </LiContainer>
+
             <LiContainer>
-              <Li>Custom-engineering</Li>
+              <Li>Easy to control</Li>
             </LiContainer>
           </Ul>
         </Content>

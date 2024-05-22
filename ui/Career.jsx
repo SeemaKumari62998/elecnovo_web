@@ -57,8 +57,8 @@ function Carrer() {
         <StyledParagraph>
           Elecnovo offers excellent career opportunities for engineering,
           manufacturing, human resources, and business development. Please send
-          your introduction and resume to reach us at reachus@elecnovo.com if
-          you want to join the journey of Elecnovo.
+          your introduction and resume at reachus@elecnovo.com if you want to
+          join the journey of Elecnovo.
         </StyledParagraph>
       </Container>
     </>

@@ -61,8 +61,10 @@ function Career() {
         <Div>
           <Img src="A1.png" />
           <Img src="A3.png" />
-          <Img src="A2.png" />
           <Img src="A4.png" />
+          <Img src="A5.png" />
+          <Img src="A2.png" />
+          <Img src="A6.png" />
         </Div>
       </Container>
     </>

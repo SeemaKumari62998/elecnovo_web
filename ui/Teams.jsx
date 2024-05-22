@@ -141,9 +141,9 @@ function Teams() {
       </Container>
 
       <Box>
-        <H1>We are a group of hardworking, passionate individuals!</H1>
-        <Img src="grouppic.jpg" alt="picture" />
+        <H1>We are a team of passionate and hardworking individuals!</H1>
         <Img src="Elecnovo_Team.JPG" alt="picture" />
+        <Img src="grouppic.jpg" alt="picture" />
       </Box>
     </>
   );
