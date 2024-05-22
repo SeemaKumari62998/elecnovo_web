@@ -88,7 +88,7 @@ function Products() {
       </LinkButton> */}
 
       <StyledContainer>
-        <H3>Elecnovo Products</H3>
+        <H3>Elecnovo Motors</H3>
 
         <StyledUl>
           <StyledImage

@@ -16,20 +16,20 @@ const ImageContainer = styled.ul`
   grid-gap: 20px;
   grid-row-gap: 40px;
   padding: 20px;
-  margin-top: 70px;
+  margin-top: 130px;
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 10px;
     margin-bottom: 30px;
+    margin-top: 70px;
   }
 `;
 
 const Image = styled.img`
   width: 65%;
   height: 72%;
-
   transition: transform 0.4s;
 `;
 
@@ -49,8 +49,7 @@ const ImageItem = styled.li`
 
   @media only screen and (max-width: 600px) {
     margin-bottom: 20px;
-    margin-top: 30px;
-
+    margin-top: 10px;
     align-content: center;
   }
 `;
@@ -68,6 +67,21 @@ const H2 = styled(motion.h2)`
     margin-top: 5px;
     left: 25%;
     font-size: 17px;
+    justify-content: center;
+  }
+`;
+const H3 = styled.h3`
+  font-size: 3rem;
+  font-weight: 500;
+  position: absolute;
+  left: 37%;
+  top: 8%;
+  color: var(--color-grey-600);
+
+  @media only screen and (max-width: 600px) {
+    top: 6rem;
+    left: 23%;
+    font-size: 15px;
     justify-content: center;
   }
 `;
@@ -127,6 +141,7 @@ function Application() {
       <Container>
         <ImageContainer>
           <H2> Elecnovo Application</H2>
+          <H3>Electric Vehicle and ..more</H3>
 
           <ImageItem
             as={motion.li}
@@ -147,7 +162,7 @@ function Application() {
                 <>
                   <h3>Electric Motorcycle : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
-                  Motorcycle{" "}
+                  Motorcycle
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
                   for more details
                 </>

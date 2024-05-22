@@ -32,9 +32,7 @@ const H1 = styled.h1`
 const Content = styled.div`
   position: absolute;
   top: 95%;
-  /* right: 1px; */
   transform: translateY(-60%);
-  /* text-align: center; */
   color: var(--color-grey-200);
   width: 100%;
   display: flex;
@@ -52,8 +50,11 @@ const Ul = styled.ul`
   flex-wrap: wrap;
 
   @media only screen and (max-width: 600px) {
-    margin: 25px;
-    margin-bottom: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    margin: 0;
+    padding: 0;
   }
 `;
 
@@ -66,9 +67,9 @@ const LiContainer = styled.div`
   backdrop-filter: blur(60px);
 
   @media only screen and (max-width: 600px) {
-    width: 100px;
-    padding: 2px;
-    margin: 1px;
+    width: 95px;
+    padding: 0px;
+    margin: 0px;
   }
 `;
 
@@ -113,6 +114,9 @@ function Solutions() {
             </LiContainer>
             <LiContainer>
               <Li>Technical support</Li>
+            </LiContainer>
+            <LiContainer>
+              <Li>Custom-engineering</Li>
             </LiContainer>
           </Ul>
         </Content>

@@ -95,7 +95,7 @@ const Ul = styled.ul`
 const Li = styled.h1`
   margin: 1px;
   font-size: 5rem;
-  color: var(--color-grey-600);
+  color: var(--color-grey-700);
   padding: 80px;
   margin-bottom: 80px;
 
