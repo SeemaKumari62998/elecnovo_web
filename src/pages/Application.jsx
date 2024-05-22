@@ -74,7 +74,7 @@ const H3 = styled.h3`
   font-size: 3rem;
   font-weight: 500;
   position: absolute;
-  left: 37%;
+  left: 38%;
   top: 8%;
   color: var(--color-grey-600);
 
@@ -141,7 +141,7 @@ function Application() {
       <Container>
         <ImageContainer>
           <H2> Elecnovo Application</H2>
-          <H3>Electric Vehicle and ..more</H3>
+          <H3>Electric Vehicle and more</H3>
 
           <ImageItem
             as={motion.li}

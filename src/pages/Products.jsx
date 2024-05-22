@@ -176,7 +176,7 @@ function Products() {
             }}
           >
             <img src="8KW SPM R1.jpg" alt="product" />
-            <h2>8 kW BLDC / PMSM</h2>
+            <h2>10 kW BLDC / PMSM</h2>
 
             <Button onClick={handleExplore}>..more</Button>
           </StyledImage>

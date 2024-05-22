@@ -5,6 +5,7 @@ import Application from "./Application";
 import Solutions from "./Solutions";
 import Products from "./Products";
 import SPM from "../../public/SPM.mp4";
+import Achivements from "../../ui/Achivemets";
 import productVideo from "../../public/productVideo.mp4";
 
 const Container = styled.div`
@@ -107,16 +108,40 @@ const Li = styled.h1`
   }
 `;
 
+const Img = styled.img`
+  width: 500px;
+  height: 280px;
+
+  @media only screen and (max-width: 600px) {
+    width: 80%; /* Adjust width for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px auto; /* Center horizontally and add margin */
+    padding: 10px;
+  }
+`;
+
+const Div = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 200px;
+  height: 100vh;
+  width: 100%;
+  justify-content: space-around;
+  grid-row-gap: 1px;
+  grid-column-gap: 2px;
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin: 10px auto; /* Center the grid container */
+    padding: 10px; /* Add padding for spacing */
+  }
+`;
+
 function Home() {
   return (
     <Container>
-      {/* <Section> */}
-      {/* <H1>DRIVING GREEN MOBILITY</H1> */}
-      {/* <Video src={technology} autoPlay loop muted /> */}
-      {/* <Video src={SPM} autoPlay loop muted /> */}
-      {/* <Video1 src={productVideo} autoPlay loop muted /> */}
-      {/* </Section> */}
-
       <Section>
         <H1
           as={motion.h1}
@@ -154,6 +179,24 @@ function Home() {
           </Ul>
         </Content>
       </Section>
+
+      <Div
+        as={motion.div}
+        initial={{ scale: 0.3, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{
+          delay: 0.4,
+          x: { type: "spring", stiffness: 60 },
+          opacity: { duration: 1 },
+          ease: "easeIn",
+          duration: 1,
+        }}
+      >
+        <Img src="A2.png" />
+        <Img src="A6.png" />
+        <Img src="A9.png" />
+        <Img src="A10.png" />
+      </Div>
 
       <Application />
 
