@@ -89,7 +89,7 @@ const Paragraph = styled.p`
   overflow: hidden;
   color: black;
   font-size: 1.5rem;
-  padding: ${(props) => (props.showFullText ? "40px 60px" : "30px 20px")};
+  padding: ${(props) => (props.showFullText ? "80px 60px" : "40px 18px")};
   text-align: left;
   display: -webkit-box;
   -webkit-line-clamp: ${(props) => (props.showFullText ? "unset" : "5")};
@@ -98,7 +98,7 @@ const Paragraph = styled.p`
   /* box-shadow: 0 0 5px rgb(0, 0, 0); */
   border-radius: 5px;
   margin-top: ${(props) => (props.showFullText ? "25px" : "20px")};
-  margin-bottom: ${(props) => (props.showFullText ? "30px" : "20px")};
+  margin-bottom: ${(props) => (props.showFullText ? "20px" : "10px")};
 
   @media only screen and (max-width: 600px) {
     padding: ${(props) => (props.showFullText ? "20px 10px" : "15px 5px")};
