@@ -112,17 +112,21 @@ function Footer() {
             <StyledNavLink to="/">Home</StyledNavLink>
           </li>
           <li>
-            <StyledNavLink to="/products">Products</StyledNavLink>
+            <StyledNavLink to="/about">About us</StyledNavLink>
           </li>
 
           <li>
-            <StyledNavLink to="/about">About us</StyledNavLink>
+            <StyledNavLink to="/teams">Team</StyledNavLink>
           </li>
-          <li>
-            <StyledNavLink to="/contact">Contact us</StyledNavLink>
-          </li>
+
           <li>
             <StyledNavLink to="/application">Application</StyledNavLink>
+          </li>
+          <li>
+            <StyledNavLink to="/products">Products</StyledNavLink>
+          </li>
+          <li>
+            <StyledNavLink to="/career">Career</StyledNavLink>
           </li>
         </StyledUl>
       </StyledColumn>
