@@ -128,7 +128,7 @@ function Teams() {
           <P2>Ratul Borah</P2>
           <P1>Founder & CEO</P1>
           <P>
-            Ratul is an entrepreneur, engineer business strategist and
+            Ratul is an entrepreneur, engineer, business strategist and
             motivational speaker. He had managed global engineering, innovation,
             marketing and business with his 25 years plus multicultural and
             multinational experience in India, USA, Germany, Japan, China,
