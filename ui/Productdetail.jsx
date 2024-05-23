@@ -16,10 +16,11 @@ const Container = styled.div`
   position: fixed;
 
   @media only screen and (max-width: 600px) {
-    top: 3%;
-    height: auto;
+    top: 8%;
+    height: 100vh;
     padding: 25px;
     margin: 5px;
+    padding-bottom: 50px;
   }
 `;
 
@@ -69,13 +70,16 @@ const Li = styled.li`
 const Div = styled.div`
   margin-top: 60px;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
 
   @media only screen and (max-width: 600px) {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 5px;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 5px;
   }
 `;
 
