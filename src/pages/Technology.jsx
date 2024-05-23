@@ -1,8 +1,6 @@
 import styled from "styled-components";
-import LinkButton from "../../ui/LinkButton";
 
 const Container = styled.div`
-  /* height: 100vh; */
   width: 100%;
   background-color: white;
   display: flex;
@@ -19,6 +17,7 @@ const H1 = styled.h1`
 
   @media only screen and (max-width: 600px) {
     font-size: 20px;
+    margin-top: 15px;
   }
 `;
 const H2 = styled.h2`
@@ -27,7 +26,7 @@ const H2 = styled.h2`
 
   @media only screen and (max-width: 600px) {
     font-size: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     margin-bottom: 5px;
   }
@@ -51,10 +50,7 @@ const Image = styled.img`
   width: 80%;
   max-height: 280px;
   height: 80%;
-  /* margin: 10px; */
   margin-bottom: 10px;
-
-  /* object-fit: cover; */
 
   @media only screen and (max-width: 600px) {
     max-width: calc(100% - 50px);
@@ -81,19 +77,9 @@ const P = styled.p`
   }
 `;
 
-const Span = styled.span`
-  @media only screen and (max-width: 600px) {
-    font-size: 15px;
-  }
-`;
-
 function Technology() {
   return (
     <>
-      {/* <LinkButton to="/">
-        <Span>&larr;Back</Span>
-      </LinkButton> */}
-
       <Container>
         <H1>Elecnovo's Motor Technologies</H1>
         <Imagecontainer>
@@ -103,7 +89,7 @@ function Technology() {
           </Div>
 
           <Div>
-            <Image src="5KW SPM R1.jpg" alt="technology" />
+            <Image src="2KW SPM R1.jpg" alt="technology" />
             <P>PMSM</P>
           </Div>
           <Div>

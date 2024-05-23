@@ -22,6 +22,7 @@ const Div = styled.div`
 const Span = styled.span`
   color: black;
   margin: 20px;
+
   @media only screen and (max-width: 600px) {
     font-size: 13px;
   }
@@ -46,6 +47,7 @@ const H1 = styled.h1`
 
   @media only screen and (max-width: 600px) {
     font-size: 20px;
+    margin-top: 20px;
   }
 `;
 
@@ -59,14 +61,14 @@ function Career() {
       <H1>Certificates & Achivements</H1>
       <Container>
         <Div>
-          <Img src="A1.png" />
-          <Img src="A3.png" />
-          <Img src="A4.png" />
-          <Img src="A5.png" />
-          <Img src="A2.png" />
-          <Img src="A6.png" />
-          <Img src="A9.png" />
-          <Img src="A10.png" />
+          <Img src="certificate1.png" />
+          <Img src="certificate3.png" />
+          <Img src="certificate4.png" />
+          <Img src="certificate5.png" />
+          <Img src="certificate2.png" />
+          <Img src="certificate6.png" />
+          <Img src="certificate9.png" />
+          <Img src="certificate10.png" />
         </Div>
       </Container>
     </>

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import { MdOutlineMailOutline, MdPhone } from "react-icons/md";
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const StyledFooter = styled.div`
@@ -9,7 +8,6 @@ const StyledFooter = styled.div`
   justify-content: space-between;
   background-color: var(--color-grey-900);
   padding: 20px 100px 10px 10px;
-  /* color: var(--color-grey-100); */
   width: 100%;
 
   @media only screen and (max-width: 600px) {

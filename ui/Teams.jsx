@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import LinkButton from "./LinkButton";
-import { motion } from "framer-motion";
 
 const Container = styled.div`
   display: flex;
@@ -54,13 +53,17 @@ const H1 = styled.h1`
 
 const Span = styled.span`
   color: black;
-  font-size: 15px;
+  margin: 20px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 13px;
+  }
 `;
 
 const P = styled.p`
   font-size: 18px;
   line-height: 1.6;
-  margin-top: 20px;
+  margin-top: 5px;
   color: var(--color-grey-800);
   margin-bottom: 20px;
   font-family: "Roboto", sans-serif;

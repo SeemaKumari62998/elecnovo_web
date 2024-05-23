@@ -6,7 +6,6 @@ const Section = styled.div`
   width: 100%;
   height: 90vh;
   overflow: hidden;
-  border: 1px solid grey;
 
   @media only screen and (max-width: 600px) {
     height: 30vh;
@@ -91,8 +90,6 @@ const LiContainer = styled.div`
   padding: 20px;
   border-radius: 8px;
   margin: 20px;
-  /* background-color: rgba(0, 0, 0, 0.4); */
-  /* backdrop-filter: blur(60px); */
 
   @media only screen and (max-width: 600px) {
     width: 95px;

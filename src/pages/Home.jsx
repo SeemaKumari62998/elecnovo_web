@@ -5,8 +5,6 @@ import Application from "./Application";
 import Solutions from "./Solutions";
 import Products from "./Products";
 import SPM from "../../public/SPM.mp4";
-import Achivements from "../../ui/Achivemets";
-import productVideo from "../../public/productVideo.mp4";
 
 const Container = styled.div`
   display: flex;
@@ -37,14 +35,6 @@ const Video = styled.video`
   z-index: -1;
 `;
 
-const Video1 = styled.video`
-  width: 80%;
-  height: 80%;
-  top: 0;
-  left: 0;
-  margin-left: 10%;
-`;
-
 const H1 = styled(motion.h1)`
   position: absolute;
   top: 85px;
@@ -57,7 +47,6 @@ const H1 = styled(motion.h1)`
   text-align: center;
 
   @media only screen and (max-width: 600px) {
-    /* margin-left: %; */
     font-size: 15px;
     font-weight: 400;
     top: 10%;
@@ -88,7 +77,6 @@ const Ul = styled.ul`
   @media only screen and (max-width: 600px) {
     margin: 7px;
     margin-bottom: 15px;
-
     flex-direction: column;
   }
 `;
@@ -196,10 +184,10 @@ function Home() {
           duration: 1,
         }}
       >
-        <Img src="A2.png" />
-        <Img src="A6.png" />
-        <Img src="A9.png" />
-        <Img src="A10.png" />
+        <Img src="certificate2.png" />
+        <Img src="certificate6.png" />
+        <Img src="certificate9.png" />
+        <Img src="certificate10.png" />
       </Div>
       <Footer />
     </Container>
