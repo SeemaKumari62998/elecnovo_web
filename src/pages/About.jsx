@@ -68,7 +68,7 @@ function About() {
       <Wrapper>
         <H1>ABOUT US</H1>
         <Paragrapg>
-          Elecnovo is engaged in Design, Development, manufacture and Supply of
+          Elecnovo is engaged in Design, Development, Manufacture and Supply of
           Intelligent, Efficient, Reliable and Robust electric motors for
           Electric Vehicles (EV) and other applications. Elecnovo also provides
           motor control and powertrain solutions. Based in Bengaluru, India,
