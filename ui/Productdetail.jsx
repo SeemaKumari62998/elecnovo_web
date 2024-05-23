@@ -124,7 +124,7 @@ function Productdetail() {
         <Img src="3KW SPM R1.jpg" alt="details" />
         <Img src="5KW SPM R1.jpg" alt="details" />
         <Img src="8KW SPM R1.jpg" alt="details" />
-        <Img src="173 IPM.jpg" alt="details" />
+        <Img src="173 IPM R4.jpg" alt="details" />
       </Div>
     </Container>
   );

@@ -4,7 +4,8 @@ import Footer from "../../ui/Footer";
 import Application from "./Application";
 import Solutions from "./Solutions";
 import Products from "./Products";
-import SPM from "../../public/SPM.mp4";
+import PMSManimationR1 from "../../public/PMSManimationR1.mp4";
+// import MotorAnimationSPMR3 from "../../public/MotorAnimationSPMR3.mp4";
 
 const Container = styled.div`
   display: flex;
@@ -145,7 +146,7 @@ function Home() {
           Electric Motor
         </H1>
 
-        <Video src={SPM} autoPlay loop muted />
+        <Video src={PMSManimationR1} autoPlay loop muted />
 
         <Content>
           <Ul>
@@ -172,6 +173,7 @@ function Home() {
       <Products />
 
       <Solutions />
+
       <Div
         as={motion.div}
         initial={{ scale: 0.3, opacity: 0 }}
@@ -184,10 +186,10 @@ function Home() {
           duration: 1,
         }}
       >
+        <Img src="certificate10.png" />
+        <Img src="certificate9.png" />
         <Img src="certificate2.png" />
         <Img src="certificate6.png" />
-        <Img src="certificate9.png" />
-        <Img src="certificate10.png" />
       </Div>
       <Footer />
     </Container>

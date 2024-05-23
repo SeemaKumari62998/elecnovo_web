@@ -100,6 +100,16 @@ const Box = styled.div`
   flex-direction: column;
 `;
 
+const P1 = styled.p`
+  font-size: 20px;
+  margin-left: 10px;
+`;
+const P2 = styled.p`
+  font-size: 23px;
+  margin-left: 10px;
+  font-weight: bold;
+`;
+
 const StyledBr = styled.div`
   margin-bottom: ${(props) => props.marginBottom || "20px"};
 `;
@@ -115,13 +125,14 @@ function Teams() {
       <Container>
         <Image src="RatulPic.jpg" alt="photo" />
         <Section>
+          <P2>Ratul Borah</P2>
+          <P1>Founder & CEO</P1>
           <P>
-            Ratul Borah Founder and CEO. Ratul is an entrepreneur, engineer
-            business strategist and motivational speaker. He had managed global
-            engineering, innovation, marketing and business with his 25 years
-            plus multicultural and multinational experience in India, USA,
-            Germany, Japan, China, France, Italy, Thailand, Hong Kong and
-            Singapore.
+            Ratul is an entrepreneur, engineer business strategist and
+            motivational speaker. He had managed global engineering, innovation,
+            marketing and business with his 25 years plus multicultural and
+            multinational experience in India, USA, Germany, Japan, China,
+            France, Italy, Thailand, Hong Kong and Singapore.
             <StyledBr marginBottom="30px" />
             He had done his bachelor’s in Mechanical Engineering. He did his
             master’s in Industrial Engineering. He was awarded Gold Medal for
@@ -134,7 +145,7 @@ function Teams() {
             He had influenced thousands of individuals to do better in life.
             <StyledBr marginBottom="30px" />
             Ratul is engaged in social works including water preservation, tree
-            plantations and neighborhoods cleaning and promoting green
+            plantations, neighborhoods cleaning and promoting green
             environments.
             <StyledBr marginBottom="30px" />
             Please do feel free to contact me via email:

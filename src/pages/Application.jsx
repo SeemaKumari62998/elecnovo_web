@@ -38,6 +38,7 @@ const ImageItem = styled.li`
   justify-content: flex-start;
   align-items: center;
   height: 100%;
+  padding: 20px;
 
   &:hover {
     ${Image} {
@@ -87,16 +88,14 @@ const H3 = styled.h3`
 const Paragraph = styled.p`
   overflow: hidden;
   color: black;
-
-  padding: ${(props) => (props.showFullText ? "20px 45px" : "15px 35px")};
+  font-size: 1.5rem;
+  padding: ${(props) => (props.showFullText ? "40px 60px" : "30px 20px")};
   text-align: left;
-
-  text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: ${(props) => (props.showFullText ? "unset" : "5")};
   -webkit-box-orient: vertical;
   background-color: var(--color-grey-200);
-  box-shadow: 0 0 10px rgb(0, 0, 0);
+  /* box-shadow: 0 0 5px rgb(0, 0, 0); */
   border-radius: 5px;
   margin-top: ${(props) => (props.showFullText ? "25px" : "20px")};
   margin-bottom: ${(props) => (props.showFullText ? "30px" : "20px")};
