@@ -5,7 +5,6 @@ import Application from "./Application";
 import Solutions from "./Solutions";
 import Products from "./Products";
 import PMSManimationR1 from "../../public/PMSManimationR1.mp4";
-// import MotorAnimationSPMR3 from "../../public/MotorAnimationSPMR3.mp4";
 
 const Container = styled.div`
   display: flex;
@@ -100,7 +99,7 @@ const Li = styled.h1`
 const Img = styled.img`
   width: 100%;
   height: 60%;
-  margin: 0;
+  margin: 90px;
   padding: 0;
 
   @media only screen and (max-width: 600px) {
@@ -113,8 +112,7 @@ const Img = styled.img`
 const Div = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
-  margin: 20px 0;
+  margin: 40px 0;
   height: 100vh;
   width: 80%;
 

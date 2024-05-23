@@ -89,7 +89,7 @@ const LiContainer = styled.div`
   width: auto;
   padding: 20px;
   border-radius: 8px;
-  margin: 20px;
+  margin: 10px;
 
   @media only screen and (max-width: 600px) {
     width: 95px;
