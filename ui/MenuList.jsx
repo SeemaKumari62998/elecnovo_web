@@ -100,16 +100,16 @@ function Menu() {
           </Border>
 
           <Border>
+            <NavLink to="/about" onClick={() => setMenuOpen(false)}>
+              <MenuItem>About us</MenuItem>
+            </NavLink>
+
             <NavLink to="/application" onClick={() => setMenuOpen(false)}>
               <MenuItem>Application</MenuItem>
             </NavLink>
 
             <NavLink to="/technology" onClick={() => setMenuOpen(false)}>
               <MenuItem>Technology</MenuItem>
-            </NavLink>
-
-            <NavLink to="/about" onClick={() => setMenuOpen(false)}>
-              <MenuItem>About us</MenuItem>
             </NavLink>
 
             <NavLink to="/products" onClick={() => setMenuOpen(false)}>
@@ -123,7 +123,7 @@ function Menu() {
             </NavLink>
 
             <NavLink to="/teams" onClick={() => setMenuOpen(false)}>
-              <MenuItem>Teams</MenuItem>
+              <MenuItem>Team</MenuItem>
             </NavLink>
             <NavLink to="/achivements" onClick={() => setMenuOpen(false)}>
               <MenuItem>Achivements</MenuItem>
