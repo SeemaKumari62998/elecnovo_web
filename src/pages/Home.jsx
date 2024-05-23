@@ -109,33 +109,32 @@ const Li = styled.h1`
 `;
 
 const Img = styled.img`
-  width: 500px;
-  height: 280px;
+  width: 100%;
+  height: 60%;
+  margin: 0;
+  padding: 0;
 
   @media only screen and (max-width: 600px) {
-    width: 80%; /* Adjust width for smaller screens */
-    height: auto; /* Maintain aspect ratio */
-    margin: 10px auto; /* Center horizontally and add margin */
-    padding: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 `;
 
 const Div = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-left: 200px;
+
+  margin: 20px 0;
   height: 100vh;
-  width: 100%;
-  justify-content: space-around;
-  grid-row-gap: 1px;
-  grid-column-gap: 2px;
+  width: 80%;
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    margin: 10px auto; /* Center the grid container */
-    padding: 10px; /* Add padding for spacing */
+
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
   }
 `;
 

@@ -33,7 +33,7 @@ const H2 = styled.h2`
   padding-left: 75%;
   font-size: 3rem;
   font-weight: 500;
-  color: var(--color-cream-200);
+  color: var(--color-cream-100);
 
   @media only screen and (max-width: 600px) {
     font-size: 1rem;
@@ -46,7 +46,7 @@ const H3 = styled.h3`
   padding-left: 80%;
   font-size: 2.5rem;
   font-weight: 500;
-  color: var(--color-cream-200);
+  color: var(--color-cream-100);
   margin-top: 200px;
 
   @media only screen and (max-width: 600px) {
