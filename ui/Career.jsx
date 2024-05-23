@@ -1,12 +1,9 @@
 import styled from "styled-components";
-import LinkButton from "./LinkButton";
 
 const Container = styled.div`
   width: 100%;
-
   display: flex;
   flex-direction: row;
-
   background-color: var(--color-grey-200);
 
   @media only screen and (max-width: 600px) {
@@ -27,11 +24,6 @@ const Img = styled.img`
   }
 `;
 
-const Span = styled.span`
-  font-size: 15px;
-  color: black;
-`;
-
 const StyledParagraph = styled.p`
   font-size: 23px;
   text-align: left;
@@ -48,12 +40,8 @@ const StyledParagraph = styled.p`
 function Carrer() {
   return (
     <>
-      {/* <LinkButton to="/">
-        <Span>&larr;Back</Span>
-      </LinkButton> */}
       <Container>
-        <Img src="career10.jpg" alt="Career" />
-
+        <Img src="career.jpg" alt="Career" />
         <StyledParagraph>
           Elecnovo offers excellent career opportunities for engineering,
           manufacturing, human resources, and business development. Please send

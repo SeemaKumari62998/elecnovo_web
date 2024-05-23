@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../ui/Button";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import LinkButton from "../../ui/LinkButton";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -22,7 +21,6 @@ const StyledUl = styled.ul`
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* gap: 10px; */
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
@@ -83,10 +81,6 @@ function Products() {
 
   return (
     <>
-      {/* <LinkButton to="/">
-        <Span>&larr;Back</Span>
-      </LinkButton> */}
-
       <StyledContainer>
         <H3>Elecnovo Motors</H3>
 

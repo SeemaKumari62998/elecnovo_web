@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Footer from "../../ui/Footer";
 import { motion } from "framer-motion";
-import LinkButton from "../../ui/LinkButton";
 
 const Wrapper = styled(motion.div)`
   display: flex;
@@ -39,22 +38,10 @@ const Img = styled.img`
   height: 400px;
   width: 100%;
   object-fit: cover;
-  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
 
   @media only screen and (max-width: 600px) {
     height: 20%;
   }
-`;
-
-const Overlay = styled.div`
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  z-index: 1;
 `;
 
 const H1 = styled.h1`
@@ -66,42 +53,38 @@ const H1 = styled.h1`
   }
 `;
 
-const Span = styled.span`
-  @media only screen and (max-width: 600px) {
-    font-size: 15px;
-  }
-`;
-
 function About() {
   return (
     <>
-      {/* <LinkButton to="/">
-        <Span>&larr;Back</Span>
-      </LinkButton> */}
-
       <Container
         as={motion.div}
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
       >
-        <Img src="aboutpageimage.jpg" alt="About" />
-        {/* <Overlay /> */}
+        <Img src="about.jpg" alt="About" />
       </Container>
 
       <Wrapper>
         <H1>ABOUT US</H1>
         <Paragrapg>
-          Elecnovo is engaged in Design, Development and Supply of Intelligent,
-          Efficient and Reliable electric motors and controllers for electric
-          vehicles (EV). Based in Bangalore, India, elecnovo team consists of
-          motor experts, electronics engineers, electrical engineers, mechanical
-          designers and manufacturing experts. Elecnovo provides motor solutions
-          ranging from 1kW and 20kW. Elecnovo applications include electric
-          bicycles, electric scooters, electric motorcycles, electric three
-          wheelers, electic boats, electric cleaning vehicles, electric light
-          duty goods vehicles and electric light duty passenger vehicles.
-          Elecnovo is an iniative of R & D in India and Make in India.
+          Elecnovo is engaged in Design, Development, manufacture and Supply of
+          Intelligent, Efficient, Reliable and Robust electric motors for
+          Electric Vehicles (EV) and other applications. Elecnovo also provides
+          motor control and powertrain solutions. Based in Bengaluru, India,
+          Elecnovo team consists of motor experts, electronics engineers,
+          electrical engineers, mechanical designers and manufacturing experts.
+          Elecnovo provides motor solutions in Brushless DC (BLDC) and Permanent
+          Magnet Synchronous Motor (PMSM) technologies ranging from 1kW and
+          20kW. Elecnovo applications include electric bicycles, electric
+          scooters, electric motorcycles, electric three wheelers, electric
+          boats, electric cleaning vehicles, electric light duty goods vehicles
+          and electric light duty passenger vehicles. Elecnovo has patented
+          inventions on motor control system for Electric Vehicles, learning
+          based motor control system for Electric Vehicles and commutation
+          system for BLDC motors, and patent-pending invention on an electronic
+          commutation system for electric motor. Elecnovo is an initiative of R
+          & D in India and Make in India.
         </Paragrapg>
       </Wrapper>
       <Footer />

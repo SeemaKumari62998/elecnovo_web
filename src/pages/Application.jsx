@@ -11,8 +11,6 @@ const Container = styled.div`
 const ImageContainer = styled.ul`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* grid-template-rows: auto; */
-  /* gap: 15px; */
   grid-gap: 20px;
   grid-row-gap: 40px;
   padding: 20px;

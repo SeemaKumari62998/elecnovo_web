@@ -2,9 +2,6 @@ import toast from "react-hot-toast";
 import Form from "./Form";
 import styled from "styled-components";
 import Button from "./Button";
-import { CiLocationOn } from "react-icons/ci";
-import { MdOutlineMailOutline, MdPhone } from "react-icons/md";
-import LinkButton from "./LinkButton";
 import Footer from "./Footer";
 
 const Container = styled.div`
@@ -98,7 +95,7 @@ function ContactForm() {
     <>
       <Container>
         <Div>
-          <Img src="Contact1.jpg" alt="Contact" />
+          <Img src="contact.jpg" alt="Contact" />
         </Div>
 
         <Form>
@@ -112,17 +109,22 @@ function ContactForm() {
           <FormContainer>
             <SpanOr>OR</SpanOr>
 
-            <Input type="text" placeholder="Enter your Name" required />
-            <Input type="text" placeholder="Enter your phone number" required />
-            <Input type="text" placeholder="Enter your Email" required />
+            <Input type="text" placeholder="Enter your Name" disabled />
+            <Input type="text" placeholder="Enter your phone number" disabled />
+            <Input type="text" placeholder="Enter your Email" disabled />
             <StyledTextarea
               placeholder="Enter your Message or question"
               maxLength={200}
-              required
+              disabled
             />
           </FormContainer>
 
-          <Button size="small" variation="primary" onClick={handleSubmit}>
+          <Button
+            size="small"
+            variation="primary"
+            disabled
+            onClick={handleSubmit}
+          >
             Submit
           </Button>
         </Form>

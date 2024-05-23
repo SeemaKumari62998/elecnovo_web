@@ -51,9 +51,7 @@ const StyledNavLink = styled(NavLink)`
   &:active,
   &.active:link,
   &.active:visited {
-    /* font-size: 1.8rem; */
     background-color: var(--color-grey-900);
-    /* border-radius: 8px; */
     color: white;
     border-radius: 11px;
   }
@@ -61,10 +59,8 @@ const StyledNavLink = styled(NavLink)`
 
 const StyledLogo = styled.div`
   display: flex;
-
   justify-content: flex-start;
   align-items: center;
-  /* height: 1000px; */
   width: 15%;
   margin-right: auto;
   overflow: hidden;
@@ -83,51 +79,11 @@ const Img = styled.img`
   display: block;
 `;
 
-const Div = styled.div`
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  span {
-    &:hover,
-    &:active,
-    &.active:link,
-    &.active:visited {
-      color: var(--color-grey-600);
-
-      text-decoration: underline;
-    }
-  }
-
-  @media only screen and (max-width: 600px) {
-    display: none;
-  }
-`;
-
-const Text = styled.h2`
-  font-size: 4rem;
-  font-weight: 500;
-  color: var(--color-green-500);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
-  background: linear-gradient(45deg, #ff7e5f, #feb47b);
-  -webkit-background-clip: text;
-  /* -webkit-text-fill-color: transparent; */
-  display: inline-block;
-  padding: 0.5rem 1rem; /* Add some padding */
-  border-radius: 10px; /* Add border radius */
-
-  @media only screen and (max-width: 600px) {
-    font-size: 3rem;
-  }
-`;
-
 function MainNav() {
   return (
     <>
       <StyledLogo>
         <Link to="/">
-          {/* <Img src="logo1.jpeg" alt="Logo" /> */}
           <Img src="ElecnovoPageLogo.png" alt="Logo" />
         </Link>
       </StyledLogo>

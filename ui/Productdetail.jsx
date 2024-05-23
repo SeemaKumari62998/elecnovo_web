@@ -5,7 +5,7 @@ const Container = styled.div`
   width: 100%;
   top: 20px;
   color: var(--color-grey-800);
-  height: 100vh;
+  height: auto;
   margin: 10px 10px;
   padding: 10px;
   display: flex;
@@ -13,10 +13,10 @@ const Container = styled.div`
   justify-content: center;
   background-color: white;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  position: fixed;
+  position: relative;
 
   @media only screen and (max-width: 600px) {
-    top: 8%;
+    top: 2%;
     height: 100vh;
     padding: 25px;
     margin: 5px;
@@ -77,8 +77,7 @@ const Div = styled.div`
   @media only screen and (max-width: 600px) {
     margin-top: 5px;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 5px;
   }
 `;
@@ -94,7 +93,7 @@ const Contact = styled.div`
 function Productdetail() {
   return (
     <Container>
-      <LinkButton>
+      <LinkButton to="/">
         <Span>&larr;Back</Span>
       </LinkButton>
 

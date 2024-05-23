@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import solution from "../public/solution.mp4";
+import Solutionvideo from "../public/Solutionvideo.mp4";
 
 const Container = styled.div`
   position: absolute;
@@ -19,7 +19,7 @@ const Video = styled.video`
 function PerformanceVideo() {
   return (
     <Container>
-      <Video src={solution} autoPlay loop muted />
+      <Video src={Solutionvideo} autoPlay loop muted />
     </Container>
   );
 }
