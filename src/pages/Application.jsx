@@ -38,7 +38,7 @@ const ImageItem = styled.li`
   justify-content: flex-start;
   align-items: center;
   height: 100%;
-  padding: 20px;
+  padding: 10px;
 
   &:hover {
     ${Image} {
@@ -50,6 +50,36 @@ const ImageItem = styled.li`
     margin-bottom: 20px;
     margin-top: 10px;
     align-content: center;
+  }
+`;
+
+const Paragraph = styled.p`
+  overflow: hidden;
+  color: black;
+  font-size: 1.5rem;
+  padding: ${(props) => (props.showFullText ? "40px 20px" : "20px 10px")};
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: ${(props) => (props.showFullText ? "unset" : "5")};
+  -webkit-box-orient: vertical;
+  background-color: var(--color-grey-200);
+  /* box-shadow: 0 0 5px rgb(0, 0, 0); */
+  border-radius: 5px;
+  margin-top: ${(props) => (props.showFullText ? "15px" : "10px")};
+  margin-bottom: ${(props) => (props.showFullText ? "10px" : "5px")};
+
+  @media only screen and (max-width: 600px) {
+    padding: ${(props) => (props.showFullText ? "20px 10px" : "15px 5px")};
+    width: 250px;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: ${(props) => (props.showFullText ? "15px" : "10px")};
+    margin-bottom: ${(props) => (props.showFullText ? "10px" : "5px")};
+    white-space: normal;
+
+    /* & > * {
+      text-align: left;
+    } */
   }
 `;
 
@@ -82,32 +112,6 @@ const H3 = styled.h3`
     left: 23%;
     font-size: 15px;
     justify-content: center;
-  }
-`;
-
-const Paragraph = styled.p`
-  overflow: hidden;
-  color: black;
-  font-size: 1.5rem;
-  padding: ${(props) => (props.showFullText ? "80px 60px" : "40px 18px")};
-  text-align: left;
-  display: -webkit-box;
-  -webkit-line-clamp: ${(props) => (props.showFullText ? "unset" : "5")};
-  -webkit-box-orient: vertical;
-  background-color: var(--color-grey-200);
-  /* box-shadow: 0 0 5px rgb(0, 0, 0); */
-  border-radius: 5px;
-  margin-top: ${(props) => (props.showFullText ? "25px" : "20px")};
-  margin-bottom: ${(props) => (props.showFullText ? "20px" : "10px")};
-
-  @media only screen and (max-width: 600px) {
-    padding: ${(props) => (props.showFullText ? "20px 10px" : "15px 5px")};
-    width: 250px;
-    font-size: 1rem;
-    text-align: center;
-    margin-top: ${(props) => (props.showFullText ? "25px" : "20px")};
-    margin-bottom: ${(props) => (props.showFullText ? "30px" : "20px")};
-    white-space: normal;
   }
 `;
 
@@ -159,7 +163,7 @@ function Application() {
                 <>
                   <h3>Electric Motorcycle : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
-                  Motorcycle
+                  motorcycle
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
                   for more details
                 </>
@@ -202,7 +206,7 @@ function Application() {
                 <>
                   <h3> Electric Scooter : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
-                  Scooter
+                  scooter
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
                   for more details
                 </>
@@ -245,7 +249,7 @@ function Application() {
                 <>
                   <h3>Electric Truck : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
-                  Four Wheeler Loader{" "}
+                  truck
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
                   for more details
                 </>
@@ -322,7 +326,7 @@ function Application() {
                 <>
                   <h3>Electric Tractor : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
-                  Tractor{" "}
+                  tractor
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
                   for more details
                 </>
@@ -407,7 +411,7 @@ function Application() {
                 <>
                   <h3>Electric Buggy : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
-                  Buggy{" "}
+                  buggy
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
                   for more details
                 </>
@@ -446,7 +450,7 @@ function Application() {
                 <>
                   <h3>Electric Boat : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
-                  Boat <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  boat <ContactLink href="/contact"> "Contact us" </ContactLink>
                   for more details
                 </>
               ) : (
@@ -484,7 +488,7 @@ function Application() {
                 <>
                   <h3>Electric Goods Vehicle : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
-                  Goods Vehicle{" "}
+                  goods vehicle
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
                   for more details
                 </>
@@ -526,7 +530,7 @@ function Application() {
                 <>
                   <h3>Electric Cleaning Vehicle : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
-                  Cleaning Vehicle{" "}
+                  cleaning vehicle
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
                   for more details
                 </>
@@ -568,7 +572,7 @@ function Application() {
                 <>
                   <h3>Electric Auto : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
-                  Auto <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  auto <ContactLink href="/contact"> "Contact us" </ContactLink>
                   for more details
                 </>
               ) : (
@@ -606,7 +610,7 @@ function Application() {
                 <>
                   <h3>Electric Streeing wheel : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
-                  Streeing wheel{" "}
+                  streeing wheel
                   <ContactLink href="/contact"> "Contact us" </ContactLink>
                   for more details
                 </>

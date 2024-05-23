@@ -102,11 +102,11 @@ const Box = styled.div`
 
 const P1 = styled.p`
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 13px;
 `;
 const P2 = styled.p`
   font-size: 23px;
-  margin-left: 10px;
+  margin-left: 12px;
   font-weight: bold;
 `;
 

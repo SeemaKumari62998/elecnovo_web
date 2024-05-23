@@ -44,7 +44,7 @@ function Carrer() {
         <Img src="career.jpg" alt="Career" />
         <StyledParagraph>
           Elecnovo offers excellent career opportunities for engineering,
-          manufacturing, human resources, and business development. Please send
+          manufacturing, human resources and business development. Please send
           your introduction and resume at reachus@elecnovo.com if you want to
           join the journey of Elecnovo.
         </StyledParagraph>
