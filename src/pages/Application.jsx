@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
+import { useNavigate } from "react-router-dom";
+
 const Container = styled.div`
   position: relative;
   background-color: var(--color-grey-200);
@@ -129,12 +131,17 @@ const ContactLink = styled.a`
 
 function Application() {
   const [showFullText, setShowFullText] = useState({});
+  const navigate = useNavigate();
 
   const handleShowMore = (itemName) => {
     setShowFullText((prevState) => ({
       ...prevState,
       [itemName]: !prevState[itemName],
     }));
+  };
+
+  const handleContactClick = () => {
+    navigate("/contact");
   };
 
   return (
@@ -164,7 +171,9 @@ function Application() {
                   <h3>Electric Motorcycle : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   motorcycle
-                  <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  <ContactLink onClick={handleContactClick}>
+                    "Contact us"
+                  </ContactLink>
                   for more details
                 </>
               ) : (
@@ -207,7 +216,9 @@ function Application() {
                   <h3> Electric Scooter : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   scooter
-                  <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  <ContactLink onClick={handleContactClick}>
+                    "Contact us"
+                  </ContactLink>
                   for more details
                 </>
               ) : (
@@ -250,7 +261,9 @@ function Application() {
                   <h3>Electric Truck : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   truck
-                  <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  <ContactLink onClick={handleContactClick}>
+                    "Contact us"
+                  </ContactLink>
                   for more details
                 </>
               ) : (
@@ -288,7 +301,10 @@ function Application() {
                 <>
                   <h3>Electric Car : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
-                  Car <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  Car{" "}
+                  <ContactLink onClick={handleContactClick}>
+                    "Contact us"
+                  </ContactLink>
                   for more details
                 </>
               ) : (
@@ -327,7 +343,9 @@ function Application() {
                   <h3>Electric Tractor : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   tractor
-                  <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  <ContactLink onClick={handleContactClick}>
+                    "Contact us"
+                  </ContactLink>
                   for more details
                 </>
               ) : (
@@ -370,7 +388,9 @@ function Application() {
                   <h3>Electric Golfkart : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   Golfkart{" "}
-                  <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  <ContactLink onClick={handleContactClick}>
+                    "Contact us"
+                  </ContactLink>
                   for more details
                 </>
               ) : (
@@ -412,7 +432,9 @@ function Application() {
                   <h3>Electric Buggy : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   buggy
-                  <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  <ContactLink onClick={handleContactClick}>
+                    "Contact us"
+                  </ContactLink>
                   for more details
                 </>
               ) : (
@@ -450,7 +472,10 @@ function Application() {
                 <>
                   <h3>Electric Boat : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
-                  boat <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  boat{" "}
+                  <ContactLink onClick={handleContactClick}>
+                    "Contact us"
+                  </ContactLink>
                   for more details
                 </>
               ) : (
@@ -489,7 +514,9 @@ function Application() {
                   <h3>Electric Goods Vehicle : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   goods vehicle
-                  <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  <ContactLink onClick={handleContactClick}>
+                    "Contact us"
+                  </ContactLink>
                   for more details
                 </>
               ) : (
@@ -531,7 +558,9 @@ function Application() {
                   <h3>Electric Cleaning Vehicle : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   cleaning vehicle
-                  <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  <ContactLink onClick={handleContactClick}>
+                    "Contact us"
+                  </ContactLink>
                   for more details
                 </>
               ) : (
@@ -572,7 +601,10 @@ function Application() {
                 <>
                   <h3>Electric Auto : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
-                  auto <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  auto{" "}
+                  <ContactLink onClick={handleContactClick}>
+                    "Contact us"
+                  </ContactLink>
                   for more details
                 </>
               ) : (
@@ -611,7 +643,9 @@ function Application() {
                   <h3>Electric Streeing wheel : </h3>
                   Elecnovo offers custom engineered motorsolutions to electric
                   streeing wheel
-                  <ContactLink href="/contact"> "Contact us" </ContactLink>
+                  <ContactLink onClick={handleContactClick}>
+                    "Contact us"
+                  </ContactLink>
                   for more details
                 </>
               ) : (
