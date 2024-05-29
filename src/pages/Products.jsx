@@ -13,7 +13,7 @@ const StyledContainer = styled.div`
   @media only screen and (max-width: 600px) {
     height: 100%;
     top: 0;
-    margin-top: 5px;
+    /* margin-top: 5px; */
   }
 `;
 
@@ -67,7 +67,7 @@ const H3 = styled.h3`
   color: var(--color-grey-600);
 
   @media only screen and (max-width: 600px) {
-    font-size: 20px;
+    font-size: 2.5rem;
     margin-top: 25px;
   }
 `;
@@ -98,7 +98,7 @@ function Products() {
             }}
           >
             <img src="1KW SPM R1.jpg" alt="product" />
-            <h2>1 kW BLDC / PMSM</h2>
+            <h4>1 kW BLDC / PMSM</h4>
 
             <Button onClick={handleExplore}>..more</Button>
           </StyledImage>
@@ -116,7 +116,7 @@ function Products() {
             }}
           >
             <img src="2KW SPM R1.jpg" alt="product" />
-            <h2>2 kW BLDC / PMSM</h2>
+            <h4>2 kW BLDC / PMSM</h4>
 
             <Button onClick={handleExplore}>..more</Button>
           </StyledImage>
@@ -134,7 +134,7 @@ function Products() {
             }}
           >
             <img src="3KW SPM R1.jpg" alt="product" />
-            <h2>3 kW BLDC / PMSM</h2>
+            <h4>3 kW BLDC / PMSM</h4>
 
             <Button onClick={handleExplore}>..more</Button>
           </StyledImage>
@@ -152,7 +152,7 @@ function Products() {
             }}
           >
             <img src="5KW SPM R1.jpg" alt="product" />
-            <h2>5 kW BLDC / PMSM</h2>
+            <h4>5 kW BLDC / PMSM</h4>
 
             <Button onClick={handleExplore}>..more</Button>
           </StyledImage>
@@ -170,7 +170,7 @@ function Products() {
             }}
           >
             <img src="8KW SPM R1.jpg" alt="product" />
-            <h2>10 kW BLDC / PMSM</h2>
+            <h4>10 kW BLDC / PMSM</h4>
 
             <Button onClick={handleExplore}>..more</Button>
           </StyledImage>
@@ -189,7 +189,7 @@ function Products() {
           >
             <img src="173 IPM R4.jpg" alt="product" />
 
-            <h2>15 kW BLDC / PMSM</h2>
+            <h4>15 kW BLDC / PMSM</h4>
 
             <Button onClick={handleExplore}>..more</Button>
           </StyledImage>

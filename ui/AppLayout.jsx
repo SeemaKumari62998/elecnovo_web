@@ -13,8 +13,7 @@ const StyledAppLayout = styled.div`
 
 const Main = styled.main`
   margin-top: 85px;
-
-  background-color: var(--color-grey-50);
+  background-color: var(--color-grey-200);
 
   @media only screen and (max-width: 600px) {
     margin-top: 60px;

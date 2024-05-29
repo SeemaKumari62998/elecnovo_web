@@ -15,7 +15,6 @@ const StyledFooter = styled.div`
     align-items: flex-start;
     padding: 2px;
     padding-left: 30px;
-    margin-bottom: 90px;
   }
 `;
 

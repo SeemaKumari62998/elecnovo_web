@@ -21,7 +21,7 @@ const Section = styled.div`
   overflow: hidden;
 
   @media only screen and (max-width: 600px) {
-    height: 26vh;
+    height: 100vh;
   }
 `;
 
@@ -33,6 +33,11 @@ const Video = styled.video`
   top: 0;
   left: 0;
   z-index: -1;
+
+  @media only screen and (max-width: 600px) {
+    height: 40%;
+    object-fit: cover;
+  }
 `;
 
 const H1 = styled(motion.h1)`
@@ -99,7 +104,7 @@ const Li = styled.h1`
 const Img = styled.img`
   width: 100%;
   height: 60%;
-  margin: 90px;
+  margin: 80px;
   padding: 0;
 
   @media only screen and (max-width: 600px) {
@@ -112,13 +117,13 @@ const Img = styled.img`
 const Div = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 40px 0;
+  margin: 20px 20px;
+  gap: 40px;
   height: 100vh;
   width: 80%;
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
-
     width: 90%;
     margin: 10px auto;
     padding: 10px;
@@ -164,6 +169,15 @@ function Home() {
             </Li>
           </Ul>
         </Content>
+      </Section>
+
+      <Section>
+        <h1>
+          ABOUT US Elecnovo is engaged in Design, Development, Manufacture and
+          Supply of Intelligent, Efficient, Reliable and Robust electric motors
+          for Electric Vehicles (EV) and other applications. Elecnovo also
+          provides motor control and powertrain solutions.
+        </h1>
       </Section>
 
       <Application />
