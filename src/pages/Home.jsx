@@ -5,6 +5,8 @@ import Application from "./Application";
 import Solutions from "./Solutions";
 import Products from "./Products";
 import PMSManimationR1 from "../../public/PMSManimationR1.mp4";
+import motorR2 from "../../public/motorR2.mp4";
+import Text from "../../ui/Text";
 
 const Container = styled.div`
   display: flex;
@@ -172,13 +174,9 @@ function Home() {
       </Section>
 
       <Section>
-        <h1>
-          ABOUT US Elecnovo is engaged in Design, Development, Manufacture and
-          Supply of Intelligent, Efficient, Reliable and Robust electric motors
-          for Electric Vehicles (EV) and other applications. Elecnovo also
-          provides motor control and powertrain solutions.
-        </h1>
+        <Video src={motorR2} autoPlay loop muted />
       </Section>
+      <Text />
 
       <Application />
 
