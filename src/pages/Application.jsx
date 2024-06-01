@@ -1,14 +1,13 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import Abg from "../../public/Abg.jpg";
+
 import { useNavigate } from "react-router-dom";
 
 const Container = styled.div`
   position: relative;
   background-color: var(--color-grey-200);
   padding: 20px;
-  background-image: url(${Abg});
 `;
 
 const ImageContainer = styled.ul`
@@ -65,7 +64,7 @@ const Paragraph = styled.p`
   display: -webkit-box;
   -webkit-line-clamp: ${(props) => (props.showFullText ? "unset" : "5")};
   -webkit-box-orient: vertical;
-  /* background-color: var(--color-grey-200); */
+  background-color: var(--color-grey-200);
   /* box-shadow: 0 0 5px rgb(0, 0, 0); */
   border-radius: 5px;
   margin-top: ${(props) => (props.showFullText ? "15px" : "10px")};
