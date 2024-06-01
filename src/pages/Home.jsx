@@ -12,6 +12,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   overflow: hidden;
   width: 100vw;
 `;
@@ -19,11 +20,17 @@ const Container = styled.div`
 const Section = styled.div`
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: calc(100vh - 60px);
+  /* height: 100vh; */
   overflow: hidden;
+  border-bottom: 1px solid white;
 
   @media only screen and (max-width: 600px) {
-    height: 100vh;
+    height: auto;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
   }
 `;
 
@@ -37,26 +44,32 @@ const Video = styled.video`
   z-index: -1;
 
   @media only screen and (max-width: 600px) {
-    height: 40%;
+    height: auto;
+    margin-top: 50%;
     object-fit: cover;
   }
 `;
 
 const H1 = styled(motion.h1)`
   position: absolute;
-  top: 85px;
-  left: 5%;
+  top: 55px;
+  left: 35%;
   letter-spacing: 1px;
   font-weight: 500;
   color: var(--color-cream-100);
-  font-size: 5rem;
+
+  font-size: 6rem;
   z-index: 10;
-  text-align: center;
+  /* text-align: center; */
 
   @media only screen and (max-width: 600px) {
-    font-size: 15px;
+    font-size: 2.5rem;
     font-weight: 400;
-    top: 10%;
+    top: 0;
+    color: grey;
+    margin-top: 60px;
+    left: 28%;
+    transform: translate(-50%, -50%);
   }
 `;
 
@@ -71,6 +84,9 @@ const Content = styled.div`
 
   @media only screen and (max-width: 600px) {
     padding-bottom: 20px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 `;
 
@@ -91,15 +107,17 @@ const Ul = styled.ul`
 const Li = styled.h1`
   margin: 1px;
   font-size: 5rem;
-  color: var(--color-grey-700);
-  padding: 80px;
+  /* color: var(--color-grey-700); */
+  color: grey;
+  padding: 50px;
   margin-bottom: 80px;
 
   @media only screen and (max-width: 600px) {
-    font-size: 15px;
+    font-size: 2.5rem;
     margin: 1px;
-    padding: 5px;
-    margin-top: 40px;
+    padding: 10px;
+    margin-top: 30px;
+    white-space: nowrap;
   }
 `;
 
@@ -176,6 +194,7 @@ function Home() {
       <Section>
         <Video src={motorR2} autoPlay loop muted />
       </Section>
+
       <Text />
 
       <Application />
