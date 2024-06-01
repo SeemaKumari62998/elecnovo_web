@@ -42,6 +42,7 @@ const StyledParagraph = styled.p`
 
 const FancyH1 = styled(motion.h1)`
   font-size: 5rem;
+  font-weight: 500;
   color: var(--color-grey-700);
   text-align: center;
   font-family: "Times New Roman", Times, serif;
@@ -69,7 +70,7 @@ function Career() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          Driving green mobility🌳
+          Elecnoco offers best carrer opportunity
         </FancyH1>
       </Container>
     </>
