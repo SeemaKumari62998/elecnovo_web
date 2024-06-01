@@ -12,7 +12,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   overflow: hidden;
   width: 100vw;
 `;
@@ -20,17 +19,11 @@ const Container = styled.div`
 const Section = styled.div`
   position: relative;
   width: 100%;
-  min-height: calc(100vh - 60px);
-  /* height: 100vh; */
+  height: 100vh;
   overflow: hidden;
-  border-bottom: 1px solid white;
 
   @media only screen and (max-width: 600px) {
-    height: auto;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
+    height: 26vh;
   }
 `;
 
@@ -42,89 +35,61 @@ const Video = styled.video`
   top: 0;
   left: 0;
   z-index: -1;
-
-  @media only screen and (max-width: 600px) {
-    height: auto;
-    margin-top: 50%;
-    object-fit: cover;
-  }
 `;
 
 const H1 = styled(motion.h1)`
   position: absolute;
-  top: 55px;
-  left: 35%;
-  letter-spacing: 1px;
+  top: 50px;
+  left: 25%;
+  letter-spacing: 2px;
   font-weight: 500;
   color: var(--color-cream-100);
 
-  font-size: 6rem;
+  font-size: 4rem;
   z-index: 10;
-  /* text-align: center; */
-
-  @media only screen and (max-width: 600px) {
-    font-size: 2.5rem;
-    font-weight: 400;
-    top: 0;
-    color: grey;
-    margin-top: 60px;
-    left: 28%;
-    transform: translate(-50%, -50%);
-  }
-`;
-
-const Content = styled.div`
-  position: absolute;
-  top: 90%;
-  right: 1px;
-  transform: translateY(-60%);
   text-align: center;
-  color: var(--color-grey-100);
-  width: fit-content;
 
   @media only screen and (max-width: 600px) {
-    padding-bottom: 20px;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 15px;
+    font-weight: 400;
+    top: 8%;
+    left: 15%;
   }
 `;
 
-const Ul = styled.ul`
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+const Subheading = styled(motion.div)`
+  position: absolute;
+  top: 90px;
+  left: 23%;
+  transform: translateX(-50%);
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  z-index: 10;
 
   @media only screen and (max-width: 600px) {
-    margin: 7px;
-    margin-bottom: 15px;
-    flex-direction: column;
+    top: 11%;
+    letter-spacing: 1px;
+    left: 11%;
   }
 `;
 
-const Li = styled.h1`
-  margin: 1px;
-  font-size: 5rem;
-  /* color: var(--color-grey-700); */
-  color: grey;
-  padding: 50px;
-  margin-bottom: 80px;
+const TextContent = styled.p`
+  margin: 0;
+  padding: 20px;
+  color: var(--color-cream-100);
 
   @media only screen and (max-width: 600px) {
-    font-size: 2.5rem;
-    margin: 1px;
+    font-size: 1.3rem;
     padding: 10px;
-    margin-top: 30px;
-    white-space: nowrap;
   }
 `;
 
 const Img = styled.img`
   width: 100%;
   height: 60%;
-  margin: 80px;
+  margin: 90px;
   padding: 0;
 
   @media only screen and (max-width: 600px) {
@@ -137,8 +102,8 @@ const Img = styled.img`
 const Div = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 20px 20px;
-  gap: 40px;
+  margin: 40px 0;
+  /* gap: 40px; */
   height: 100vh;
   width: 80%;
 
@@ -169,33 +134,29 @@ function Home() {
           Electric Motor
         </H1>
 
+        <Subheading
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            y: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+        >
+          <TextContent>Patented Technology</TextContent>
+        </Subheading>
+
         <Video src={PMSManimationR1} autoPlay loop muted />
-
-        <Content>
-          <Ul>
-            <Li
-              as={motion.li}
-              initial={{ x: 100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{
-                delay: 0.2,
-                x: { type: "spring", stiffness: 60 },
-                opacity: { duration: 1 },
-                ease: "easeIn",
-                duration: 1,
-              }}
-            >
-              Patented Technology
-            </Li>
-          </Ul>
-        </Content>
-      </Section>
-
-      <Section>
-        <Video src={motorR2} autoPlay loop muted />
       </Section>
 
       <Text />
+
+      <Section>
+        <Video src={motorR2} autoPlay loop muted />
+        <H1>Driving green mobility</H1>
+      </Section>
 
       <Application />
 
@@ -203,18 +164,7 @@ function Home() {
 
       <Solutions />
 
-      <Div
-        as={motion.div}
-        initial={{ scale: 0.3, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }}
-        transition={{
-          delay: 0.4,
-          x: { type: "spring", stiffness: 60 },
-          opacity: { duration: 1 },
-          ease: "easeIn",
-          duration: 1,
-        }}
-      >
+      <Div>
         <Img src="certificate10.png" />
         <Img src="certificate9.png" />
         <Img src="certificate2.png" />
