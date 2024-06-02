@@ -125,8 +125,8 @@ function Menu() {
             <NavLink to="/teams" onClick={() => setMenuOpen(false)}>
               <MenuItem>Team</MenuItem>
             </NavLink>
-            <NavLink to="/achivements" onClick={() => setMenuOpen(false)}>
-              <MenuItem>Achivements</MenuItem>
+            <NavLink to="/achievements" onClick={() => setMenuOpen(false)}>
+              <MenuItem>Achievements</MenuItem>
             </NavLink>
           </Border>
 

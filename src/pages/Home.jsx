@@ -58,19 +58,19 @@ const H1 = styled(motion.h1)`
 const Subheading = styled(motion.div)`
   position: absolute;
   top: 75%;
-  left: 65%;
+  left: 63%;
   transform: translateX(-50%);
-  letter-spacing: 2px;
+
   text-align: center;
-  font-size: 5rem;
-  font-weight: 500;
+  font-size: 5.5rem;
+  font-weight: 400;
   white-space: nowrap;
   z-index: 10;
 
   @media only screen and (max-width: 600px) {
-    top: 11%;
-    letter-spacing: 1px;
-    left: 11%;
+    top: 12%;
+
+    left: 17%;
   }
 `;
 
@@ -89,25 +89,32 @@ const TextContent = styled.p`
 `;
 
 const Img = styled.img`
-  width: 100%;
+  /* width: 100%;
   height: 60%;
   margin: 90px;
-  padding: 0;
+  padding: 0; */
 
+  width: 100%;
+  height: auto;
+  padding: 20px;
   @media only screen and (max-width: 600px) {
     width: 100%;
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    padding: 10px;
   }
 `;
 
 const Div = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 40px 0;
-  /* gap: 40px; */
-  height: 100vh;
-  width: 80%;
+  /* margin: 40px 0; */
+  margin: 50px auto;
+  gap: 30px;
+  /* height: 100vh; */
+  width: 90%;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
