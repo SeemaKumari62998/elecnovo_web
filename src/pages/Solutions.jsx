@@ -8,7 +8,7 @@ const Section = styled.div`
   overflow: hidden;
 
   @media only screen and (max-width: 600px) {
-    height: 100vh;
+    height: 30vh;
   }
 `;
 const H1 = styled.h1`
@@ -21,7 +21,7 @@ const H1 = styled.h1`
   z-index: 10;
 
   @media only screen and (max-width: 600px) {
-    font-size: 2.5rem;
+    font-size: 17px;
     padding-left: 25px;
     margin-top: 25px;
     text-align: center;
@@ -29,16 +29,15 @@ const H1 = styled.h1`
 `;
 const H2 = styled.h2`
   position: relative;
-
   padding-left: 75%;
   font-size: 3rem;
   font-weight: 500;
   color: var(--color-cream-100);
 
   @media only screen and (max-width: 600px) {
-    font-size: 1.5rem;
-    padding-left: 55%;
-    margin-top: 90px;
+    font-size: 1rem;
+    padding-left: 70%;
+    margin-top: 8px;
   }
 `;
 const H3 = styled.h3`
@@ -50,8 +49,8 @@ const H3 = styled.h3`
   margin-top: 200px;
 
   @media only screen and (max-width: 600px) {
-    font-size: 1.5rem;
-    margin-top: 50%;
+    font-size: 1.1rem;
+    margin-top: 25px;
   }
 `;
 
@@ -59,7 +58,7 @@ const Content = styled.div`
   position: absolute;
   top: 95%;
   transform: translateY(-60%);
-  color: var(--color-yellow-100);
+  color: var(--color-green-100);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -116,11 +115,8 @@ function Solutions() {
         <H1>Elecnovo Solutions</H1>
 
         <PerformanceVideo />
-        <H2>
-          Motor control system <br />
-          AI based
-        </H2>
-
+        <H2>Motor control system</H2>
+        <H2>AI based</H2>
         <H3>Powertrain</H3>
         <Content>
           <Ul>
