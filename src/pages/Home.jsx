@@ -164,7 +164,19 @@ function Home() {
 
       <Section>
         <Video src={motorR2} autoPlay loop muted />
-        <H1>Driving green mobility</H1>
+        <Subheading
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            y: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+        >
+          <TextContent>Driving green mobility</TextContent>
+        </Subheading>
       </Section>
 
       <Application />
