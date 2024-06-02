@@ -169,7 +169,7 @@ function Application() {
               {showFullText["Electric Motorcycle"] ? (
                 <>
                   <h3>Electric Motorcycle : </h3>
-                  Elecnovo offers custom engineered motorsolutions to electric
+                  Elecnovo offers custom engineered motor solutions to electric
                   motorcycle
                   <ContactLink onClick={handleContactClick}>
                     "Contact us"
@@ -214,7 +214,7 @@ function Application() {
               {showFullText["Electric Scooter"] ? (
                 <>
                   <h3> Electric Scooter : </h3>
-                  Elecnovo offers custom engineered motorsolutions to electric
+                  Elecnovo offers custom engineered motor solutions to electric
                   scooter
                   <ContactLink onClick={handleContactClick}>
                     "Contact us"
@@ -259,7 +259,7 @@ function Application() {
               {showFullText["Electric Truck"] ? (
                 <>
                   <h3>Electric Truck : </h3>
-                  Elecnovo offers custom engineered motorsolutions to electric
+                  Elecnovo offers custom engineered motor solutions to electric
                   truck
                   <ContactLink onClick={handleContactClick}>
                     "Contact us"
@@ -300,7 +300,7 @@ function Application() {
               {showFullText["Electric Car"] ? (
                 <>
                   <h3>Electric Car : </h3>
-                  Elecnovo offers custom engineered motorsolutions to electric
+                  Elecnovo offers custom engineered motor solutions to electric
                   Car{" "}
                   <ContactLink onClick={handleContactClick}>
                     "Contact us"
@@ -341,7 +341,7 @@ function Application() {
               {showFullText["Electric Tractor"] ? (
                 <>
                   <h3>Electric Tractor : </h3>
-                  Elecnovo offers custom engineered motorsolutions to electric
+                  Elecnovo offers custom engineered motor solutions to electric
                   tractor
                   <ContactLink onClick={handleContactClick}>
                     "Contact us"
@@ -386,7 +386,7 @@ function Application() {
               {showFullText["Electric Golfkart"] ? (
                 <>
                   <h3>Electric Golfkart : </h3>
-                  Elecnovo offers custom engineered motorsolutions to electric
+                  Elecnovo offers custom engineered motor solutions to electric
                   Golfkart{" "}
                   <ContactLink onClick={handleContactClick}>
                     "Contact us"
@@ -430,7 +430,7 @@ function Application() {
               {showFullText["Electric Buggy"] ? (
                 <>
                   <h3>Electric Buggy : </h3>
-                  Elecnovo offers custom engineered motorsolutions to electric
+                  Elecnovo offers custom engineered motor solutions to electric
                   buggy
                   <ContactLink onClick={handleContactClick}>
                     "Contact us"
@@ -471,7 +471,7 @@ function Application() {
               {showFullText["Electric Boat"] ? (
                 <>
                   <h3>Electric Boat : </h3>
-                  Elecnovo offers custom engineered motorsolutions to electric
+                  Elecnovo offers custom engineered motor solutions to electric
                   boat{" "}
                   <ContactLink onClick={handleContactClick}>
                     "Contact us"
@@ -512,7 +512,7 @@ function Application() {
               {showFullText["Electric Goods Vehicle"] ? (
                 <>
                   <h3>Electric Goods Vehicle : </h3>
-                  Elecnovo offers custom engineered motorsolutions to electric
+                  Elecnovo offers custom engineered motor solutions to electric
                   goods vehicle
                   <ContactLink onClick={handleContactClick}>
                     "Contact us"
@@ -556,7 +556,7 @@ function Application() {
               {showFullText["Electric Cleaning Vehicle"] ? (
                 <>
                   <h3>Electric Cleaning Vehicle : </h3>
-                  Elecnovo offers custom engineered motorsolutions to electric
+                  Elecnovo offers custom engineered motor solutions to electric
                   cleaning vehicle
                   <ContactLink onClick={handleContactClick}>
                     "Contact us"
@@ -600,7 +600,7 @@ function Application() {
               {showFullText["Electric Auto"] ? (
                 <>
                   <h3>Electric Auto : </h3>
-                  Elecnovo offers custom engineered motorsolutions to electric
+                  Elecnovo offers custom engineered motor solutions to electric
                   auto{" "}
                   <ContactLink onClick={handleContactClick}>
                     "Contact us"
@@ -641,7 +641,7 @@ function Application() {
               {showFullText["Electric Streeing wheel"] ? (
                 <>
                   <h3>Electric Streeing wheel : </h3>
-                  Elecnovo offers custom engineered motorsolutions to electric
+                  Elecnovo offers custom engineered motor solutions to electric
                   streeing wheel
                   <ContactLink onClick={handleContactClick}>
                     "Contact us"

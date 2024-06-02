@@ -58,7 +58,7 @@ function Career() {
         <Span>&larr;Back</Span>
       </LinkButton>
 
-      <H1>Certificates & Achivements</H1>
+      <H1>Certificates & Achievements</H1>
       <Container>
         <Div>
           <Img src="certificate1.png" />
