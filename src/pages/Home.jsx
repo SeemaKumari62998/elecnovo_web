@@ -39,33 +39,32 @@ const Video = styled.video`
 
 const H1 = styled(motion.h1)`
   position: absolute;
-  top: 50px;
-  left: 25%;
-  letter-spacing: 2px;
+  top: 85px;
+  left: 5%;
+  letter-spacing: 1px;
   font-weight: 500;
   color: var(--color-cream-100);
-
-  font-size: 4rem;
+  font-size: 5rem;
   z-index: 10;
   text-align: center;
 
   @media only screen and (max-width: 600px) {
     font-size: 15px;
     font-weight: 400;
-    top: 8%;
-    left: 15%;
+    top: 10%;
   }
 `;
 
 const Subheading = styled(motion.div)`
   position: absolute;
-  top: 90px;
-  left: 23%;
+  top: 75%;
+  left: 65%;
   transform: translateX(-50%);
   letter-spacing: 2px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: 500;
+  white-space: nowrap;
   z-index: 10;
 
   @media only screen and (max-width: 600px) {
@@ -78,11 +77,14 @@ const Subheading = styled(motion.div)`
 const TextContent = styled.p`
   margin: 0;
   padding: 20px;
-  color: var(--color-cream-100);
+  color: var(--color-grey-700);
 
   @media only screen and (max-width: 600px) {
-    font-size: 1.3rem;
-    padding: 10px;
+    font-size: 15px;
+    margin: 140px;
+
+    padding: 2px;
+    margin-top: 130px;
   }
 `;
 
