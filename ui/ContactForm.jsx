@@ -13,7 +13,7 @@ const Container = styled.div`
   @media only screen and (max-width: 600px) {
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
   }
 `;
 
