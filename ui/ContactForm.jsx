@@ -28,6 +28,10 @@ const Div = styled.ul`
 `;
 const Img = styled.img`
   height: 100%;
+
+  @media only screen and (max-width: 600px) {
+    height: 300px;
+  }
 `;
 
 const Input = styled.input`
