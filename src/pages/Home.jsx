@@ -27,15 +27,6 @@ const Section = styled.div`
   }
 `;
 
-// const Video = styled.video`
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-
-//   top: 0;
-//   left: 0;
-//   z-index: -1;
-// `;
 const Video = styled.video`
   width: 100%;
   height: 100%;
@@ -166,13 +157,13 @@ function Home() {
           <TextContent>Patented Technology</TextContent>
         </Subheading>
 
-        <Video src={PMSManimationR1} autoPlay loop muted />
+        <Video src={PMSManimationR1} autoPlay loop muted playsInline />
       </Section>
 
       <Text />
 
       <Section>
-        <Video src={motorR2} autoPlay loop muted />
+        <Video src={motorR2} autoPlay loop muted playsInline />
         <Subheading
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
