@@ -148,8 +148,8 @@ function Teams() {
             plantations, neighborhoods cleaning and promoting green
             environments.
             <StyledBr marginBottom="30px" />
-            Please do feel free to contact Ratul via email:
-            ratul.borah@elecnovo.com
+            {/* Please do feel free to contact Ratul via email:
+            ratul.borah@elecnovo.com */}
           </P>
         </Section>
       </Container>
