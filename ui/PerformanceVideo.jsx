@@ -14,12 +14,13 @@ const Video = styled.video`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  pointer-events: none;
 `;
 
 function PerformanceVideo() {
   return (
     <Container>
-      <Video src={Solutionvideo} autoPlay loop muted />
+      <Video src={Solutionvideo} autoPlay loop muted playsInline />
     </Container>
   );
 }
