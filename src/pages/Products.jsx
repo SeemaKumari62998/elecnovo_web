@@ -71,6 +71,10 @@ const H3 = styled.h3`
     margin-top: 25px;
   }
 `;
+const Pa = styled.p`
+  font-size: 1.8rem;
+  margin-top: 10px;
+`;
 
 function Products() {
   const navigate = useNavigate();
@@ -83,6 +87,11 @@ function Products() {
     <>
       <StyledContainer>
         <H3>Elecnovo Motors</H3>
+        <Pa>
+          Elecnovo provides custom-engineered and advanced motor solutions with
+          enhanced performance, ease of integration, compact size and high
+          efficiency and enhanced reliability.{" "}
+        </Pa>
 
         <StyledUl>
           <StyledImage

@@ -16,7 +16,7 @@ const ImageContainer = styled.ul`
   grid-gap: 20px;
   grid-row-gap: 40px;
   padding: 20px;
-  margin-top: 130px;
+  margin-top: 170px;
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
@@ -78,10 +78,6 @@ const Paragraph = styled.p`
     margin-top: ${(props) => (props.showFullText ? "15px" : "10px")};
     margin-bottom: ${(props) => (props.showFullText ? "10px" : "5px")};
     white-space: normal;
-
-    /* & > * {
-      text-align: left;
-    } */
   }
 `;
 
@@ -111,6 +107,23 @@ const H3 = styled.h3`
 
   @media only screen and (max-width: 600px) {
     top: 6rem;
+    left: 23%;
+    font-size: 15px;
+    justify-content: center;
+  }
+`;
+const H4 = styled.h4`
+  font-size: 1.9rem;
+  font-weight: 500;
+  position: absolute;
+  left: 4%;
+  top: 14%;
+  width: 90%;
+
+  color: var(--color-grey-600);
+
+  @media only screen and (max-width: 600px) {
+    top: 4rem;
     left: 23%;
     font-size: 15px;
     justify-content: center;
@@ -149,7 +162,16 @@ function Application() {
       <Container>
         <ImageContainer>
           <H2> Elecnovo Application</H2>
+
           <H3>Electric Vehicle and more</H3>
+
+          <H4>
+            Elecnovo provides motor solutions to light duty electric vehicles
+            and electrically operated machines and equipment. Energy efficiency,
+            high performance, compact size, increased robustness and enhanced
+            reliability are key solutions of products and technologies of
+            Elecnovo.
+          </H4>
 
           <ImageItem
             as={motion.li}
