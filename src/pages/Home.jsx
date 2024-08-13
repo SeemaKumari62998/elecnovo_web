@@ -89,17 +89,12 @@ const TextContent = styled.p`
 `;
 
 const Img = styled.img`
-  /* width: 100%;
-  height: 60%;
-  margin: 90px;
-  padding: 0; */
-
   width: 100%;
   height: auto;
   padding: 20px;
   @media only screen and (max-width: 600px) {
     width: 100%;
-    /* margin: 0; */
+
     padding: 10px;
   }
 `;
@@ -107,10 +102,8 @@ const Img = styled.img`
 const Div = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* margin: 40px 0; */
   margin: 50px auto;
   gap: 30px;
-  /* height: 100vh; */
   width: 90%;
   padding: 20px;
   justify-content: center;

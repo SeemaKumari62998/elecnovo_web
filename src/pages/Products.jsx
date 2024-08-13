@@ -74,6 +74,12 @@ const H3 = styled.h3`
 const Pa = styled.p`
   font-size: 1.8rem;
   margin-top: 10px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1.6rem;
+    padding: 5px;
+    max-width: 92%;
+  }
 `;
 
 function Products() {

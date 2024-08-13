@@ -23,7 +23,7 @@ const ImageContainer = styled.ul`
     grid-template-rows: repeat(1, 1fr);
     gap: 10px;
     margin-bottom: 30px;
-    margin-top: 70px;
+    margin-top: 240px;
   }
 `;
 
@@ -119,14 +119,13 @@ const H4 = styled.h4`
   left: 4%;
   top: 14%;
   width: 90%;
-
   color: var(--color-grey-600);
 
   @media only screen and (max-width: 600px) {
-    top: 4rem;
-    left: 23%;
-    font-size: 15px;
-    justify-content: center;
+    font-size: 1.6rem;
+    padding: 5px;
+    max-width: 92%;
+    top: 3%;
   }
 `;
 
