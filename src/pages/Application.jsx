@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useState } from "react";
-
+import CrossBrowserTextComponent from "../TextFormatter";
 import { useNavigate } from "react-router-dom";
 
 const Container = styled.div`
@@ -119,16 +119,19 @@ const H4 = styled.h4`
   left: 4%;
   top: 14%;
   width: 90%;
+  line-height: 1.5;
   color: var(--color-grey-600);
+  white-space: normal;
+  overflow-wrap: break-word;
 
   @media only screen and (max-width: 600px) {
     font-size: 1.6rem;
     padding: 5px;
     max-width: 92%;
     top: 3%;
+    line-height: 1.4;
   }
 `;
-
 const ShowMoreLink = styled.span`
   color: blue;
   cursor: pointer;
@@ -164,12 +167,21 @@ function Application() {
 
           <H3>Electric Vehicle and more</H3>
 
-          <H4>
+{/*           <H4>
             Elecnovo provides motor solutions to light duty electric vehicles
             and electrically operated machines and equipment. Energy efficiency,
             high performance, compact size, increased robustness and enhanced
             reliability are key solutions of products and technologies of
             Elecnovo.
+          </H4> */}
+          <H4>
+            <CrossBrowserTextComponent
+              text={`Elecnovo provides motor solutions to light duty electric vehicles
+            and electrically operated machines and equipment. Energy efficiency,
+            high performance, compact size, increased robustness and enhanced
+            reliability are key solutions of products and technologies of
+            Elecnovo.`}
+            />
           </H4>
 
           <ImageItem
