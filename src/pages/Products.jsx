@@ -79,6 +79,7 @@ const Pa = styled.p`
   white-space: normal;
   overflow-wrap: break-word;
   line-height: 1.5;
+  padding: 10px;
 
   @media only screen and (max-width: 600px) {
     font-size: 1.6rem;
@@ -86,6 +87,7 @@ const Pa = styled.p`
     max-width: 92%;
     line-height: 1.4;
     top: 3%;
+    text-align: justify;
   }
 `;
 
@@ -105,7 +107,7 @@ function Products() {
             text={`Elecnovo provides custom-engineered and advanced motor solutions with
           enhanced performance, ease of integration, compact size and high
           efficiency and enhanced reliability.`}
-            />
+          />
         </Pa>
 
         <StyledUl>
