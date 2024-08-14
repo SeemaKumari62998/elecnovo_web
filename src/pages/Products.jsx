@@ -105,7 +105,7 @@ function Products() {
         <Pa>
           <CrossBrowserTextComponent
             text={`Elecnovo provides custom-engineered and advanced motor solutions with
-          enhanced performance, ease of integration, compact size and high
+          enhanced performance, ease of integration, compact size, high
           efficiency and increased reliability.`}
           />
         </Pa>
