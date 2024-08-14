@@ -5,8 +5,8 @@ function CrossBrowserTextComponent({ text }) {
   return (
     <span
       style={{
-        whiteSpace: "normal",
-        overflowWrap: "break-word",
+        // whiteSpace: "normal",
+        // overflowWrap: "break-word",
         hyphens: "none",
         textAlign: "justify",
       }}
