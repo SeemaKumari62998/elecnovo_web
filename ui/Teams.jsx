@@ -77,8 +77,9 @@ const P = styled.p`
     max-width: 92%;
     line-height: 1.4;
     top: 3%;
-    text-align: justify;
+
     margin-left: 10px;
+    text-align: left;
   }
 `;
 

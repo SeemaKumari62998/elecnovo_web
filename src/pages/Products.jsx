@@ -87,7 +87,7 @@ const Pa = styled.p`
     max-width: 92%;
     line-height: 1.4;
     top: 3%;
-    text-align: justify;
+    /* text-align: justify; */
   }
 `;
 
@@ -106,7 +106,7 @@ function Products() {
           <CrossBrowserTextComponent
             text={`Elecnovo provides custom-engineered and advanced motor solutions with
           enhanced performance, ease of integration, compact size and high
-          efficiency and enhanced reliability.`}
+          efficiency and increased reliability.`}
           />
         </Pa>
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
+
 import CrossBrowserTextComponent from "../src/TextFormatter";
 
 const Container = styled.div`
@@ -40,7 +40,8 @@ const StyledParagraph = styled.p`
     max-width: 92%;
     line-height: 1.4;
     top: 3%;
-    text-align: justify;
+    text-align: left;
+    /* text-align: justify; */
   }
 `;
 

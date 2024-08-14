@@ -21,7 +21,6 @@ const Paragraph = styled.p`
   text-align: left;
   white-space: normal;
   overflow-wrap: break-word;
-  text-align: justify;
 
   @media only screen and (max-width: 600px) {
     font-size: 1.6rem;

@@ -121,7 +121,7 @@ const H4 = styled.h4`
   width: 90%;
   line-height: 1.5;
   color: grey;
-  text-align: justify;
+  /* text-align: justify; */
 
   white-space: normal;
   overflow-wrap: break-word;
@@ -132,7 +132,7 @@ const H4 = styled.h4`
     /* max-width: 92%; */
     top: 3%;
     line-height: 1.4;
-    text-align: justify;
+    /* text-align: justify; */
     padding: 15px;
   }
 `;

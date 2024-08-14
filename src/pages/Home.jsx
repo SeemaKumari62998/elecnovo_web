@@ -58,7 +58,7 @@ const H1 = styled(motion.h1)`
 const Subheading = styled(motion.div)`
   position: absolute;
   top: 75%;
-  left: 63%;
+  left: 62%;
   transform: translateX(-50%);
 
   text-align: center;
