@@ -120,7 +120,7 @@ const H4 = styled.h4`
   top: 14%;
   width: 90%;
   line-height: 1.5;
-  color: var(--color-grey-600);
+  color: grey;
 
   white-space: normal;
   overflow-wrap: break-word;
@@ -168,7 +168,7 @@ function Application() {
 
           <H3>Electric Vehicle and more</H3>
 
-{/*           <H4>
+          {/*           <H4>
             Elecnovo provides motor solutions to light duty electric vehicles
             and electrically operated machines and equipment. Energy efficiency,
             high performance, compact size, increased robustness and enhanced
