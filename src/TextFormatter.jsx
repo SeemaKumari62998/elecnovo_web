@@ -8,6 +8,7 @@ function CrossBrowserTextComponent({ text }) {
         whiteSpace: "normal",
         overflowWrap: "break-word",
         hyphens: "none",
+        textAlign: "justify",
       }}
     >
       {text}
