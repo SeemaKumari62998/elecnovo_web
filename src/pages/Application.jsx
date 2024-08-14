@@ -120,6 +120,9 @@ const H4 = styled.h4`
   top: 14%;
   width: 90%;
   color: var(--color-grey-600);
+  white-space: pre-line;
+  word-break: break-word;
+  overflow-wrap: break-word;
 
   @media only screen and (max-width: 600px) {
     font-size: 1.6rem;
