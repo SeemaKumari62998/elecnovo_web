@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../ui/Button";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import CrossBrowserTextComponent from "../TextFormatter";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -75,11 +76,16 @@ const Pa = styled.p`
   font-size: 1.8rem;
   margin-top: 10px;
   color: grey;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.5;
 
   @media only screen and (max-width: 600px) {
     font-size: 1.6rem;
     padding: 5px;
     max-width: 92%;
+    line-height: 1.4;
+    top: 3%;
   }
 `;
 
@@ -95,9 +101,11 @@ function Products() {
       <StyledContainer>
         <H3>Elecnovo Motors</H3>
         <Pa>
-          Elecnovo provides custom-engineered and advanced motor solutions with
+          <CrossBrowserTextComponent
+            text={`Elecnovo provides custom-engineered and advanced motor solutions with
           enhanced performance, ease of integration, compact size and high
-          efficiency and enhanced reliability.{" "}
+          efficiency and enhanced reliability.{" "}`}
+            />
         </Pa>
 
         <StyledUl>
