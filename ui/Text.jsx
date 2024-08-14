@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import CrossBrowserTextComponent from "../src/TextFormatter";
 
-
 const Container = styled.div`
   min-height: 30vh;
   display: flex;
@@ -13,7 +12,7 @@ const Container = styled.div`
   color: grey;
 
   @media only screen and (max-width: 600px) {
-    max-width: 80%;
+    max-width: 90%;
   }
 `;
 
@@ -22,11 +21,10 @@ const Paragraph = styled.p`
   text-align: left;
   white-space: normal;
   overflow-wrap: break-word;
+  text-align: justify;
 
   @media only screen and (max-width: 600px) {
     font-size: 1.6rem;
-    padding: 5px;
-    line-height: 1.4;
   }
 `;
 
@@ -35,11 +33,11 @@ function Text() {
     <Container>
       <Paragraph>
         <CrossBrowserTextComponent
-              text={`Elecnovo is engaged in Design, Development, Manufacture and Supply of
+          text={`Elecnovo is engaged in Design, Development, Manufacture and Supply of
         Intelligent, Efficient, Reliable and Robust electric motors for Electric
         Vehicles (EV) and other applications. Elecnovo also provides motor
         control and powertrain solutions.`}
-            />
+        />
       </Paragraph>
     </Container>
   );
