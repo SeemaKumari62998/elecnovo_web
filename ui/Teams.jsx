@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import LinkButton from "./LinkButton";
+import CrossBrowserTextComponent from "../src/TextFormatter";
 
 const Container = styled.div`
   display: flex;
@@ -23,7 +24,7 @@ const Section = styled.div`
   @media only screen and (max-width: 600px) {
     margin-top: 10px;
     text-align: center;
-    margin-left: 0;
+    margin-left: 10px;
   }
 `;
 
@@ -69,16 +70,15 @@ const P = styled.p`
   font-family: "Roboto", sans-serif;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   padding: 15px;
-  background: #f9f9f9;
-  border-radius: 8px;
 
   @media only screen and (max-width: 600px) {
-    font-size: 14px;
-    margin: 10px 0;
-    text-align: left;
-    padding: 10px;
+    font-size: 1.4rem;
+    padding: 15px;
+    max-width: 92%;
+    line-height: 1.4;
+    top: 3%;
     text-align: justify;
-    margin: 10px;
+    margin-left: 10px;
   }
 `;
 
@@ -110,10 +110,6 @@ const P2 = styled.p`
   font-weight: bold;
 `;
 
-const StyledBr = styled.div`
-  margin-bottom: ${(props) => props.marginBottom || "20px"};
-`;
-
 function Teams() {
   return (
     <>
@@ -128,12 +124,13 @@ function Teams() {
           <P2>Ratul Borah</P2>
           <P1>Founder & CEO</P1>
           <P>
-            Ratul is an entrepreneur, engineer, business strategist and
+            <CrossBrowserTextComponent
+              text={` Ratul is an entrepreneur, engineer, business strategist and
             motivational speaker. He had managed global engineering, innovation,
             marketing and business with his 25 years plus multicultural and
             multinational experience in India, USA, Germany, Japan, China,
             France, Italy, Thailand, Hong Kong and Singapore.
-            <StyledBr marginBottom="30px" />
+           
             He had done his bachelor’s in Mechanical Engineering. He did his
             master’s in Industrial Engineering. He was awarded Gold Medal for
             securing the Highest Marks in General Mathematics in High School
@@ -143,13 +140,12 @@ function Teams() {
             organisations. He had delivered motivational workshops at various
             schools, colleges, universities and organisations in India & abroad.
             He had influenced thousands of individuals to do better in life.
-            <StyledBr marginBottom="30px" />
+           
             Ratul is engaged in social works including water preservation, tree
             plantations, neighborhoods cleaning and promoting green
             environments.
-            <StyledBr marginBottom="30px" />
-            {/* Please do feel free to contact Ratul via email:
-            ratul.borah@elecnovo.com */}
+            `}
+            />
           </P>
         </Section>
       </Container>

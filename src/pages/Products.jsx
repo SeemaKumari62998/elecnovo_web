@@ -83,7 +83,7 @@ const Pa = styled.p`
 
   @media only screen and (max-width: 600px) {
     font-size: 1.6rem;
-    padding: 5px;
+    padding: 15px;
     max-width: 92%;
     line-height: 1.4;
     top: 3%;

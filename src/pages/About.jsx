@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Footer from "../../ui/Footer";
 import { motion } from "framer-motion";
+import CrossBrowserTextComponent from "../TextFormatter";
 
 const Wrapper = styled(motion.div)`
   display: flex;
@@ -14,18 +15,21 @@ const Wrapper = styled(motion.div)`
   }
 `;
 
-const Paragrapg = styled.p`
+const Paragraph = styled.p`
   text-align: left;
   max-width: 100%;
   margin: 2% auto;
   font-size: 1.8rem;
   color: balck;
+  left: 5%;
 
   @media only screen and (max-width: 600px) {
     font-size: 1.4rem;
-    margin: 20px;
-
-    text-align: left;
+    padding: 15px;
+    max-width: 92%;
+    line-height: 1.4;
+    top: 3%;
+    text-align: justify;
   }
 `;
 
@@ -67,8 +71,9 @@ function About() {
 
       <Wrapper>
         <H1>ABOUT US</H1>
-        <Paragrapg>
-          Elecnovo is engaged in Design, Development, Manufacture and Supply of
+        <Paragraph>
+          <CrossBrowserTextComponent
+            text={`Elecnovo is engaged in Design, Development, Manufacture and Supply of
           Intelligent, Efficient, Reliable and Robust electric motors for
           Electric Vehicles (EV) and other applications. Elecnovo also provides
           motor control and powertrain solutions. Based in Bengaluru, India,
@@ -84,8 +89,9 @@ function About() {
           based motor control system for Electric Vehicles and commutation
           system for BLDC motors, and patent-pending invention on an electronic
           commutation system for electric motor. Elecnovo is an initiative of R
-          & D in India and Make in India.
-        </Paragrapg>
+          & D in India and Make in India.`}
+          />
+        </Paragraph>
       </Wrapper>
       <Footer />
     </>

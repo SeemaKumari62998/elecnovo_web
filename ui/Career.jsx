@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import CrossBrowserTextComponent from "../src/TextFormatter";
 
 const Container = styled.div`
   width: 100%;
@@ -29,28 +30,17 @@ const Img = styled.img`
 
 const StyledParagraph = styled.p`
   font-size: 23px;
-  text-align: left;
-  margin: 20px 0;
-
-  @media only screen and (max-width: 600px) {
-    font-size: 1.5rem;
-    margin: 20px 0;
-    padding: 5px 10px;
-    line-height: 25px;
-  }
-`;
-
-const FancyH1 = styled(motion.h1)`
-  font-size: 5rem;
-  font-weight: 500;
-  color: var(--color-grey-700);
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+  justify-content: center;
 
   @media only screen and (max-width: 600px) {
-    font-size: 2.5rem;
-    /* margin: 10px; */
+    font-size: 1.4rem;
+    padding: 15px;
+    max-width: 92%;
+    line-height: 1.4;
+    top: 3%;
+    text-align: justify;
   }
 `;
 
@@ -60,18 +50,13 @@ function Career() {
       <Container>
         <Img src="career.jpg" alt="Career" />
         <StyledParagraph>
-          Elecnovo offers excellent career opportunities for engineering,
+          <CrossBrowserTextComponent
+            text={` Elecnovo offers excellent career opportunities for engineering,
           manufacturing, human resources and business development. Please send
           your introduction and resume at reachus@elecnovo.com if you want to
-          join the journey of Elecnovo.
+          join the journey of Elecnovo.`}
+          />
         </StyledParagraph>
-        <FancyH1
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-        >
-          Elecnoco offers best carrer opportunity
-        </FancyH1>
       </Container>
     </>
   );

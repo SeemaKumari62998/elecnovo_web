@@ -25,6 +25,7 @@ const Paragraph = styled.p`
 
   @media only screen and (max-width: 600px) {
     font-size: 1.6rem;
+    padding: 15px;
   }
 `;
 

@@ -86,13 +86,13 @@ const H2 = styled(motion.h2)`
   font-weight: 500;
   position: absolute;
   top: 20px;
-  left: 38%;
+  left: 39%;
   color: var(--color-grey-600);
   padding: 10px 0;
 
   @media only screen and (max-width: 600px) {
     margin-top: 5px;
-    left: 25%;
+    left: 29%;
     font-size: 17px;
     justify-content: center;
   }
@@ -101,13 +101,13 @@ const H3 = styled.h3`
   font-size: 3rem;
   font-weight: 500;
   position: absolute;
-  left: 38%;
+  left: 39%;
   top: 8%;
   color: var(--color-grey-600);
 
   @media only screen and (max-width: 600px) {
     top: 6rem;
-    left: 23%;
+    left: 28%;
     font-size: 15px;
     justify-content: center;
   }
@@ -116,23 +116,24 @@ const H4 = styled.h4`
   font-size: 1.9rem;
   font-weight: 500;
   position: absolute;
-  left: 4%;
+  left: 5%;
   top: 14%;
   width: 90%;
   line-height: 1.5;
   color: grey;
-  text-align:justify;
+  text-align: justify;
 
   white-space: normal;
   overflow-wrap: break-word;
 
   @media only screen and (max-width: 600px) {
     font-size: 1.6rem;
-    padding: 5px;
-    max-width: 92%;
+    /* padding: 5px;*/
+    /* max-width: 92%; */
     top: 3%;
     line-height: 1.4;
-    text-align:justify;
+    text-align: justify;
+    padding: 15px;
   }
 `;
 const ShowMoreLink = styled.span`
@@ -170,13 +171,6 @@ function Application() {
 
           <H3>Electric Vehicle and more</H3>
 
-          {/*           <H4>
-            Elecnovo provides motor solutions to light duty electric vehicles
-            and electrically operated machines and equipment. Energy efficiency,
-            high performance, compact size, increased robustness and enhanced
-            reliability are key solutions of products and technologies of
-            Elecnovo.
-          </H4> */}
           <H4>
             <CrossBrowserTextComponent
               text={`Elecnovo provides motor solutions to light duty electric vehicles
