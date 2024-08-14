@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import CrossBrowserTextComponent from "../src/TextFormatter";
+
 
 const Container = styled.div`
   min-height: 30vh;
@@ -18,10 +20,13 @@ const Container = styled.div`
 const Paragraph = styled.p`
   font-size: 2.5rem;
   text-align: left;
+  white-space: normal;
+  overflow-wrap: break-word;
 
   @media only screen and (max-width: 600px) {
     font-size: 1.6rem;
     padding: 5px;
+    line-height: 1.4;
   }
 `;
 
@@ -29,10 +34,12 @@ function Text() {
   return (
     <Container>
       <Paragraph>
-        Elecnovo is engaged in Design, Development, Manufacture and Supply of
+        <CrossBrowserTextComponent
+              text={`Elecnovo is engaged in Design, Development, Manufacture and Supply of
         Intelligent, Efficient, Reliable and Robust electric motors for Electric
         Vehicles (EV) and other applications. Elecnovo also provides motor
-        control and powertrain solutions.
+        control and powertrain solutions.`}
+            />
       </Paragraph>
     </Container>
   );
