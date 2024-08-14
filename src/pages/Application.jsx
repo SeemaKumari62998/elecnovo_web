@@ -121,6 +121,7 @@ const H4 = styled.h4`
   width: 90%;
   line-height: 1.5;
   color: var(--color-grey-600);
+
   white-space: normal;
   overflow-wrap: break-word;
 
