@@ -14,7 +14,6 @@ const StyledContainer = styled.div`
   @media only screen and (max-width: 600px) {
     height: 100%;
     top: 0;
-    /* margin-top: 5px; */
   }
 `;
 
@@ -87,7 +86,6 @@ const Pa = styled.p`
     max-width: 92%;
     line-height: 1.4;
     top: 3%;
-    /* text-align: justify; */
   }
 `;
 

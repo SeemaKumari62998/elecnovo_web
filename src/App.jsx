@@ -35,7 +35,6 @@ function App() {
             <Route path="career" element={<Career />} />
             <Route path="footer" element={<Footer />} />
             <Route path="productdetails" element={<Productdetail />}></Route>
-            {/* <Route path="/" element={<Home />} /> */}
             <Route path="application" element={<MenuApplication />} />
             <Route path="solutions" element={<Solutions />} />
           </Route>

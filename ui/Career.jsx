@@ -41,7 +41,6 @@ const StyledParagraph = styled.p`
     line-height: 1.4;
     top: 3%;
     text-align: left;
-    /* text-align: justify; */
   }
 `;
 
@@ -54,7 +53,7 @@ function Career() {
           <CrossBrowserTextComponent
             text={` Elecnovo offers excellent career opportunities for engineering,
           manufacturing, human resources and business development. Please send
-          your introduction and resume at reachus@elecnovo.com if you want to
+          your introduction and resume to reachus@elecnovo.com if you want to
           join the journey of Elecnovo.`}
           />
         </StyledParagraph>

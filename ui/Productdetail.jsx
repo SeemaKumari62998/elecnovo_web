@@ -3,10 +3,9 @@ import styled from "styled-components";
 
 const Container = styled.div`
   width: 100%;
-  /* top: 20px; */
+
   color: var(--color-grey-800);
   height: auto;
-  /* margin: 10px 10px; */
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -16,10 +15,8 @@ const Container = styled.div`
   position: relative;
 
   @media only screen and (max-width: 600px) {
-    /* top: 2%; */
     height: 100vh;
     padding: 25px;
-    /* margin: 5px; */
     padding-bottom: 50px;
   }
 `;

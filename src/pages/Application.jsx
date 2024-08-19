@@ -65,7 +65,6 @@ const Paragraph = styled.p`
   -webkit-line-clamp: ${(props) => (props.showFullText ? "unset" : "5")};
   -webkit-box-orient: vertical;
   background-color: var(--color-grey-200);
-  /* box-shadow: 0 0 5px rgb(0, 0, 0); */
   border-radius: 5px;
   margin-top: ${(props) => (props.showFullText ? "15px" : "10px")};
   margin-bottom: ${(props) => (props.showFullText ? "10px" : "5px")};
@@ -121,18 +120,14 @@ const H4 = styled.h4`
   width: 90%;
   line-height: 1.5;
   color: grey;
-  /* text-align: justify; */
 
   white-space: normal;
   overflow-wrap: break-word;
 
   @media only screen and (max-width: 600px) {
     font-size: 1.6rem;
-    /* padding: 5px;*/
-    /* max-width: 92%; */
     top: 3%;
     line-height: 1.4;
-    /* text-align: justify; */
     padding: 15px;
   }
 `;
